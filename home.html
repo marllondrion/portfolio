@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="drionApp">
+<head data-gwd-animation-mode="proMode">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>Marllon Drion</title>
+<meta name="author" content="Marllon Drion">
+<meta name="description" content="Page of yet personal with the intention to disclose your resume and your experience working">
+<meta name="keywords" content="Marllon,Drion,Marllon Drion,Developer,Analyst,Architect,Research,Tester">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+<link rel="stylesheet" href="scripts/advanced/bootstrap-3.3.6-dist/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="scripts/advanced/animate.css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="scripts/advanced/font-awesome-4.3.0/css/font-awesome.min.css" type="text/css">
+<!--link rel="stylesheet" href="scripts/advanced/font-awesome-4.6.3/css/font-awesome.css" type="text/css"-->
+<!--link rel="stylesheet" href="scripts/advanced/fontawesome-free-5.5.0-web/css/fontawesome.min.css" type="text/css"-->
+
+<link rel="stylesheet" href="scripts/advanced/font-StrokeGap/StrokeGap.css" type="text/css">
+
+
+<!-- link rel="stylesheet" href="scripts/advanced/stroke-gap-icons/style.css" type="text/css"-->
+<link rel="stylesheet" href="scripts/advanced/owl-carousel-1.3.3/owl.carousel.css">
+<link rel="stylesheet" href="scripts/advanced/owl-carousel-1.3.3/owl.theme.css">
+<link rel="stylesheet" href="scripts/advanced/lightbox-2.7.1/css/lightbox.css">
+<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+    <style type="text/css">
+	html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      -webkit-transform-style: preserve-3d;
+      background-color: transparent;
+    }
+	.text-bold {
+	font-weight: bold;
+	}
+	
+		
+  </style>
+  
+</head>
+<body class="loading" >
+<div ng-controller="drionController">
+	<div class="style-selector close" title="Idioma">
+ 		<a class="btn style-change style-2" onclick="idioma();" id="idioma">Portugues</a>
+ 		<span class="style-toggle"><i class="fa fa-gears"></i></span>
+ 	</div>
+	
+	<div id="preloader-wrapper">
+		<div id="preloader">Loading...</div>
+	</div>
+	
+	<!--<h1 class="hidden">Febris Home Style - 1</h1>-->
+	<header class="style-1">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-menu">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<h2>
+						<a class="navbar-brand" href="home.html">
+							<img src="image/logo1.png" alt="Logo" />
+						</a>
+					</h2>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#services">Services</a></li>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#process">Process</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#graduations">Graduation</a></li>
+						<li><a href="#follow">Follow Me</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section id="home-slider" class="section-slider">
+		<h2 class="hidden">Slider</h2>
+
+		<div class="owl-carousel vcarousel right-side" id="home-slider-1">
+			<div class="owl-carousel-item">
+				<img src="image/slider-image-1.jpg" alt="Home Slider 1" />
+
+				<div class="slider-contents container slide-1">
+					<h3 data-animation="fadeInUp" 
+						data-delay="1000" 
+						data-margin-left="-10" 
+						class="slider-title"> 
+						<!--{{ info2}}</h3>-->
+						{{ info.curriculo.pessoal.nome }}</h3>
+
+
+					<h4 data-animation="flipInX" 
+						data-delay="2000"
+						data-margin-bottom="50" 
+						class="slider-subtitle">Developer Analyst and member of the team (R&D)</h4>
+
+					<a data-animation="bounceInLeft" 
+						data-delay="3000" 
+						data-margin-right="10" 
+						class="slider-cta btn blue-hover" href="#works">About me</a>
+
+					<!--a data-animation="bounceInRight" 
+						data-delay="3100" 
+						data-margin-top="" 
+						data-margin-bottom="" 
+						class="slider-cta btn blue-hover">Buy theme</a-->
+				</div>
+			</div>
+			<!--
+			<div class="owl-carousel-item">
+				<img src="image/slider-image-2.jpg" alt="Home Slider 2" />
+
+				<div class="slider-contents container slide-2 text-center">
+					<div data-animation="slideInDown" 
+						data-delay="1000" 
+						class="slider-big-text">Creative Portfolio &amp; Corporate</div>
+
+					<h3 data-animation="rotateInUpLeft" 
+						data-delay="2500"
+						data-margin-top="30" 
+						data-margin-bottom="30" 
+						class="slider-title">One Page HTML Template</h3>
+
+					<div data-animation="fadeInUp" 
+						data-delay="4000" 
+						data-margin-bottom="70"
+						class="slider-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget quam ut tortor ultricies pulvinar placerat id orci.</div>
+
+					<!--a data-animation="rollIn" 
+						data-delay="5000" 
+						data-margin-right="10"
+						class="slider-cta btn blue-hover" href="blog-list.html">Read more</a>
+
+					<a data-animation="rollIn" 
+						data-delay="5200" 
+						class="slider-cta btn blue-hover">Buy theme</a-- >
+				</div>
+			</div> -->
+			
+			<!--
+			<div class="owl-carousel-item">
+				<img src="image/slider-image-3.jpg" alt="Home Slider 3" />
+
+				<div class="slider-contents container slide-3 text-center">
+					<div class="slider-social">
+						<a class="social-icon" href="#"
+							data-animation="rotateIn" 
+							data-delay="1000" 
+							data-margin-right="30"><i class="fa fa-facebook"></i></a>
+
+						<a class="social-icon" href="#"
+							data-animation="rotateIn" 
+							data-delay="1200" 
+							data-margin-right="30"><i class="fa fa-dribbble"></i></a>
+
+						<a class="social-icon" href="#"
+							data-animation="rotateIn" 
+							data-delay="1400"><i class="fa fa-twitter"></i></a>
+					</div>
+
+					<h3 data-animation="bounceIn" 
+						data-delay="2000" 
+						data-margin-top="70" 
+						data-margin-bottom="30" 
+						class="slider-title">Creative One Page Design!</h3>
+
+					<div data-animation="fadeInUp" 
+						data-delay="2500" 
+						data-margin-bottom="60" 
+						class="slider-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam euismod venenatis.</div>
+
+					<a data-animation="zoomInLeft" 
+						data-delay="3000" 
+						data-margin-right="10" 
+						class="slider-cta btn blue-hover" href="blog-detail.html">Read more</a>
+
+					<a data-animation="zoomInRight" 
+						data-delay="3200" 
+						class="slider-cta btn blue-hover">Buy theme</a>
+				</div>
+			</div> -->
+		</div>
+	</section>
+
+	<section id="services" class="section-services">
+		<h2 class="hidden">Services</h2>
+		<div class="container-fluid services">
+			<div class="row">
+				<div ng-repeat="item in info.curriculo.conhecimento" class="col-md-3 col-sm-6 col-xs-12">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+						<span ng-class="item.icone" ></span>
+							<!--span class="icon fa fa-connectdevelop fa-5x"></span-->		
+						</div>
+					</div>
+					<h3>{{ item.titulo }}</h3>
+					<div class="brief">
+					{{ item.descricao }}
+					<!--	Experience in <span class="text-bold" title="programs that manage business operations of companies">Commercial Software</span>, <span class="text-bold" title="programs used for numerical processing and data processing for different areas of research">Electrical Engineering Software</span> and <span class="text-bold" title="programs that use non-numerical algorithms and of computational intelligence technique for solving complex problems">Artificial Intelligence Software</span>.-->
+					</div>
+					<!--button class="btn pillow colored blue-hover">Detail</button-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="works" class="section-works withpattern2 overlay-black">
+		<div class="container">
+			<h2><span>Trabalos</span></h2>
+			<div>
+			descricao 
+			</div>
+
+			<div class="laptop-frame" data-animate="fadeInUp" data-offset="70%">
+				<img src="image/laptop.png" alt="Laptop"/>
+				<div class="video-poster">
+					<video poster="image/video-poster.jpg">
+						<source src="http://demo.theme-paradise.com/xman/assets/oceans.mp4" type="video/mp4" />
+					</video>
+
+					<div class="video-hover-wrapper">
+						<div class="video-inner-wrapper">
+							<div class="icon">
+								<span class="icon icon-Play"></span>
+							</div>
+							<div class="title">
+								Watch our <strong>introductory</strong> video
+							</div>
+							<div class="sub-title">Check Out Our Video Presentation</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<section id="process" class="section-process">
+		<div class="container-fluid services">
+			<h2 class="hidden">Process</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+							<span class="icon icon-Bulb"></span>
+						</div>
+					</div>
+					<h3>Idea</h3>
+					<div class="brief">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...
+					</div>
+					
+					<button class="btn pillow colored blue-hover">Detail</button>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+							<span class="icon icon-Linked"></span>
+						</div>
+					</div>
+					<h3>Design</h3>
+					<div class="brief">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...
+					</div>
+					
+					<button class="btn pillow colored blue-hover">Detail</button>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+							<span class="icon icon-Plaine"></span>
+						</div>
+					</div>
+					<h3>Develop</h3>
+					<div class="brief">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...
+					</div>
+					
+					<button class="btn pillow colored blue-hover">Detail</button>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+							<span class="icon icon-Starship2"></span>
+						</div>
+					</div>
+					<h3>Deploy</h3>
+					<div class="brief">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...
+					</div>
+
+					<button class="btn pillow colored blue-hover">Detail</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="experience" class="section-about">
+		<div class="container">
+			<h2><span>Experience</span></h2>
+			<div class="sub-title">
+				{{ info.curriculo.experiencia[0].descricao }}				
+			</div>
+			
+			
+			<!--  TODOS AS EXPERIENCIAS EXETO A PRIMEIRA QUE É UMA DESCRIÇÃO  -->
+			<div  ng-repeat="item in info.curriculo.experiencia"  ng:show="$index != 0" class="row">
+				<div class="col-sm-3">
+					<a class="avatar" href="#" data-animate="fadeInLeft">
+						<img src="{{ item.imagem }}" alt="Avatar 1" />
+						<span class="plus-sign"></span>
+					</a>	
+				</div>
+				<div class="col-sm-6 lr-dotted-border ct-about">
+					<div class="colored underlined">Basic Information</div>
+					<div class="person">
+						<span class="name">{{ item.cargo }}</span>
+						<span class="title">{{ item.dataInicio }} - {{ item.dataFim }} </span>
+					</div>
+					<div>
+						{{ item.descricao }}
+					</div>
+				</div>
+				<div class="col-sm-3 ct-about">
+					<div class="colored underlined">About</div>
+					<ul class="social-follow-icons">
+						<li><a class="" href="#"><i class="fa fa-link"></i></a></li>
+						<li class="lr-dotted-border"><a class="" href="{{ info.curriculo.experiencia[4].contato[1].valor }}"><i class="{{ info.curriculo.experiencia[4].contato[1].class}}"></i></a></li>
+						<li><a class="" href="https://pt.wikipedia.org/wiki/Companhia_Energ%C3%A9tica_de_Minas_Gerais"><i class="fa fa-wikipedia-w"  style="color:FFFFFF"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		
+		</div>
+	</section>
+  <!--section-- id="products" class="section-products">
+		<div class="container">
+			<h2><span class="underlined black">Our Products</span></h2>
+
+			<ul class="categories">
+				<li><button class="btn round white bordered white-hover btn-filter active" data-filter="*">All</button></li>
+				<li><button class="btn round white bordered white-hover btn-filter" data-filter="design">Design</button></li>
+				<li><button class="btn round white bordered white-hover btn-filter" data-filter="website">Website</button></li>
+				<li><button class="btn round white bordered white-hover btn-filter" data-filter="graphics">Graphic Design</button></li>
+				<li><button class="btn round white bordered white-hover btn-filter" data-filter="video">Video</button></li>
+			</ul>
+
+			<div class="portfolio">
+				<div id="isotope-filter" class="havemargin">
+					<div class="isotope-item" data-category="design">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-1.jpg" alt="portfolio 1" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-1.jpg" data-lightbox="portfolio-set" data-title="Portfolio 1"><span class="plus-sign"></span></a>
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="isotope-item" data-category="website">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-2.jpg" alt="portfolio 2" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-2.jpg" data-lightbox="portfolio-set" data-title="Portfolio 2"><span class="plus-sign"></span></a>
+								
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="isotope-item" data-category="graphics,design">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-3.jpg" alt="portfolio 3" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-3.jpg" data-lightbox="portfolio-set" data-title="Portfolio 3"><span class="plus-sign"></span></a>
+								
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="isotope-item" data-category="website">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-4.jpg" alt="portfolio 4" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-4.jpg" data-lightbox="portfolio-set" data-title="Portfolio 4"><span class="plus-sign"></span></a>
+								
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="isotope-item" data-category="design">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-5.jpg" alt="portfolio 5" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-5.jpg" data-lightbox="portfolio-set" data-title="Portfolio 5"><span class="plus-sign"></span></a>
+								
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="isotope-item" data-category="graphics">
+						<div class="portfolio-wrapper">
+							<img src="image/ourwork-work-6.jpg" alt="portfolio 6" />
+							<div class="portfolio-preview">
+								<a class="plus-sign" href="image/ourwork-work-6.jpg" data-lightbox="portfolio-set" data-title="Portfolio 6"><span class="plus-sign"></span></a>
+							</div>
+							<div class="portfolio-link">
+								<a class="" href="#"><span class="icon icon-Linked"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section-->
+
+	
+	<!--section id="pricing" class="section-pricing">
+		<div class="container">
+			<h2><span>Our Pricing</span></h2>
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare ac tellus nec varius. <br/>Nunc viverra quam quis nunc lobortis tempor.</div>
+			
+			<div class="pricing-table owl-carousel" id="pricing-table-carousel">
+				<div class="pricing owl-carousel-item">
+					<div class="half-circle">
+						<div class="content-inside-half-circle">
+							<sup class="currency">$</sup>
+							<span class="price">9.99</span>
+							<span class="period">/ month</span>
+						</div>
+					</div>
+					<div class="extra-container">
+						<h3>Basic</h3>
+						<ul class="features">
+							<li>1 Forms</li>
+							<li>5 Reports</li>
+							<li>10 Fields</li>
+							<li>1,000 Entires / Month</li>
+							<li>1GB Storage</li>
+							<li>No Gift cards</li>
+						</ul>
+						<button class="btn pillow bordered white pricing-signup">Sign Up</button>
+					</div>
+				</div>
+				<div class="pricing owl-carousel-item active">
+					<div class="half-circle">
+						<div class="content-inside-half-circle">
+							<sup class="currency">$</sup>
+							<span class="price">19.99</span>
+							<span class="period">/ month</span>
+						</div>
+					</div>
+					<div class="extra-container">
+						<h3>Professional</h3>
+						<ul class="features">
+							<li>3 Forms</li>
+							<li>15 Reports</li>
+							<li>50 Fields</li>
+							<li>10,000 Entires / Month</li>
+							<li>3GB Storage</li>
+							<li>Gift cards</li>
+						</ul>
+						<button class="btn pillow bordered white pricing-signup">Sign Up</button>
+					</div>
+				</div>
+				<div class="pricing owl-carousel-item">
+					<div class="half-circle">
+						<div class="content-inside-half-circle">
+							<sup class="currency">$</sup>
+							<span class="price">39.99</span>
+							<span class="period">/ month</span>
+						</div>
+					</div>
+					<div class="extra-container">
+						<h3>Enterprise</h3>
+						<ul class="features">
+							<li>10 Forms</li>
+							<li>Unlimited Reports</li>
+							<li>Max Fields</li>
+							<li>50,000 Entires / Month</li>
+							<li>5GB Storage</li>
+							<li>Gift cards</li>
+						</ul>
+						<button class="btn pillow bordered white pricing-signup">Sign Up</button>
+					</div>
+				</div>
+				<div class="pricing owl-carousel-item" >
+					<div class="half-circle">
+						<div class="content-inside-half-circle">
+							<sup class="currency">$</sup>
+							<span class="price">79.99</span>
+							<span class="period">/ month</span>
+						</div>
+					</div>
+					<div class="extra-container">
+						<h3>Unlimited</h3>
+						<ul class="features">
+							<li>Unlimited Forms</li>
+							<li>Unlimited Reports</li>
+							<li>Max Fields</li>
+							<li>100,000 Entires / Month</li>
+							<li>10GB Storage</li>
+							<li>Gift cards</li>
+						</ul>
+						<button class="btn pillow bordered white pricing-signup">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section-->
+	
+	<section id="success-meter" class="section-success withpattern">
+		<div class="container">
+			<h2 class="hidden">Success</h2>
+			<div class="row double-strike">
+				<div class="col-sm-3">
+					<div class="success-wrapper" data-animate="rotateIn">
+						<span>3814</span>
+					</div>
+					<div class="caption">
+						<i class="fa fa-users"></i> Happy Clients
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="success-wrapper" data-animate="rotateIn" data-delay="250">
+						<span>2518</span>
+					</div>
+					<div class="caption">
+						<i class="fa fa-suitcase"></i> Project Complete
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="success-wrapper" data-animate="rotateIn" data-delay="500">
+						<span>18K+</span>
+					</div>
+					<div class="caption">
+						<span><i class="fa fa-facebook"></i></span> Facebook Likes
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="success-wrapper" data-animate="rotateIn" data-delay="750">
+						<span>3628</span>
+					</div>
+					<div class="caption">
+						<span><i class="fa fa-twitter"></i></span> Tweets
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="testimonials" class="section-testimonials withpattern2 overlay-black">
+		<div class="container">
+			<h2><span class="underlined">WHAT FRIENDS JOB SAY</span></h2>
+			<div class="nav-control">
+				<a class="testimonial-prev" href="#"></a>
+				<span class="separator"></span>
+				<a class="testimonial-next" href="#"></a>
+			</div>
+
+			<div id="testimonial-carousel" class="owl-carousel">
+				<div class="owl-carousel-item">
+					<div class="testimonial">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lectus justo, rutrum in urna vel, vestibulum gravida orci. Nam malesuada ante non massa varius tincidunt. In convallis tellus.
+					</div>
+					<div class="author" data-animate="pulse">
+						<a class="author-avatar">
+							<img src="image/testimonial-avatar-1.jpg" alt="Testimonial Avatar" />
+						</a>
+						<a class="author-name">
+							<span class="underlined">Hanna Soe</span>
+						</a>
+						<div class="author-job">
+							Cardiac Clinic
+						</div>
+					</div>
+				</div>
+				<div class="owl-carousel-item">
+					<div class="testimonial">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lectus justo, rutrum in urna vel, vestibulum gravida orci. Nam malesuada ante non massa varius tincidunt. In convallis tellus.
+					</div>
+					<div class="author" data-animate="pulse">
+						<a class="author-avatar">
+							<img src="image/testimonial-avatar-2.jpg" alt="Testimonial Avatar" />
+						</a>
+						<a class="author-name">
+							<span class="underlined">Joth Smith</span>
+						</a>
+						<div class="author-job">
+							Cardiac Clinic
+						</div>
+					</div>
+				</div>
+				<div class="owl-carousel-item">
+					<div class="testimonial">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lectus justo, rutrum in urna vel, vestibulum gravida orci. Nam malesuada ante non massa varius tincidunt. In convallis tellus.
+					</div>
+					<div class="author" data-animate="pulse">
+						<a class="author-avatar">
+							<img src="image/testimonial-avatar-2.jpg" alt="Testimonial Avatar" />
+						</a>
+						<a class="author-name">
+							<span class="underlined">John Doe</span>
+						</a>
+						<div class="author-job">
+							Cardiac Clinic
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--section-- id="clients" class="section-clients">
+		<div class="container">
+			<h2 class="hidden">Clients</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-1.png" class="vh-centered" alt="Client 1" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-2.png" class="vh-centered" alt="Client 2" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-3.png" class="vh-centered" alt="Client 3" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-4.png" class="vh-centered" alt="Client 4" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-5.png" class="vh-centered" alt="Client 5" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-6.png" class="vh-centered" alt="Client 6" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-7.png" class="vh-centered" alt="Client 7" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="br-bordered">
+						<img src="image/client-8.png" class="vh-centered" alt="Client 8" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section-->
+	
+  <!--Start Graduation -->   
+	<section id="graduations" class="section-blog">
+		
+		<div class="container">
+			<h2><span>Graduations</span></h2>
+			
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare ac tellus nec varius. <br/>Nunc viverra quam quis nunc lobortis tempor.</div>
+			
+			<div ng-repeat="item in info.curriculo.formacao" class="row blog-post">
+				<div class="col-md-6 thumb">
+					<img src="{{item.imagem}}" alt="Blog Thumb 1" />
+					<div class="meta-infos">
+						<div class="post-author" data-animate="fadeInRight">
+							<span>{{item.tipoCurso}}</span>
+						</div>
+						<div class="post-author" data-animate="fadeInRight" data-delay="250">
+							<span>{{item.duracaoCurso}}</span>
+						</div>
+						<div class="post-share" data-animate="fadeInRight" data-delay="600">
+							<span class="icon icon-Share"></span>
+							<ul class="social">
+								<li ng-repeat="contato in intem.contato" >
+									<a class="" href="{{contato.valor}}"><i class="{{contato.class}}"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 desc">
+					<h3><a href="blog-detail.html">Computer Information Systems</a></h3>
+					<div>During the course was explored strategies to work in teams within organizations, how to analyze and evaluate the information processing needs and building solutions agile and able to meet the technological and market change. Got experience in systems analysis, systems design, architecture design, software development, Process development (SCRUM and XP), Databases and Programming (web services, desktop and mobile) with emphasis on JAVA liguagem....</div>
+					<a class="btn pillow colored read-more blue-hover" href="http://newtonpaiva.br/graduacao/sistemas-de-informacao">Read More</a>
+				</div>
+			</div>
+
+			<div class="row blog-post">
+				<div class="col-md-6 thumb">
+					<img src="image/oracle.png" alt="Blog Thumb 2" />
+					<div class="meta-infos">
+						<div class="post-date" data-animate="fadeInLeft">
+							<time datetime="2015-01-27 00:00"><span class="day">27</span> <span class="month">Jan</span> <span class="year">2015</span></time>
+						</div>
+						<div class="post-author" data-animate="fadeInLeft" data-delay="250">
+							<span>By</span> Conado
+						</div>
+						<div class="post-comments" data-animate="fadeInLeft" data-delay="500">
+							<span class="icon icon-MessageLeft"></span> 05
+						</div>
+						<div class="post-share" data-animate="fadeInLeft" data-delay="650">
+							<span class="icon icon-Share"></span>
+							<ul class="social">
+								<li><a class="" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="" href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a class="" href="#"><i class="fa fa-dribbble"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 desc">
+					<h3><a href="blog-detail.html">Nunc egestas magna non ante</a></h3>
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut neque diam. Nunc diam lectus, vulputate a eleifend nec, consequat et ac justo nisl euismod magna non ante...</div>
+					<a class="btn pillow colored read-more blue-hover" href="www.exemple.com">Read More</a>
+				</div>
+			</div>
+
+			<!--a class="btn pillow colored view-more blue-hover" href="www.exemple.com">View More</a-->
+		</div>
+	</section>
+
+	<section id="follow" class="section-follow withpattern2 overlay-black">
+		<div class="container">
+			<h2><span>FOLLOW ME</span></h2>
+			<div>To follow my activities and posting.</div>
+			<div class="row follow-style1">
+				<div class="col-sm-4">				
+					<div class="follow-circle" data-animate="flipInY" onclick="window.location='https://plus.google.com/+MarllonDrion/';">
+						<i class="fa fa-google-plus"></i>						
+						<div class="follow-inner-circle">
+							<div>								
+								<span class="fa fa-google-plus fa-4x"></span>
+							</div>
+						</div>
+					</div>				
+					<div class="social-title">Google+</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="follow-circle" data-animate="flipInY" data-delay="500" onclick="window.location='https://www.facebook.com/marllondrion';">
+						<i class="fa fa-facebook fa-fw"></i>
+						<div class="follow-inner-circle">
+							<div>							
+								<span class="fa fa-facebook fa-4x"></span>
+							</div>
+						</div>
+					</div>
+					<div class="social-title">Facebook</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="follow-circle" data-animate="flipInY" data-delay="1000" onclick="window.location='https://twitter.com/marllondrion';">
+						<i class="fa fa-twitter fa-fw"></i>
+						<div class="follow-inner-circle">
+							<div>
+								<span class="fa fa-twitter fa-4x"></span>
+							</div>
+						</div>
+					</div>
+					<div class="social-title">Twitter</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="section-separator open-map withpattern">
+		<div>Open The Map</div><i class="fa fa-angle-down"></i>
+	</div>
+
+	<section id="contact"  class="google-map">
+		<h2 class="hidden">Contact Info</h2>
+		<div class="google-map-wrapper">
+			<!-- Google map generated code -->
+			<!--script type="text/javascript" src="scripts/js/maps.google.api.sensor.false.js"></script-->
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.20&sensor=false"></script>
+			<div style="overflow:hidden;height:440px;width:100%;"><div id="gmap_canvas" style="height:440px;width:100%;"></div>
+			</div>
+			<script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-19.8582024,-43.9792311,19),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-19.8582024,-43.9792311,19)});infowindow = new google.maps.InfoWindow({content:"<b>My City</b><br/>Belo Horizonte/MG<br/> Brazil" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<!-- End of Google map generated code -->
+		</div>
+		
+		<div class="map-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="contact-info" data-animate="bounceIn">
+							<h3><span class="underlined">Phone</span></h3>
+							<div class=""><i class="fa fa-phone"></i> + 55 031 8745 3607</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="contact-info" data-animate="bounceIn" data-delay="250">
+							<h3><span class="underlined">Email</span></h3>
+							<div class=""><i class="fa fa-envelop"></i> marllon@drion.com.br</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="contact-info" data-animate="bounceIn" data-delay="500">
+							<h3><span class="underlined">Address</span></h3>
+							<div class=""><i class="fa fa-marker"></i> Belo Horizonte, Minas Gerais - Brazil</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section class="contact-form">
+			<div class="container">
+				<h2>
+					<span class="underlined">Get In Touch</span>
+				</h2>
+				<div class="heading-desc">For more information, write a message.<br/>I will answer you as soon as possible, thank you.</div>
+				
+				<form id="contact-form" class="contact-form" method="post" action="index.html">
+					<div class="row">
+						<div class="col-md-4">
+							<input required='required' type="text" name="name" placeholder="Name..." />
+						</div>
+						<div class="col-md-4">
+							<input required='required' type="text" name="email" placeholder="Email..." />
+						</div>
+						<div class="col-md-4">
+							<input required='required' type="text" name="subject" placeholder="Subject..." />
+						</div>
+							<div class="col-md-12">
+							<textarea name="description" placeholder="Describe your project..." class="description"></textarea>
+						</div>
+					</div>
+					
+					<button class="btn pillow colored blue-hover">Submit</button>
+				</form>
+			</div>
+		</section>
+		<section id="copyright" class="copyright">
+			<h2 class="hidden">Copyright</h2>
+			<div class="container">Copyright &copy;{{date | date:"yyyy"}}
+			Powered by <a href="http://drion.com.br/">Marllon Drion.com.br</a>. All Rights Reserved.</div>
+		</section>
+	</footer>
+
+	<div class="totop-wrapper">
+		<div class="container">
+			<a id="toTop" href="#">SUBIRR</a>
+		</div>
+	</div>
+	
+	
+	</div>
+<!-- 	<script type="text/javascript" src="scripts/advanced/angular-1.5.6/angular.min.js"></script> -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/jquery-1.11.2/jquery-1.11.2.min.js"></script>
+ 	<script type="text/javascript" src="scripts/advanced/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/waypoints-3.1.1/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/waypoints-3.1.1/shortcuts/waypoint.sticky.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/imagesloaded-3.1.8/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/owl-carousel-1.3.3/owl.carousel.js"></script>
+	<script type="text/javascript" src="scripts/advanced/isotope-2.2.0/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/jquery.scrollTo-2.1.1/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/jquery.localScroll-1.4.0/jquery.localScroll.min.js"></script>
+	<script type="text/javascript" src="scripts/advanced/lightbox-2.7.1/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="scripts/informacoes.js"></script>
+	<script type="text/javascript" src="scripts/drion.js"></script>
+	<script type="text/javascript" src="scripts/script.min.js"></script>
+</body>
+</html>
+
+</html>
