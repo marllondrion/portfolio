@@ -3,20 +3,19 @@ var getYeardate = (new Date()).getFullYear();
 
 var variavel_curriculo_en = {	
 		"pessoal": {
-			"nome": "Marllon Drion.*",
+			"nome": "Marllon Drion AQUI",
 			"sobrenome": "Batista de Alcino",
 			"dataNascimento": "24/09/1991",
-			"idade": "24",
 			"endereco": {
-				"rua": "da Descida",
-				"numero": "163",
-				"complemento": "a",
-				"bairro": "Jardim São José",
-				"cidade": "Belo Horizonte",
-				"cidadeSigla": "BH",
-				"estado": "Minas Gerais",
-				"estadoSigla": "MG",
-				"pais": "Brasil"
+				"rua": "Sargood St",
+				"numero": "48",
+				"complemento": "",
+				"bairro": "Altona",
+				"cidade": "Melbourne",
+				"cidadeSigla": "",
+				"estado": "VIC",
+				"estadoSigla": "VIC",
+				"pais": "Australia"
 			}
 		},
 		"formacao": [{
@@ -66,38 +65,62 @@ var variavel_curriculo_en = {
 		"contato": {
 			"celular": "+61 0410 389 445",
 			"telefone": "+61 0410 389 445",
-			"e-mail": "marllon@drion.dev",
+			"email": "marllon@drion.dev",
 			"site": "www.drion.dev"
 		},
-		"conhecimento": [{
-			"titulo": "Desenvolvedor de Software",
-			"descricao": "Experiência em Software comercial, Sistema de Engenharia Elétrica e Software de Inteligência Artificial.",
-			"icone": "icon icon-Plaine"
+		
+		"habilidades":[{
+			"titulo": "IDEA",
+			"descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...",
+			"icone": "icon icon-Bulb"
 		},
 		{
-			"titulo": "Pesquisa & Desenvolvimento ",
-			"descricao": "Realiza pesquisa e desenvolvimento de sistemas com intuito de trazer evolução e inovação no setor energetico do país com apoio de Universidades.",
-			"icone": "icon f002"
+			"titulo": "DESIGN",
+			"descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...",
+			"icone": "fa fa-search"
 		},
 		{
-			"titulo": "Consultoria",
-			"descricao": "Realizo consultoria em desenvolvimento, arquitetura e modelagem de software.",
-			"icone": "icon-inner-Wrapper"
+			"titulo": "DEVELOP",
+			"descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla vel sem sed elementum. Sed lobortis odio est, convallis mauris sit amet aliquam...",
+			"icone": "fa fa-connectdevelop "
 		},
 		{
 			"titulo": "Tester de Software",
 			"descricao": "Experiencia em tester de software, com intuito de minimizar erro e aumentando a qualidade do sistema.",
-			"icone": "icon fa fa-bug"
+			"icone": "fa fa-bug"
+		}
+			
+		],
+		
+		"conhecimento": [{
+			"titulo": "Desenvolvedor de Software",
+			"descricao": "Experiência em Software comercial, Sistema de Engenharia Elétrica e Software de Inteligência Artificial.",
+			"icone": "fa fa-code"
+		},
+		{
+			"titulo": "Pesquisa & Desenvolvimento ",
+			"descricao": "Realiza pesquisa e desenvolvimento de sistemas com intuito de trazer evolução e inovação no setor energetico do país com apoio de Universidades.",
+			"icone": "fa fa-search"
+		},
+		{
+			"titulo": "Consultoria",
+			"descricao": "Realizo consultoria em desenvolvimento, arquitetura e modelagem de software.",
+			"icone": "fa fa-connectdevelop "
+		},
+		{
+			"titulo": "Tester de Software",
+			"descricao": "Experiencia em tester de software, com intuito de minimizar erro e aumentando a qualidade do sistema.",
+			"icone": "fa fa-bug"
 		},
 		{
 			"titulo": "Gerência de Configuração",
 			"descricao": "Experiencia em gerenciamento de software do setor de P&D.",
-			"icone": "icon fa fa-cog"
+			"icone": " fa fa-cog"
 		},
 		{
 			"titulo": "Análise de Sistema",
 			"descricao": "Modelagem e estrutura de dados conforme as necessidades do cliente.",
-			"icone": "icon-inner-wrapper"
+			"icone": " fa fa-area-chart "
 		},
 		{
 			"titulo": "Prototipagem de software",
@@ -118,7 +141,7 @@ var variavel_curriculo_en = {
 			"sigla": "AXXIOM",
 			"cargo": "Analista Desenvolvedor",
 			"dataInicio": "Abril/2014",
-			"dataFim": "Atual",
+			"dataFim": "Novembro/2016",
 			"descricao": "Sou parte de uma equipe do setor de P&D que realiza pesquisas, análises, testes e projectos de desenvolvimento destinada ao setor do Sistema de Distribuição de Energia Elétrica. Tecnologias utilizadas Java EE, Java SE, Hibernate, Dot Net, C #, MVC4, Entity Framework, SQL Server, MySQL e jQuery entre outras tecnologias. Eu também tenho experiência com a metodologia Scrum e conhecimento em processos de negócios.",
 			"contato": [{
 				"tipo": "site",
@@ -128,9 +151,15 @@ var variavel_curriculo_en = {
 			},
 			{
 				"tipo": "rede-social",
+				"nome": "Facebook",
+				"class": "fa fa-facebook",
+				"valor": "https://www.facebook.com/AxxiomTecnologiaeInovacao/"
+			},
+			{
+				"tipo": "rede-social",
 				"nome": "Linkedin",
 				"class": "fa fa-linkedin",
-				"valor": "https://www.linkedin.com/company/375048"
+				"valor": "https://www.linkedin.com/company/axxiom/"
 			}]
 		},
 		{
@@ -145,13 +174,19 @@ var variavel_curriculo_en = {
 				"tipo": "site",
 				"nome": "site",
 				"class": "fa fa-link",
-				"valor": "http://www.axxiom.com.br"
+				"valor": "http://site.flag.com.br/"
 			},
 			{
 				"tipo": "rede-social",
-				"nome": "Twitter",
-				"class": "fa fa-twitter",
-				"valor": "https://twitter.com/newtonpaiva"
+				"nome": "Facebook",
+				"class": "fa fa-facebook",
+				"valor": "https://www.facebook.com/pages/Flag-Intelliwan/147835338717088"
+			},
+			{
+				"tipo": "rede-social",
+				"nome": "Linkedin",
+				"class": "fa fa-linkedin",
+				"valor": "https://www.linkedin.com/company/flag-intelliwan/about/"
 			}]
 		},
 		{
@@ -166,13 +201,19 @@ var variavel_curriculo_en = {
 				"tipo": "site",
 				"nome": "site",
 				"class": "fa fa-link",
-				"valor": "http://www.axxiom.com.br"
+				"valor": "https://www.tsaengenharia.com.br/"
 			},
 			{
 				"tipo": "rede-social",
-				"nome": "Twitter",
-				"class": "fa fa-twitter",
-				"valor": "https://twitter.com/newtonpaiva"
+				"nome": "Facebook",
+				"class": "fa fa-facebook",
+				"valor": "https://www.facebook.com/tsatecnologiaautomacao"
+			},
+			{
+				"tipo": "rede-social",
+				"nome": "Linkedin",
+				"class": "fa fa-linkedin",
+				"valor": "https://www.linkedin.com/company/tsa---tecnologia-de-sistemas-de-automa-o-s-a/"
 			}]
 		},
 		{
@@ -187,13 +228,19 @@ var variavel_curriculo_en = {
 				"tipo": "site",
 				"nome": "site",
 				"class": "fa fa-link",
-				"valor": "http://www.axxiom.com.br"
+				"valor": "http://www.techbiz.com.br/"
 			},
 			{
 				"tipo": "rede-social",
-				"nome": "Twitter",
-				"class": "fa fa-twitter",
-				"valor": "https://twitter.com/newtonpaiva"
+				"nome": "Facebook",
+				"class": "fa fa-facebook",
+				"valor": "https://www.facebook.com/TechBiz-Informática-346094915407508/"
+			},
+			{
+				"tipo": "rede-social",
+				"nome": "Linkedin",
+				"class": "fa fa-linkedin",
+				"valor": "https://www.linkedin.com/company/techbizbrasil/"
 			}]
 		},
 		{
@@ -208,13 +255,19 @@ var variavel_curriculo_en = {
 				"tipo": "site",
 				"nome": "site",
 				"class": "fa fa-link",
-				"valor": "http://www.axxiom.com.br"
+				"valor": "http://www.newtonpaiva.br/"
 			},
 			{
 				"tipo": "rede-social",
-				"nome": "Twitter",
-				"class": "fa fa-twitter",
-				"valor": "https://twitter.com/newtonpaiva"
+				"nome": "Facebook",
+				"class": "fa fa-facebook",
+				"valor": "https://www.facebook.com/centrouniversitarionewtonpaiva"
+			},
+			{
+				"tipo": "rede-social",
+				"nome": "Linkedin",
+				"class": "fa fa-linkedin",
+				"valor": "https://www.linkedin.com/school/newtonpaiva/"
 			}]
 		}]
 };
