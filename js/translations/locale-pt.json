@@ -1,0 +1,56 @@
+{
+    "home.title": "",
+    "home.i.am.software": "Sou Desenvolvedor de",
+    "home.developer": "Software",
+    "home.hello": "Olá",
+    "home.my.name.is": "meu nome é",
+    "home.i.am.a": "eu sou um",
+    
+    "about.title": "Eu sou um <br> <span class='text-primary'> Programador de Software </span> <br> com as habilidades em",
+    "about.me": "Sobre me",
+    "about.me.years.work.experience": "ANOS <br> DE <br> EXPERIENCIA",
+    
+    "experience": "Experiência",
+    
+    "skill.title": "Minhas Habilidades <span class='text-primary'> estão em </span> desenvolvimento",
+    "skill.impact.frase": "Develop algorithms to solve your problems.",
+   
+    "project.title": "Projects",
+    "project.subtitle": "Lastest projects",
+    
+
+    "serverce.title": "Services Provided",
+    
+    "graduation.title": "Formations",
+    "graduation.subtitle": "Graduations",
+    
+    "contato.subtitle": "Diferença formas de contatos",
+    "contato.description": "Olá, segue abaixo algumas maneiras de me encontrar. Sinta-se a vontade de me contatar.",
+    "contato.address": "Melbourne Austrália",
+    "contato.second.subtitle": "Vamos trocar uma ideia, <span class='text-primary'> será um prazer conhecê-lo. </span>",
+    "contato.form.send.label.name": "Seu nome",
+    "contato.form.send.label.email": "Seu E-mail",
+    "contato.form.send.label.msg": "Mensagem",
+
+    "developer": "Developer",
+
+    "menu.label.home": "Pagina inicial",
+    "menu.label.about": "Sobre me",
+    "menu.label.experience": "Experiência",
+    "menu.label.skill": "Habilidades",
+    "menu.label.project": "Projetos",
+    "menu.label.service": "Servirços",
+    "menu.label.formation": "Formações",
+    "menu.label.recommendation": "Recomendações",
+    "menu.label.contact": "Contato",
+
+    "msg.erro.send.email": "Sorry something went wrong",
+    "msg.success.send.email": "Your message is successfully sent...",
+    
+    
+
+    "btn.contact.me": "Contate-me",
+    "btn.read.more": "Mais informações",
+    "btn.change.the.language": "English",
+    
+}
