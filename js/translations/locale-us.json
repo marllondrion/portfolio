@@ -1,0 +1,54 @@
+{
+    "home.title": "",
+    "home.i.am.software": "I'm Software",
+    "home.developer": "Developer",
+    "home.hello": "Hello",
+    "home.my.name.is": "my name's",
+    "home.i.am.a": "I'm a",
+    
+    "about.title": "I'm a <br> <span class='text-primary'> Software Developer </span> <br>  with skills in",
+    "about.me": "About me",
+    "about.me.years.work.experience": "YEARS /n WORK /n EXPERIENCE",
+   
+    "experience": "Experience",
+    
+    "skill": "Developer",
+    "skill.title": "My skills <span class='text-primary'> are </span> developing",
+    "skill.impact.frase": "Develop algorithms to solve your problems.",
+   
+    "project.title": "Projects",
+    "project.subtitle": "Lastest projects",
+    
+
+    "serverce.title": "Services Provided",
+    
+    "graduation.title": "Formations",
+    "graduation.subtitle": "Graduations",
+
+    "contato.subtitle": "Different forms of contact",
+    "contato.description": "Hi, below u will see some ways to find me. Feel free to contact me.",
+    "contato.address": "Melbourne Australia",
+    "contato.second.subtitle": "Let's exchange an idea, <span class='text-primary'> it will be a pleasure to meet you. </span>",
+    "contato.form.send.label.name": "Name *",
+    "contato.form.send.label.email": "E-mail *",
+    "contato.form.send.label.msg": "Message *",
+
+    "menu.label.home": "",
+    "menu.label.about": "About me",
+    "menu.label.experience": "Experience",
+    "menu.label.skill": "Skills",
+    "menu.label.project": "Projetos",
+    "menu.label.serverce": "Serverce",
+    "menu.label.formation": "Formations",
+    "menu.label.recommendation": "Recommendation",
+    "menu.label.contact": "Contact",
+    
+    "msg.erro.send.email": "Sorry something went wrong",
+    "msg.success.send.email": "Your message is successfully sent...",
+    
+
+   "btn.change.the.language": "Português",
+    "btn.contact.me": "Contact me",
+    "btn.read.more": "Read More",
+   
+  }
