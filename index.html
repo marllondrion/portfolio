@@ -1,25 +1,503 @@
-<div id="wrapper">
-    <div id="bg"></div>
+<!doctype html>
+<html lang='en,pt' ng-app="drionApp">
 
-    <div id="overlay"></div>
+<head data-gwd-animation-mode="proMode">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Marllon Drion">
+	<meta name="description" content="Marllon Drion - My personal webpage with the intention to disclose my resume and my experiences working">
+	<meta name="keywords" content="Marllon,Drion,Marllon Drion,Developer,Programmer,Analyst,Architect,Research,Tester">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
 
-    <div id="main">
-        <!-- Header -->
+	<title>{{ info.PersonalInformation.name }} </title>
+</head>
 
-        <header id="header">
-            <h1>Marllon Drion</h1>
+<body>
+	<div ng-controller="drionController as ctrl">
 
-            <p>&nbsp;•&nbsp; Developer &nbsp;•&nbsp; Analyst &nbsp;•&nbsp; Architect &nbsp;•&nbsp; Researcher &nbsp;•&nbsp; Tester</p>
+		<!-- Loader -->
+		<div class="loader">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>
 
-            <nav>
-                <ul>
-                    <li style="list-style: none"><a href="home.html" title="English"></a></li>
+		<!-- Click capture -->
+		<div class="click-capture"></div>
 
-                    <li style="list-style: none"><a href="home.html?lang=pt" title="Portuguese"></a></li>
-                </ul>
-            </nav>
-        </header><!--Footer -->
+		<!-- Navbar -->
+		<nav class="navbar navbar-desctop">
+			<div class="position-relative w-100">
 
-        <footer id="footer"><span class="copyright"><a style="color: #fff" href="http://www.drion.com.br">Marllon Drion ®</a></span></footer>
-    </div>
+				<!-- Brand-->
+				<a class="navbar-brand" href="#home">
+					{{ info.PersonalInformation.name }} 
+					<span class="text-primary general-title" id='XtopTitle'>	
+						{{  titleChange }}
+					</span>
+				</a>
+				
+
+				<!-- Toggler -->
+				<button class="toggler">
+					<span class="toggler-icon"></span>
+					<span class="toggler-icon"></span>
+					<span class="toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+		<nav class="navbar-bottom">
+
+		</nav>
+
+		<!-- Navbar Mobile -->
+		<nav class="navbar navbar-mobile">
+			<ion-icon class="close" name="close-outline"></ion-icon>
+
+			<!-- language -->
+			<ul class="language">
+				<li class="active">
+					<button class="btn" ng-click='changeLanguage()'>
+						<i class="fa fa-language"></i>  
+						{{'btn.change.the.language'|translate}}
+					 </button>
+				</li>
+			</ul>
+			<ul class="navbar-nav navbar-nav-mobile">
+				<li class="active"><a class="nav-link active" data-menuanchor="home" href="#home">{{'menu.label.home'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="about" href="#about">{{'menu.label.about'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="experience" href="#experience">{{'menu.label.experience'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="skills" href="#skills">{{'menu.label.skill'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="projects" href="#projects">{{'menu.label.project'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="services" href="#services">{{'menu.label.serverce'|translate}}</a></li>
+				<li><a class="nav-link" data-menuanchor="graduations" href="#graduations">{{'menu.label.formation'|translate}} </a></li>
+				<!--li><a class="nav-link" data-menuanchor="recommendation" href="#recommendation">{{'menu.label.recommendation'|translate}}</a></li-->
+				<li><a class="nav-link" data-menuanchor="contact" href="#contact">{{'menu.label.contact'|translate}}</a></li>
+			</ul>
+			<div class="navbar-mobile-footer">
+				<!-- Copyright -->
+		<div class="copy d-none d-sm-block">  {{ info.PersonalInformation.name }} © {{getYeardate}}.</div>			</div>
+		</nav>
+
+		<div id="pagepiling">
+
+	<!-- Masthead -->
+	<section id="home"
+		class="navbar-is-white text-white pp-scrollable d-flex align-items-center section position-absolute"
+		style="background-image:url('img/bg/masthead.jpg');" role="main">
+		<div class="intro">
+			<div class="scroll-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-xl-5">
+							<div class="mb-2"> {{'home.i.am.software'|translate}} <br> {{'developer'|translate}} </div>
+							<h1 class="text-white">
+								<span id='titleHome'>
+									<p>
+										<span data-ng-bind-html="'home.hello.my.name.is' | translate | htmlSafe"></span>
+										{{ info.PersonalInformation.name }}.
+									</p>
+								</span>
+							
+							</h1>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section id="about" class="section pp-scrollable d-flex align-items-center position-absolute">
+		<div class="intro">
+			<div class="scroll-wrap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 pr-md-5 pr-lg-0">
+							<div class="mb-4 text-dark">
+								{{'about.me'|translate}} 
+							</div>
+							<h2>
+								<span data-ng-bind-html="'about.title' | translate | htmlSafe"></span>
+							</h2>
+							<div class="mt-5 pt-2">
+								<p ng-repeat="item in info.skills" > 
+										{{item.description}}
+									<span class="text-primary" ng-show="item.state.visible" >
+										{{item.state.name}}
+									</span>
+								</p>
+								</div>
+						</div>
+						<div class="mt-5 mt-md-0 col-md-6 col-lg-5  offset-lg-1">
+							<div class="position-relative">
+								<img alt="" class="border-radius w-100" src="img/445x459.jpg">
+								<!--a href="video"
+									class="icon-play popup-youtube">
+								</a-->
+								<div class="experience-info">
+									<div class="experience-number">
+										{{ info.experiencia.totalExperience() }}
+									</div>
+									<div class="experience-text">
+										<span data-ng-bind-html="'about.me.years.work.experience' | translate | htmlSafe"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience -->
+	<section id="experience"
+		class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute"
+		style="background-image:url('img/bg/experience.jpg');">
+		<div class="intro">
+			<div class="scroll-wrap">
+				<div class="container">
+					<div>{{ info.experiencia.description }}</div>
+					<div class="mt-5 pt-5">
+						<div class="experience-item">
+							<div class="row row-experience" ng-repeat="item in info.experiencia.jobs">
+								<div class="col-md-4">
+									<a href="">
+										<img ng-alt="{{ item.company }}" class="img-responsive-experience" ng-src="{{ item.image }}" ng-id="{{ item.image }}">
+									</a>
+								</div>
+								<div class="col-md-4 my-4">
+									<h3 class="my-3 text-white">
+										{{ item.company }} </h3>
+									<h5 class="my-3 text-white"> {{ item.position }}</h5>
+									{{   formartDate(item.startDate, 'mm/yyyy') }} - {{ formartDate(item.endDate, 'mm/yyyy') }}
+								</div>
+								<div class="col-md-4">
+									{{ item.description }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section id="skills" class="section pp-scrollable d-flex align-items-center position-absolute">
+		<div class="intro">
+			<div class="scroll-wrap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<div class="position-relative">
+								<div class="photo-icon photo-icon-1">
+									<img alt="" class="w-100" src="img/100x100.jpg">
+								</div>
+								<div class="photo-icon photo-icon-2">
+									<img alt="" class="w-100" src="img/80x80.jpg">
+								</div>
+								<div class="photo-icon photo-icon-3">
+									<img alt="" class="w-100" src="img/100x100-2.jpg">
+								</div>
+								<img alt="" class="border-radius w-100" src="img/445x459-2.jpg">
+							</div>
+						</div>
+						<div class="mt-5 mt-lg-0 col-lg-5 offset-lg-1">
+							<h2>
+								<span data-ng-bind-html="'skill.title' | translate | htmlSafe"></span>
+							</h2>
+							<p>
+								{{'skill.impact.frase'|translate}}
+							</p>
+							<div class="mt-5 pt-2">
+								<div class="progress-item" ng-repeat="item in info.skills">
+									<div class="row">
+										<h6 class="col-md-6 mt-0">
+											{{item.title}}
+										</h6>
+										<h6 class="col-md-6 text-right mt-0">
+											{{item.percentage}}%
+										</h6>
+									</div>
+									<div class="progress mb-5">
+										<div class="progress-bar" role="progressbar" style="width: {{item.percentage}}%"
+											aria-valuenow="{{item.percentage}}" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section id="projects" class="navbar-is-white text-white section pp-scrollable position-absolute">
+		<div class="project-wrap">
+			<div class="bg-changer">
+				<div ng-repeat="item in info.work.projects"
+					class="section-bg active" 
+					style="background-image:url({{item.img}});">
+				</div>
+			</div>
+			<div class="intro">
+				<div class="scroll-wrap">
+					<div class="container">
+						<h2 class="text-white mb-0">{{'project.subtitle'|translate}}</h2>
+						<div class="mt-5 pt-2">
+							<div class="row-project-box row">
+								<div class="col-project-box col-md-6 col-lg-4 col-xl-3" 
+								ng-repeat="item in info.work.projects" >
+									<a href="" class="project-box">
+										<div class="project-box-inner">
+											<h4>{{item.title}}</h4>
+											<div class="project-category">
+												{{item.technology}}
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="services" class="section pp-scrollable d-flex position-absolute section-services">
+		<div class="container-fluid services">
+			<div class="row"> 
+				<div ng-repeat="item in info.services" class="col-md-3 col-sm-6 col-xs-12 ng-scope">
+					<div class="icon-wrapper">
+						<div class="icon-inner-wrapper">
+							<div class="icon-inner-wrapper-center">
+								<span ng-class="item.icon" ></span>
+							</div>
+						</div>
+					</div>
+					<h3>{{ item.title }}</h3>
+					<div class="brief">{{ item.description }}</div>
+					<!--button class="btn pillow colored blue-hover">Detail</button-->
+				</div>						
+			</div>
+		</div>
+	</section>
+
+  <!-- Graduation -->   
+  <section id="graduations" class="section pp-scrollable d-flex align-items-center position-absolute section-graduation">
+	<div class="intro">
+		<div class="scroll-wrap">
+			<div class="container">
+			<h2>
+				<span>{{'graduation.subtitle'|translate}}</span>
+			</h2>
+			<div>{{info.education.description}}</div>
+			<div ng-repeat="item in info.education.formations" class="row course ng-scope"> 
+				<div  class="{{$index % 2!=0?'col-md-6 order-md-2':'col-md-6 desc order-md-1'}}">
+					<img ng-id="{{item.image}}" ng-src="{{item.image}}" ng-alt="{{item.companyName}}">
+					<div class="meta-infos">
+						<div 
+						class="post-author animated">
+							<div class="ng-binding" > {{item.courseType}} </div>
+						</div>
+						<div  class="post-author animated" data-animate="fadeInRight" data-delay="250">
+							<div class="ng-binding">{{item.courseDuration}}</div>
+						</div>
+						<div class="post-share fadeInLeft animated" data-animate="fadeInRight" data-delay="600">
+							<span class=" fa fa-share-alt"></span>
+							<ul class="social">
+								<li ng-repeat="i in item.contact" title="{{i.name}}" >
+									<a  href="{{i.value}}">
+										<i class="{{i.class}}"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="{{$index % 2==0?'col-md-6 desc order-md-2':'col-md-6 desc order-md-1'}}">
+					<h3> <a>{{item.courseName}}</a> </h3>
+					<div>{{item.courseDescription}}</div>
+					<a class="btn pillow colored read-more blue-hover" href="{{item.courseSite}}">{{'btn.read.more'|translate}}</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+</section>
+
+
+			
+			<!-- recommendation 
+			<section id="recommendation"
+				class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute"
+				style="background-image:url('img/bg/recommendation.jpg');">
+				<div class="intro">
+					<div class="scroll-wrap">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 col-xl-5">
+									<span class="icon-quote text-primary">"</span>
+									<h2 class="title-uppercase text-white">Hey, this is <span
+											class="text-primary">Recommendation</span>
+										from
+										my best clients & partners</h2>
+								</div>
+								<div class="col-lg-5 col-xl-5  offset-lg-1 offset-xl-2">
+									<div class="carousel-recommendation owl-carousel">
+										<div>
+											<p class="mb-5"><strong class="h4 text-white mb-0">Amanda</strong><br>Apple
+												inc.</p>
+																							<p>“There are many variations of passages of Lorem Ipsum available, but the
+												majority have suffered
+												alteration in some form, by injected humour, or randomised words which
+												don't look even slightly
+												believable. If you are going to use a passage of Lorem Ipsum, you need
+												to be sure there isn't
+												anything..
+											</p>
+
+										</div>
+										<div>
+											<p class="mb-5"><strong class="h4 text-white mb-0">John</strong><br>Google
+											</p>
+											<p>“ If you are seeking an Interior designer that will understand exactly
+												your needs, and someone
+												who will utilise their creative and technical skills in parity with your
+												taste, then Suzanne at
+												The Bauhaus Studio is perfect.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		-->
+
+			<!-- Contact -->
+			<section id="contact" class="navbar-is-white text-white section pp-scrollable position-absolute"
+				style="background-image:url('img/bg/contact.jpg');">
+				<div class="intro">
+					<div class="scroll-wrap">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<h2 class="text-white">
+										{{'contato.subtitle'|translate}}
+									</h2>
+									<p class="text-muted">
+										{{'contato.description'|translate}}
+									</p>
+									<h3 class="text-white mt-5 pt-5">{{'contato.address'|translate}}</h3>
+									<h3 class="text-white">
+										<a href="tel:{{ info.PersonalInformation.contact.mobile }}">
+											{{ info.PersonalInformation.contact.mobile }}
+										</a>
+									</h3>
+									<p class="text-muted mt-3">
+			
+										<a ng-repeat="item in info.PersonalInformation.contact.socialNetwork" 
+										href="{{item.value}}" target="_blank" class="btn-social {{item.class}}">
+											<i class="{{item.iClass}}"></i>
+										</a>
+										
+									</p>
+								</div>
+								<div class="col-md-5 offset-md-2">
+									<h3 class="text-white mt-0">
+										<span data-ng-bind-html="'contato.second.subtitle' | translate | htmlSafe"></span>
+									</h3>
+									<div class="mt-4">
+										<form  id="sendEmail" class="js-ajax-form" >
+											<div class="form-group">
+												<input type="text" name="name" ng-model="form.name" ng-value='' ng-trim='true' class="form-control" required="" placeholder="{{'contato.form.send.label.name'|translate}}">
+											</div>
+											<div class="form-group">
+												<input type="email" name="email" ng-model='form.email' ng-value='' ng-trim='true' ng-maxlength="1000" class="form-control" required=""
+													placeholder="{{'contato.form.send.label.email'|translate}}">
+											</div>
+											<div class="form-group">
+												<textarea rows="2" name="message" ng-model='form.message' ng-value='' ng-trim='true' class="form-control" required=""
+													placeholder="{{'contato.form.send.label.msg'|translate}}"></textarea>
+											</div>
+											<input id="success-message" type="hidden" value="{{'msg.success.send.email'|translate}}">
+											<input id="error-message" type="hidden" value="{{'msg.erro.send.email'|translate}}">
+											<div class="form-group mb-0">
+												<button class="btn" type="submit"   >
+													<i class="fa fa-mail"></i>  
+													{{'btn.contact.me'|translate}}
+												 </button>											
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scrollbar -->
+		<div class="progress-nav">
+			<ul class="navbar-nav">
+				<li data-menuanchor="home" class="active"></li>
+				<li data-menuanchor="about"></li>
+				<li data-menuanchor="experience"></li>
+				<li data-menuanchor="skills"></li>
+				<li data-menuanchor="projects"></li>
+				<li data-menuanchor="services"></li>
+				<li data-menuanchor="graduations"></li>
+				<!--li data-menuanchor="recommendation"></li-->
+				<li data-menuanchor="contact"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+<!-- Angularjs 1.8.0 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate/2.7.1/angular-translate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookies/1.8.0/angular-cookies.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.8.0/angular-sanitize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.18.3/angular-translate-storage-local.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-handler-log/2.18.3/angular-translate-handler-log.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.18.3/angular-translate-loader-static-files.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.18.3/angular-translate-storage-cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.18.3/angular-translate-storage-local.min.js"></script>
+
+<!-- Outros JavaScript -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="js/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+<!--script src="js/jquery.validate.min.js"></script-->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+
+<script type="text/javascript" src="js/interface.js"></script>
+<script type="text/javascript" src="js/drion.js"></script>
+<script type="text/javascript" src="js/informacoes.js"></script>
+
+</html>
