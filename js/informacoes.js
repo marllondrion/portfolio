@@ -37,7 +37,7 @@ const curriculo_en = {
 				"name": "Linkedin",
 				"class": "btn-linkedin",
 				"iClass":"fa fa-linkedin",
-				"value": "https://www.linkedin.com/edu/school?id=10566&trk=tyah&trkInfo=clickedVertical%3Aschool%2Cidx%3A2-1-2%2CtarId%3A1437699038926%2Ctas%3Anewton%20paiva"
+				"value": "https://www.linkedin.com/in/marllondrion/"
 			},
 			{
 				"type": "rede-social",
