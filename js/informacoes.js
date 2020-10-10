@@ -30,7 +30,7 @@ const curriculo_en = {
 				"name": "Github",
 				"class": "btn-github",
 				"iClass":"fa fa-github",
-				"value": "https://twitter.com/newtonpaiva"
+				"value": "https://github.com/marllondrion/"
 			},
 			{
 				"type": "rede-social",
@@ -424,7 +424,7 @@ const curriculo_pt = {
 				"name": "Github",
 				"class": "btn-github",
 				"iClass":"fa fa-github",
-				"value": "https://twitter.com/newtonpaiva"
+				"value": "https://github.com/marllondrion/"
 			},
 			{
 				"type": "rede-social",
