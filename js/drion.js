@@ -112,11 +112,7 @@ function getBrowserLanguage() {
 	};
 }
 
-
-
-$('#sendEmail').on('submit', function (event) {
-	event.preventDefault(); // prevent reload
-debugger;
+var onloadCallback = function() {
 	var formData = new FormData(this);
 	formData.append('service_id', 'service_yoaupqt');
 	formData.append('template_id', 'mytemplate');
@@ -137,4 +133,4 @@ debugger;
 		alert(msg);
 		console.error(JSON.stringify(error));
 	});
-});
+};

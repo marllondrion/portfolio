@@ -145,9 +145,7 @@
     });*/
 
 
-    function onSubmit(token) {
-        document.getElementById("sendEmail").submit();
-      }
+   
 
 
 
