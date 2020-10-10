@@ -785,6 +785,7 @@ const curriculo_pt = {
 };
 
 
+
 const locale_pt = {
 	"home.title": "",
 	"home.i.am.software.developer": "Sou Desenvolvedor de <br> Software",
