@@ -13,7 +13,7 @@ app.config(function ($translateProvider) {
 	$translateProvider.useSanitizeValueStrategy('escapeParameters');
 
 	//Browser Language as preferred of Language
-	shortLang = getBrowserLanguage.shortLang;
+	shortLang = getBrowserLanguage().shortLang;
 	$translateProvider.preferredLanguage(shortLang !== 'en' && shortLang !== 'pt'?'en':shortLang);
 });
 
@@ -46,15 +46,14 @@ app.controller('drionController', function ($scope, $window, $translate) {
 	$scope.titleChange = "";
 
 	$scope.changeLanguage = function () {
-		var newLanguage = language === "en"? "pt": "en";
+		var newLanguage = $scope.language == "en"? "pt": "en";
 		$translate.use(newLanguage);
 		$scope.titleChange = changeTitle();
 		$scope.info = eval('curriculo_'+newLanguage);
 		$scope.language  = newLanguage;
-
 	};
 
-	$scope.formartDate = function (date, format) {
+	$scope.formartDate = function(date, format){
 		const dt = new Date(date.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
 
 		const year = new Intl.DateTimeFormat($translate.use(), { year: 'numeric' }).format(dt);
@@ -69,7 +68,6 @@ app.controller('drionController', function ($scope, $window, $translate) {
 			return `${monthShort}/${year}`.replace('.', '').toUpperCase();
 		if (format === "month/yyyy")
 			return `${monthLong}/${year}`.replace('.', '').toUpperCase();
-
 	};
 
 	$($window).bind('hashchange', function () {
@@ -113,6 +111,8 @@ function getBrowserLanguage() {
 		'shortLang': shortLang
 	};
 }
+
+
 
 $('#sendEmail').on('submit', function (event) {
 	event.preventDefault(); // prevent reload
