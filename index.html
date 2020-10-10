@@ -97,7 +97,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 col-xl-5">
-							<div class="mb-2"> {{'home.i.am.software'|translate}} <br> {{'developer'|translate}} </div>
+							<div class="mb-2">
+								<span data-ng-bind-html="'home.i.am.software.developer' | translate | htmlSafe"></span>
+							</div>
 							<h1 class="text-white">
 								<span id='titleHome'>
 									<p>
@@ -145,7 +147,7 @@
 								</a-->
 								<div class="experience-info">
 									<div class="experience-number">
-										{{ info.experiencia.totalExperience() }}
+										{{ info.experience.totalExperience() }}
 									</div>
 									<div class="experience-text">
 										<span data-ng-bind-html="'about.me.years.work.experience' | translate | htmlSafe"></span>
@@ -166,10 +168,10 @@
 		<div class="intro">
 			<div class="scroll-wrap">
 				<div class="container">
-					<div>{{ info.experiencia.description }}</div>
+					<div>{{ info.experience.description }}</div>
 					<div class="mt-5 pt-5">
 						<div class="experience-item">
-							<div class="row row-experience" ng-repeat="item in info.experiencia.jobs">
+							<div class="row row-experience" ng-repeat="item in info.experience.jobs">
 								<div class="col-md-4">
 									<a href="">
 										<img ng-alt="{{ item.company }}" class="img-responsive-experience" ng-src="{{ item.image }}" ng-id="{{ item.image }}">
