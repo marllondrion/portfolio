@@ -137,13 +137,25 @@ $('#sendEmail').on('submit', function(event) {
 	});
 });
 
-var correctCaptcha = function(response) {
+
+function changeSubmitDisabledStatus(){
 	document.getElementById("btnSend").disabled = (grecaptcha.getResponse() == '');
+}
+
+
+var correctCaptcha = function(response) {
+	changeSubmitDisabledStatus();
 };
+
+var expiredCaptcha = function(response) {
+	changeSubmitDisabledStatus();
+};
+  
   
 var onloadCallback = function() {
 	grecaptcha.render('recaptcha_element', {
 	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
 	  'callback' : correctCaptcha,
+	  'expired-callback':expiredCaptcha,
 	});
   };
