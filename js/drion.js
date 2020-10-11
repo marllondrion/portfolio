@@ -152,10 +152,11 @@ var expiredCaptcha = function(response) {
 };
   
   
-var onloadCallback = function() {
+/*var onloadCallback = function() {
+	debugger;
 	grecaptcha.render('recaptcha_element', {
 	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
 	  'callback' : correctCaptcha,
 	  'expired-callback':expiredCaptcha,
 	});
-  };
+  };*/
