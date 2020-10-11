@@ -113,7 +113,13 @@ function getBrowserLanguage() {
 }
 
 var onloadCallback = function() {
-	var formData = new FormData(this);
+	$("#btnSend").disabled = false;
+};
+
+
+$('#sendEmail').on('submit', function(event) {
+    event.preventDefault(); 
+    var formData = new FormData(this);
 	formData.append('service_id', 'service_yoaupqt');
 	formData.append('template_id', 'mytemplate');
 	formData.append('user_id', 'user_09W5AKhTNs4yJGgPOnnbj');
@@ -133,4 +139,4 @@ var onloadCallback = function() {
 		alert(msg);
 		console.error(JSON.stringify(error));
 	});
-};
+});
