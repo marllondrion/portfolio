@@ -137,5 +137,18 @@ $('#sendEmail').on('submit', function(event) {
 	});
 });
 
+var verifyCallback = function(response) {
+	alert(response);
+	document.getElementById("btnSend").disabled = false;
+  };
+  
+var onloadCallback = function() {
+	debugger;
+	grecaptcha.render('recaptcha', {
+	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
+	  'callback' : verifyCallback,
+	});
 
-
+	
+  };
+// document.getElementById("btnSend").disabled = false;
