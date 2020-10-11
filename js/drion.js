@@ -142,14 +142,8 @@ var correctCaptcha = function(response) {
 };
   
 var onloadCallback = function() {
-	debugger;
 	grecaptcha.render('recaptcha_element', {
 	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
 	  'callback' : correctCaptcha,
 	});
-
-	console.info('f f f');
   };
-
-
-// document.getElementById("btnSend").disabled = false;
