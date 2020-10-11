@@ -136,19 +136,20 @@ $('#sendEmail').on('submit', function(event) {
 		console.error(JSON.stringify(error));
 	});
 });
-
+/*
 var verifyCallback = function(response) {
 	alert(response);
 	document.getElementById("btnSend").disabled = false;
   };
-  
+  */
 var onloadCallback = function() {
-	debugger;
+/*	debugger;
 	grecaptcha.render('recaptcha', {
 	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
 	  'callback' : verifyCallback,
 	});
 
-	
+	*/
+	console.info('f f f');
   };
 // document.getElementById("btnSend").disabled = false;
