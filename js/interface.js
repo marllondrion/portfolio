@@ -144,8 +144,6 @@
         items: 1
     });*/
 
-    var onloadCallback = function() {
-        document.getElementById("btnSend").disabled = false;
-    };
+    
 
 })(jQuery);
