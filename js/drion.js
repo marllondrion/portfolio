@@ -112,10 +112,6 @@ function getBrowserLanguage() {
 	};
 }
 
-var onloadCallback = function() {
-	document.getElementById("btnSend").disabled = false;
-};
-
 
 $('#sendEmail').on('submit', function(event) {
     event.preventDefault(); 

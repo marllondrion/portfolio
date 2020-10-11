@@ -446,7 +446,13 @@
 												<button class="btn" id="btnSend" disabled="disabled" action='submit' ><i class="fa fa-mail"></i>  
 												{{'btn.contact.me'|translate}}
 											</button>
-											<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>										
+											<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+											
+											var onloadCallback = function() {
+												document.getElementById("btnSend").disabled = false;
+											};
+
+											</script>										
 											</div>
 										</form>
 									</div>
