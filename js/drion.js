@@ -151,12 +151,15 @@ var expiredCaptcha = function(response) {
 	changeSubmitDisabledStatus();
 };
   
-  
-/*var onloadCallback = function() {
-	debugger;
-	grecaptcha.render('recaptcha_element', {
-	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
-	  'callback' : correctCaptcha,
-	  'expired-callback':expiredCaptcha,
-	});
-  };*/
+var entryOnloadCallback;
+
+var onloadCallback = function() {
+	if(entryOnloadCallback != true){
+		grecaptcha.render('recaptcha_element', {
+		'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
+		'callback' : correctCaptcha,
+		'expired-callback':expiredCaptcha,
+		});
+		entryOnloadCallback = true;
+	}
+  };
