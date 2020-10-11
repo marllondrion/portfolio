@@ -136,20 +136,20 @@ $('#sendEmail').on('submit', function(event) {
 		console.error(JSON.stringify(error));
 	});
 });
-/*
-var verifyCallback = function(response) {
-	alert(response);
-	document.getElementById("btnSend").disabled = false;
-  };
-  */
+
+var correctCaptcha = function(response) {
+	document.getElementById("btnSend").disabled = (grecaptcha.getResponse() == '');
+};
+  
 var onloadCallback = function() {
-/*	debugger;
-	grecaptcha.render('recaptcha', {
+	debugger;
+	grecaptcha.render('recaptcha_element', {
 	  'sitekey' : '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
-	  'callback' : verifyCallback,
+	  'callback' : correctCaptcha,
 	});
 
-	*/
 	console.info('f f f');
   };
+
+
 // document.getElementById("btnSend").disabled = false;
