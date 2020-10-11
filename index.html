@@ -442,8 +442,8 @@
 											<input id="success-message" type="hidden" value="{{'msg.success.send.email'|translate}}">
 											<input id="error-message" type="hidden" value="{{'msg.erro.send.email'|translate}}">
 											<div class="form-group mb-0">
-												<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>	
-												<div class="g-recaptcha" data-sitekey="6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-"></div>
+												<!--script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script-->	
+												<div class="g-recaptcha" id="g-recaptcha" data-sitekey="6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-"></div>
 												<button class="btn" id="btnSend" disabled="disabled" action='submit' ><i class="fa fa-mail"></i>  
 												{{'btn.contact.me'|translate}}
 											</button>
@@ -504,10 +504,7 @@
 <script type="text/javascript" src="js/drion.js"></script>
 <script type="text/javascript" src="js/informacoes.js"></script>
 
-<script>  function onloadCallback() {
-	document.getElementById("btnSend").disabled = false;
-};
-</script>
+
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </html>
