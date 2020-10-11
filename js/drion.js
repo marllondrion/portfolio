@@ -113,7 +113,7 @@ function getBrowserLanguage() {
 }
 
 var onloadCallback = function() {
-	$("#btnSend").disabled = false;
+	document.getElementById("btnSend").disabled = false;
 };
 
 
