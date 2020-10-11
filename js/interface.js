@@ -144,4 +144,33 @@
         items: 1
     });*/
 
+
+    /*var requireConfig = {
+        paths: {
+            'recaptcha': '//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
+        }
+      };*/
+      function render(id) {
+          recaptchaClientId = grecaptcha.render(id, {
+              'sitekey': '6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-',
+              'callback': verifyCallback,
+              'theme': 'light'
+          });
+      }
+      window.renderRecaptcha = render;
+      var onloadCallback = function() {
+        if (!document.getElementById('g-recaptcha')) {
+          return;
+        }
+        window.renderRecaptcha('g-recaptcha');
+      };
+      //requirejs.config(requireConfig);
+      require(['jquery','recaptcha'], function(recaptcha) {
+      
+      });
+      var verifyCallback = function (response) {
+          jQuery("#btnSend").removeClass('disabled'); 
+      };
+    
+
 })(jQuery);
