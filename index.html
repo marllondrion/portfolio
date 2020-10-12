@@ -1,8 +1,10 @@
-<!doctype html>
-<html ng-app="drionApp">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  ng-app="drionApp">
 
 <head data-gwd-animation-mode="proMode">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="en, pt"/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="Marllon Drion">
@@ -14,16 +16,7 @@
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
-
 	<title>Marllon Drion</title>
-	<script>
-		var onloadCallback = function() {
-        document.getElementById("btnSend").disabled = false;
-      };
-
-	</script>
-	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>	
-
 </head>
 
 <body>
@@ -240,7 +233,7 @@
 										</h6>
 									</div>
 									<div class="progress mb-5">
-										<div class="progress-bar" role="progressbar" style="width: {{item.percentage}}%"
+										<div class="progress-bar" role="progressbar" style='width:{{item.percentage}}%''
 											aria-valuenow="{{item.percentage}}" aria-valuemin="0" aria-valuemax="100">
 										</div>
 									</div>
@@ -452,7 +445,6 @@
 											<input id="error-message" type="hidden" value="{{'msg.erro.send.email'|translate}}">
 											<div class="form-group mb-0">
 												<div id='recaptcha_element'></div>
-												<!--div id="recaptcha" class="g-recaptcha" data-sitekey="6LfI99UZAAAAAGaxMROU_z1VAhPoYB8iJvfsLMY-"></div-->
 												<button class="btn" id="btnSend" disabled="disabled" action='submit' ><i class="fa fa-mail"></i>  
 												{{'btn.contact.me'|translate}}
 											</button>
