@@ -252,7 +252,7 @@
 			<div class="bg-changer">
 				<div ng-repeat="item in info.work.projects"
 					class="section-bg active" 
-					style="background-image:url({{item.img}});">
+					ng-style="{'background-image':'url({{item.img}})'}">
 				</div>
 			</div>
 			<div class="intro">
