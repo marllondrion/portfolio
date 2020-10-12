@@ -1,14 +1,9 @@
 ﻿(function ($) {
-
-
-
     const loaderTime = 50;
     const animateTime = 100;
     const scrollingSpeed = 280;
     
     const anchors = ['home','about','experience','skills','projects','services', 'graduations','contact'];//'recommendation'
-    
-
 
     /**
      * Format String 
@@ -30,8 +25,6 @@
             }
         });
     }
-
-    var variavel_labels = {};
     
     /* Window Load */
     $(window).on('load', function () {

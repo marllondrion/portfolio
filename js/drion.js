@@ -1,7 +1,4 @@
-
-
 var app = angular.module('drionApp', ['pascalprecht.translate', 'ngSanitize']);
-
 
 app.config(function ($translateProvider) {
 
@@ -114,6 +111,7 @@ function getBrowserLanguage() {
 
 
 $('#sendEmail').on('submit', function(event) {
+	$('.loader').show()
     event.preventDefault(); 
     var formData = new FormData(this);
 	formData.append('service_id', 'service_yoaupqt');
@@ -126,10 +124,13 @@ $('#sendEmail').on('submit', function(event) {
 		contentType: false, // auto-detection
 		processData: false // no need to parse formData to string
 	}).done(function () {
+		$('.loader').hide();
 		var msg = $('#success-message').val();
 		msg = msg.format(formData.get('name'))
+		document.getElementById("sendEmail").reset();
 		alert(msg);
 	}).fail(function (error) {
+		$('.loader').hide();
 		var msg = $('#error-message').val();
 		msg = msg.format(formData.get('name'))
 		alert(msg);
