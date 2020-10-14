@@ -234,19 +234,7 @@ const curriculo_en = {
 		"experience": 
 		{
 			"description": "Developer Analyst (Java and C # Dot Net) with experience in Research Development (R&D) team, using Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C #, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery and other technologies. I also have experience in the iterative and incremental development process for software management and development using agile methodologies.",
-			"totalExperience": function (){
-				var total = 0;
-				
-				this.jobs.forEach(element => {
-					var date1 = new Date(element.startDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var date2 = element.endDate == undefined || element.endDate == null || element.endDate ==""? new Date() : new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365;
-					total = aux + total;
-					
-				});
-
-				return Math.floor(total);
-			},
+			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
 					{
@@ -627,19 +615,7 @@ const curriculo_pt = {
 		"experience": 
 		{
 			"description": "Analista Desenvolvedor (Java e C# Dot Net) com vivência em equipe de Desenvolvimento de Pesquisa (P&D), onde ultilizava Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C#, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery dentre outras tecnologias. Também possuo experiência em processo de desenvolvimento iterativo e incremental para a gestão e desenvolvimento de software usando metodologias ágeis.",
-			"totalExperience": function (){
-				var total = 0;
-				
-				this.jobs.forEach(element => {
-					var date1 = new Date(element.startDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var date2 = element.endDate == undefined || element.endDate == null || element.endDate ==""? new Date() : new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365;
-					total = aux + total;
-					
-				});
-
-				return Math.floor(total);
-			},
+			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
 					{
@@ -894,3 +870,20 @@ anchorsMap.set('services', 'menu.label.serverce');
 anchorsMap.set('graduations', 'menu.label.formation');
 //anchorsMap.set('recommendation', 'menu.label.recommendation');
 anchorsMap.set('contact', 'menu.label.contact');
+
+
+var sumTotalExperience = function(date1, date2, total){
+	var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365.25;
+	total = aux + total;
+	return total;
+};
+
+var totalExperience = function(jobs){
+	var total = 0;				
+	jobs.forEach(element => {
+		total =	sumTotalExperience(element.startDate.convertToDate()
+		,element.endDate.isEmpty()? new Date() : element.endDate.convertToDate()
+		, total)
+	});
+	return Math.floor(total);
+}

@@ -1,30 +1,10 @@
 ﻿(function ($) {
     const loaderTime = 50;
     const animateTime = 100;
-    const scrollingSpeed = 280;
+    const scrollingSpeed = 300;
     
     const anchors = ['home','about','experience','skills','projects','services', 'graduations','contact'];//'recommendation'
 
-    /**
-     * Format String 
-     * "Hello, {0}! My name is {1}.".format("World", "Drion")
-    */
-    String.prototype.format = function () {
-        const fmt = this; 
-        if (!fmt.match(/^(?:(?:(?:[^{}]|(?:\{\{)|(?:\}\}))+)|(?:\{[0-9]+\}))+$/)) {
-            throw new Error('The format string is invalid.');
-        }
-        return fmt.replace(/((?:[^{}]|(?:\{\{)|(?:\}\}))+)|(?:\{([0-9]+)\})/g, (m, str, index) => {
-            if (str) {
-                return str.replace(/(?:{{)|(?:}})/g, m => m[0]);
-            } else {
-                if (index >= arguments.length) {
-                    throw new Error('The index is out of range in format!');
-                }
-                return arguments[index];
-            }
-        });
-    }
     
     /* Window Load */
     $(window).on('load', function () {
