@@ -239,13 +239,13 @@ const curriculo_en = {
 				
 				this.jobs.forEach(element => {
 					var date1 = new Date(element.startDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var date2 = new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var aux =  Math.floor( Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365);
-					total = aux+ total;
+					var date2 = element.endDate == undefined || element.endDate == null || element.endDate ==""? new Date() : new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
+					var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365;
+					total = aux + total;
 					
 				});
 
-				return total;
+				return Math.floor(total);
 			},
 		
 		"jobs": [
@@ -632,13 +632,13 @@ const curriculo_pt = {
 				
 				this.jobs.forEach(element => {
 					var date1 = new Date(element.startDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var date2 = new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
-					var aux =  Math.floor( Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365);
-					total = aux+ total;
+					var date2 = element.endDate == undefined || element.endDate == null || element.endDate ==""? new Date() : new Date(element.endDate.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
+					var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365;
+					total = aux + total;
 					
 				});
 
-				return total;
+				return Math.floor(total);
 			},
 		
 		"jobs": [
