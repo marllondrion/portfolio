@@ -241,6 +241,33 @@ const curriculo_en = {
 						"company": "AXXIOM",
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
+						"position": "Remotely Development Analyst",
+						"startDate": "01/12/2020",
+						"endDate": "currently",
+						"description": "I am part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "http://www.axxiom.com.br"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/AxxiomTecnologiaeInovacao/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/axxiom/"
+						}]
+					},
+					{
+						"company": "AXXIOM",
+						"image": "img/company/axxiom-200x128.jpg",
+						"sigla": "AXXIOM",
 						"position": "Development Analyst",
 						"startDate": "01/04/2014",
 						"endDate": "01/11/2016",
@@ -618,6 +645,33 @@ const curriculo_pt = {
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
+					{
+						"company": "AXXIOM",
+						"image": "img/company/axxiom-200x128.jpg",
+						"sigla": "AXXIOM",
+						"position": "Analista Desenvolvedor Remoto",
+						"startDate": "01/12/2020",
+						"endDate": "Atualmente",
+						"description": "Faço parte da equipe do setor de P&D onde realiso pesquisas, análises, testes e projetos de desenvolvimento destinados ao setor de Sistema de Distribuição de Energia Elétrica no Brasil.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "http://www.axxiom.com.br"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/AxxiomTecnologiaeInovacao/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/axxiom/"
+						}]
+					},
 					{
 						"company": "AXXIOM",
 						"image": "img/company/axxiom-200x128.jpg",
