@@ -243,8 +243,8 @@ const curriculo_en = {
 						"sigla": "AXXIOM",
 						"position": "Remotely Development Analyst",
 						"startDate": "01/12/2020",
-						"endDate": "",
-						"description": "I am part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
+						"endDate": "18/04/2021",
+						"description": "I was part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -651,8 +651,8 @@ const curriculo_pt = {
 						"sigla": "AXXIOM",
 						"position": "Analista Desenvolvedor Remoto",
 						"startDate": "01/12/2020",
-						"endDate": "",
-						"description": "Faço parte da equipe do setor de P&D onde realiso pesquisas, análises, testes e projetos de desenvolvimento destinados ao setor de Sistema de Distribuição de Energia Elétrica no Brasil.",
+						"endDate": "18/04/2021",
+						"description": "Fazia parte da equipe do setor de P&D onde realisei pesquisas, análises, testes e projetos de desenvolvimento destinados ao setor de Sistema de Distribuição de Energia Elétrica no Brasil.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
