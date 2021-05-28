@@ -12,7 +12,7 @@ const curriculo_en = {
 			"cityAbbreviation ": "",
 			"state": "VIC",
 			"stateAbbreviation ": "VIC",
-			"country": "Austrália"
+			"country": "Australia"
 		},
 		"contact": {
 			"mobile": "+61 0410 389 445",
@@ -239,7 +239,7 @@ const curriculo_en = {
 		"jobs": [
 					{
 						"company": "Staffing",
-						"image": "img/company/staffing.png",
+						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
@@ -673,7 +673,7 @@ const curriculo_pt = {
 		
 		"jobs": [		{
 						"company": "Staffing",
-						"image": "img/company/staffing.png",
+						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
