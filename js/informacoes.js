@@ -879,6 +879,7 @@ const locale_pt = {
 	"about.me.years.work.experience": "ANOS <br> DE <br> EXPERIÊNCIA",
 	
 	"experience": "Experiência",
+	"experience.currently":"Atualmente",
 	
 	"skill.title": "Minhas Habilidades <span class='text-primary'> estão em </span> desenvolvimento",
 	"skill.impact.frase": "Desenvolvendo algoritmos para resolver seus problemas.",
@@ -927,6 +928,7 @@ const locale_en = {
 	"about.me.years.work.experience": "YEARS <br> WORK <br> EXPERIENCE",
    
 	"experience": "Experience",
+	"experience.currently":"Currently",
 	
 	"skill.title": "My skills <span class='text-primary'> are </span> developing",
 	"skill.impact.frase": "Develop algorithms to solve your problems.",
@@ -934,7 +936,6 @@ const locale_en = {
 	"project.title": "Projects",
 	"project.subtitle": "Lastest projects",
 	
-
 	"serverce.title": "Services Provided",
 	
 	"graduation.title": "Formations",
