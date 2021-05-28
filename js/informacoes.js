@@ -243,7 +243,7 @@ const curriculo_en = {
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
-						"endDate": "Currently",
+						"endDate": "",
 						"description": "I am working with HR management systems and a system that helps to analyze and recruit the best candidates available for any organization. As a full-stack developer, I work with .Net C #, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Angularjs, Angular, JavaScript HTML5, and CSS.",
 						"contact": [{
 							"type": "site",
@@ -677,7 +677,7 @@ const curriculo_pt = {
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
-						"endDate": "Currently",
+						"endDate": "",
 						"description": "Estou trabalhando com sistemas de gestão de RH e um sistema que ajuda a analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalho com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
 						"contact": [{
 							"type": "site",
