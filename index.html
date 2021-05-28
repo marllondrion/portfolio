@@ -182,7 +182,7 @@
 									<h3 class="my-3 text-white">
 										{{ item.company }} </h3>
 									<h5 class="my-3 text-white"> {{ item.position }}</h5>
-									{{   formartDate(item.startDate, 'mm/yyyy') }} - {{ formartDate(item.endDate, 'mm/yyyy') }}
+									{{   formartDate(item.startDate, 'mm/yyyy') }} - {{ formartDate(item.endDate, 'mm/yyyy') || 'Currently' }}
 								</div>
 								<div class="col-md-4">
 									{{ item.description }}
