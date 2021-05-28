@@ -4,10 +4,10 @@ const curriculo_en = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Sargood St",
-			"n": "48",
+			"st": "La Trobe St",
+			"n": "673",
 			"unit": "",
-			"suburb": "Altona",
+			"suburb": "Docklands",
 			"city": "Melbourne",
 			"cityAbbreviation ": "",
 			"state": "VIC",
@@ -238,6 +238,33 @@ const curriculo_en = {
 		
 		"jobs": [
 					{
+						"company": "Staffing",
+						"image": "img/company/staffing.png",
+						"sigla": "Staffing",
+						"position": "Software Developer (full-stack)",
+						"startDate": "01/03/2021",
+						"endDate": "Currently",
+						"description": "I am working with HR management systems and a system that helps to analyze and recruit the best candidates available for any organization. As a full-stack developer, I work with .Net C #, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Angularjs, Angular, JavaScript HTML5, and CSS.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://www.staffing.com.au/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Twitter",
+							"class": "fa fa-twitter",
+							"value": "https://twitter.com/staffingau"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/staffing.com.au/mycompany/"
+						}]
+					},
+					{
 						"company": "AXXIOM",
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
@@ -413,10 +440,10 @@ const curriculo_pt = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Sargood St",
-			"n": "48",
+			"st": "La Trobe St",
+			"n": "673",
 			"unit": "",
-			"suburb": "Altona",
+			"suburb": "Docklands",
 			"city": "Melbourne",
 			"cityAbbreviation ": "",
 			"state": "VIC",
@@ -644,8 +671,34 @@ const curriculo_pt = {
 			"description": "Analista Desenvolvedor (Java e C# Dot Net) com vivência em equipe de Desenvolvimento de Pesquisa (P&D), onde ultilizava Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C#, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery dentre outras tecnologias. Também possuo experiência em processo de desenvolvimento iterativo e incremental para a gestão e desenvolvimento de software usando metodologias ágeis.",
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
-		"jobs": [
-					{
+		"jobs": [		{
+						"company": "Staffing",
+						"image": "img/company/staffing.png",
+						"sigla": "Staffing",
+						"position": "Software Developer (full-stack)",
+						"startDate": "01/03/2021",
+						"endDate": "Currently",
+						"description": "Estou trabalhando com sistemas de gestão de RH e um sistema que ajuda a analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalho com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://www.staffing.com.au/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Twitter",
+							"class": "fa fa-twitter",
+							"value": "https://twitter.com/staffingau"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/staffing.com.au/mycompany/"
+						}]
+					},
+			 		{
 						"company": "AXXIOM",
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
