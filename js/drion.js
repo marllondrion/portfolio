@@ -51,6 +51,9 @@ app.controller('drionController', function ($scope, $window, $translate) {
 	};
 
 	$scope.formartDate = function(date, format){
+		if(date == null || date == undefined || date === '')
+			return 	null;
+		
 		const dt = new Date(date.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$2/$1/$3"));
 
 		const year = new Intl.DateTimeFormat($translate.use(), { year: 'numeric' }).format(dt);
