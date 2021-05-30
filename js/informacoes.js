@@ -953,7 +953,7 @@ const locale_en = {
 	"menu.label.about": "About me",
 	"menu.label.experience": "Experience",
 	"menu.label.skill": "Skills",
-	"menu.label.project": "Projetos",
+	"menu.label.project": "Projects",
 	"menu.label.serverce": "Service",
 	"menu.label.formation": "Formations",
 	"menu.label.recommendation": "Recommendation",
