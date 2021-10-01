@@ -4,14 +4,14 @@ const curriculo_en = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "La Trobe St",
-			"n": "673",
+			"st": "Lincoln St",
+			"n": "22A",
 			"unit": "",
-			"suburb": "Docklands",
-			"city": "Melbourne",
+			"suburb": "Lindisfarne",
+			"city": "Hobart",
 			"cityAbbreviation ": "",
-			"state": "VIC",
-			"stateAbbreviation ": "VIC",
+			"state": "Tasmania",
+			"stateAbbreviation ": "TAS",
 			"country": "Australia"
 		},
 		"contact": {
@@ -440,14 +440,14 @@ const curriculo_pt = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "La Trobe St",
-			"n": "673",
+			"st": "Lincoln St",
+			"n": "22A",
 			"unit": "",
-			"suburb": "Docklands",
-			"city": "Melbourne",
+			"suburb": "Lindisfarne",
+			"city": "Hobart",
 			"cityAbbreviation ": "",
-			"state": "VIC",
-			"stateAbbreviation ": "VIC",
+			"state": "Tasmania",
+			"stateAbbreviation ": "TAS",
 			"country": "Austrália"
 		},
 		"contact": {
