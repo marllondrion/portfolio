@@ -894,7 +894,7 @@ const locale_pt = {
 	
 	"contato.subtitle": "Diferentes formas de contato",
 	"contato.description": "Olá, segue abaixo algumas maneiras de me encontrar. Sintam-se a vontade para me contatar.",
-	"contato.address": "Melbourne, Austrália",
+	"contato.address": "Hobart, TAS - Austrália",
 	"contato.second.subtitle": "Vamos trocar uma ideia? <span class='text-primary'> Será um prazer conhecê-lo. </span>",
 	"contato.form.send.label.name": "Seu nome",
 	"contato.form.send.label.email": "Seu E-mail",
@@ -943,7 +943,7 @@ const locale_en = {
 
 	"contato.subtitle": "Different forms of contact",
 	"contato.description": "Hi, below you will see some ways to find me. Feel free to contact me.",
-	"contato.address": "Melbourne, Australia",
+	"contato.address": "Hobart, TAS - Austrália",
 	"contato.second.subtitle": "Let's exchange an idea? <span class='text-primary'> it will be a pleasure to meet you. </span>",
 	"contato.form.send.label.name": "Name *",
 	"contato.form.send.label.email": "E-mail *",
