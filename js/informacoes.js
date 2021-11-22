@@ -237,13 +237,35 @@ const curriculo_en = {
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
+				{
+						"company": "Syntagium",
+						"image": "img/company/syntagium-200x60.png",
+						"sigla": "Syntagium",
+						"position": "Software Developer (full-stack)",
+						"startDate": "01/11/2021",
+						"endDate": "",
+						"description": "I was hired to help the team finish the delivery of the ProClain System within the agreed timeframe. I am working as a C# developer using ASP .Net Zero, C#, dotnet core 3.1 being MVC architecture and I am also using a DDD (Domain-Driven Design) pattern that helps in modeling. Technologies: C# .Net, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Razor, JavaScript, HTML5,CSS, and other technology.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://syntagium.com.au/"
+						},
+						
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/syntagium-consulting/"
+						}]
+					},
 					{
 						"company": "Staffing",
 						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
-						"endDate": "",
+						"endDate": "01/07/2021",
 						"description": "I am working with HR management systems and a system that helps to analyze and recruit the best candidates available for any organization. As a full-stack developer, I work with .Net C #, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Angularjs, Angular, JavaScript HTML5, and CSS.",
 						"contact": [{
 							"type": "site",
@@ -672,12 +694,34 @@ const curriculo_pt = {
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [		{
+						"company": "Syntagium",
+						"image": "img/company/syntagium-200x60.png",
+						"sigla": "Syntagium",
+						"position": "Software Developer (full-stack)",
+						"startDate": "01/11/2021",
+						"endDate": "",
+						"description": "Fui contratado para auxiliar a equipe a finalizar a entrega do Sistema ProClain no prazo combinado. Estou trabalhando como desenvolvedor C # usando ASP .Net Zero, C #, dotnet core 3.1 sendo arquitetura MVC e também estou usando um padrão DDD (Domain-Driven Design) que ajuda na modelagem. Tecnologias: C # .Net, ASP.Net MVC, WebAPI estando no back-end e ao lado do front-end Razor, JavaScript, HTML5, CSS e outras tecnologias.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://syntagium.com.au/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/syntagium-consulting/"
+						}]
+					},
+			
+					{
 						"company": "Staffing",
 						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/03/2021",
-						"endDate": "",
+						"endDate": "01/07/2021",
 						"description": "Estou trabalhando com sistemas de gestão de RH e um sistema que ajuda a analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalho com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
 						"contact": [{
 							"type": "site",
