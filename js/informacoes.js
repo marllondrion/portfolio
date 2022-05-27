@@ -238,12 +238,38 @@ const curriculo_en = {
 		
 		"jobs": [
 				{
+						"company": "MyFoodLink",
+						"image": "img/company/mfl-200x128.jpg",
+						"sigla": "MFL",
+						"position": "Software Develor",
+						"startDate": "01/12/2021",
+						"endDate": "",
+						"description": "Working with Ruby on rails and Dart on flutter.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "http://www.myfoodlink.com"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/myfoodlink/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/myfoodlink/"
+						}]
+					},{
 						"company": "Syntagium",
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/11/2021",
-						"endDate": "",
+						"endDate": "22/12/2021",
 						"description": "I was hired to help the team finish the delivery of the ProClain System within the agreed timeframe. I am working as a C# developer using ASP .Net Zero, C#, dotnet core 3.1 being MVC architecture and I am also using a DDD (Domain-Driven Design) pattern that helps in modeling. Technologies: C# .Net, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Razor, JavaScript, HTML5,CSS, and other technology.",
 						"contact": [{
 							"type": "site",
