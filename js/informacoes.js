@@ -241,7 +241,7 @@ const curriculo_en = {
 						"company": "MyFoodLink",
 						"image": "img/company/mfl-200x128.jpg",
 						"sigla": "MFL",
-						"position": "Software Develor",
+						"position": "Software Developer",
 						"startDate": "01/12/2021",
 						"endDate": "",
 						"description": "Working with Ruby on rails and Dart on flutter.",
@@ -263,7 +263,8 @@ const curriculo_en = {
 							"class": "fa fa-linkedin",
 							"value": "https://www.linkedin.com/company/myfoodlink/"
 						}]
-					},{
+					},
+			{
 						"company": "Syntagium",
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
@@ -720,12 +721,39 @@ const curriculo_pt = {
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [		{
+						"company": "MyFoodLink",
+						"image": "img/company/mfl-200x128.jpg",
+						"sigla": "MFL",
+						"position": "Software Developer",
+						"startDate": "01/12/2021",
+						"endDate": "",
+						"description": "Working with Ruby on rails and Dart on flutter.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "http://www.myfoodlink.com"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/myfoodlink/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/myfoodlink/"
+						}]
+					},
+			 {
 						"company": "Syntagium",
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
 						"position": "Software Developer (full-stack)",
 						"startDate": "01/11/2021",
-						"endDate": "",
+						"endDate": "21/12/2021",
 						"description": "Fui contratado para auxiliar a equipe a finalizar a entrega do Sistema ProClain no prazo combinado. Estou trabalhando como desenvolvedor C # usando ASP .Net Zero, C #, dotnet core 3.1 sendo arquitetura MVC e também estou usando um padrão DDD (Domain-Driven Design) que ajuda na modelagem. Tecnologias: C # .Net, ASP.Net MVC, WebAPI estando no back-end e ao lado do front-end Razor, JavaScript, HTML5, CSS e outras tecnologias.",
 						"contact": [{
 							"type": "site",
