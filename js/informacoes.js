@@ -239,7 +239,7 @@ const curriculo_en = {
 		"jobs": [
 				{
 						"company": "MyFoodLink",
-						"image": "img/company/myfoodlink-logo.svg",
+						"image": "img/company/myfoodlink-logo.png",
 						"sigla": "MFL",
 						"position": "Software Developer",
 						"startDate": "01/12/2021",
@@ -722,7 +722,7 @@ const curriculo_pt = {
 		
 		"jobs": [		{
 						"company": "MyFoodLink",
-						"image": "img/company/myfoodlink-logo.svg",
+						"image": "img/company/myfoodlink-logo.png",
 						"sigla": "MFL",
 						"position": "Software Developer",
 						"startDate": "01/12/2021",
