@@ -4,11 +4,11 @@ const curriculo_en = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Lincoln St",
-			"n": "22A",
-			"unit": "",
-			"suburb": "Lindisfarne",
-			"city": "Hobart",
+			"st": "Balmain St",
+			"n": "21a",
+			"unit": "Unit 7",
+			"suburb": "Glenorchy",
+			"city": "",
 			"cityAbbreviation ": "",
 			"state": "Tasmania",
 			"stateAbbreviation ": "TAS",
@@ -264,7 +264,7 @@ const curriculo_en = {
 							"value": "https://www.linkedin.com/company/myfoodlink/"
 						}]
 					},
-			{
+					{
 						"company": "Syntagium",
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
@@ -449,6 +449,33 @@ const curriculo_en = {
 						}]
 					},
 					{
+						"company": "Direcional Engenharia",
+						"image": "img/company/Direcional-200x128.jpg",
+						"sigla": "direcional",
+						"position": "Software Development Intern",
+						"startDate": "01/08/2010",
+						"endDate": "01/08/2011",
+						"description": "Internal system development and analysis for the firm. I assisted in the study of the company's needs, development, testing, and issue creation for systems written in C# and ASP.Net, mostly for real estate financing and civil engineering. Look for and locate software and hardware solutions. Monitoring the demands of the firm in order to check how they are verified and the shortcomings of the organization's existence. Entity and Analysis Auxiliary Search Reading Diagram in the Search of Microsoft SQL Server Usage, Financing Data, and Auxiliary Sales in Corporate Decision Maintain resolution agreements with consumers through a succession of steps, such as phone calls and emails, until a technical issue is resolved. Users receive assistance with ERP (UAU) and HR systems. Maintenance and computer configuration assistance.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://direcional.com.br/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/direcionalengenharia/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/direcional-engenharia/"
+						}]
+					},
+					{
 						"company": "Newton",
 						"image": "img/company/NewtonPaiva-200x128.jpg",
 						"sigla": "Newton",
@@ -489,11 +516,11 @@ const curriculo_pt = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Lincoln St",
-			"n": "22A",
-			"unit": "",
-			"suburb": "Lindisfarne",
-			"city": "Hobart",
+			"st": "Balmain St",
+			"n": "21a",
+			"unit": "Unit 7",
+			"suburb": "Glenorchy",
+			"city": "",
 			"cityAbbreviation ": "",
 			"state": "Tasmania",
 			"stateAbbreviation ": "TAS",
@@ -931,6 +958,35 @@ const curriculo_pt = {
 							"value": "https://www.linkedin.com/company/techbizbrasil/"
 						}]
 					},
+			 
+					{
+						"company": "Direcional Engenharia",
+						"image": "img/company/Direcional-200x128.jpg",
+						"sigla": "direcional",
+						"position": "Estagiário Desenvolvimento de Software",
+						"startDate": "01/08/2010",
+						"endDate": "01/08/2011",
+						"description": "Desenvolvimento e análise dos sistemas internos da empresa. Desenvolvimento de sistemas em C# e ASP.Net, principalmente para financiamento imobiliário e engenharia civil, onde auxiliei na análise das necessidades da empresa, codificação, testes e correções de problemas. Pesquisar e identificar soluções para problemas de software e hardware Acompanhamento das necessidades da empresa de forma a verificar as limitações e deficiências da existência da empresa. Leitura e análise de Diagrama de Relacionamento de Entidade para auxiliar na elaboração de relatórios em Microsoft SQL Server, utilizando dados de vendas e financiamento imobiliário para auxiliar na tomada de decisões corporativas. Criação de documentação mantida, como casos de uso e diagramas Acompanhe os problemas do sistema de computador até a resolução, dentro dos prazos acordados Converse com os clientes por meio de uma série de ações, seja por telefone, e-mail ou chat, até que eles resolvam um problema técnico. Suporte aos usuários em relação aos sistemas ERP (UAU) e RH. Suporte em manutenção e configurações de computadores.",
+						"contact": [{
+							"type": "site",
+							"nome": "site",
+							"class": "fa fa-link",
+							"value": "https://direcional.com.br/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Facebook",
+							"class": "fa fa-facebook",
+							"value": "https://www.facebook.com/direcionalengenharia/"
+						},
+						{
+							"type": "rede-social",
+							"nome": "Linkedin",
+							"class": "fa fa-linkedin",
+							"value": "https://www.linkedin.com/company/direcional-engenharia/"
+						}]
+					},
+			 
 					{
 						"company": "Newton",
 						"image": "img/company/NewtonPaiva-200x128.jpg",
@@ -957,7 +1013,6 @@ const curriculo_pt = {
 							"class": "fa fa-linkedin",
 							"value": "https://www.linkedin.com/school/newtonpaiva/"
 						}]
-						
 					
 					}
 
@@ -1018,7 +1073,7 @@ const locale_pt = {
 
 const locale_en = {
 	"home.title": "",
-	"home.i.am.software.developer": "I'm Software <br> Developer",
+	"home.i.am.software.developer": "I'm a Software <br> Developer",
 	"home.hello.my.name.is": "<span class='text-primary'>Hello,</span> my name's",
 	
 	"about.title": "I'm a <br> <span class='text-primary'> Software Developer </span> <br>  with skills in",
