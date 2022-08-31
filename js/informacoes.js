@@ -130,13 +130,13 @@ const curriculo_en = {
 		"skills":[
 		{
 			"title": "FRONT END",
-			"description": "AngularJS, Reactjs and React native",
+			"description": "Flutter, Vue js",
 			"state":{"name":"Improving", "visible":true},
 			"percentage":"30",
 			"icon": "fa fa-search"
 		},
 		{
-			"title": "BACK END (JAVA AND C#)",
+			"title": "BACK END (JAVA, C#, Dart, Ruby)",
 			"description": "Java, C#, .Net",
 			"state":{"name":"", "visible":false},
 			"percentage":"70",
@@ -171,7 +171,7 @@ const curriculo_en = {
 					},
 					{
 						"title": "Mobile System",
-						"technology": "Java, React Native",
+						"technology": "Dart, Flutter, Swift, kotlin",
 						"url":"wwww.google.com",
 						"startDate": "01/01/2020",
 						"endDate": "01/01/2020",
@@ -233,7 +233,7 @@ const curriculo_en = {
 			  ,
 		"experience": 
 		{
-			"description": "Developer Analyst (Java and C # Dot Net) with experience in Research Development (R&D) team, using Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C #, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery and other technologies. I also have experience in the iterative and incremental development process for software management and development using agile methodologies.",
+			"description": "Developer Analyst (Java and C # Dot Net, Dart, Flutter, Ruby on Rails) with experience in Research Development (R&D) team, using Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C #, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery and other technologies. I also have experience in the iterative and incremental development process for software management and development using agile methodologies.",
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
@@ -269,8 +269,8 @@ const curriculo_en = {
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
 						"position": "Software Developer (full-stack)",
-						"startDate": "01/11/2021",
-						"endDate": "22/12/2021",
+						"startDate": "23/10/2021",
+						"endDate": "17/12/2021",
 						"description": "I was hired to help the team finish the delivery of the ProClain System within the agreed timeframe. I am working as a C# developer using ASP .Net Zero, C#, dotnet core 3.1 being MVC architecture and I am also using a DDD (Domain-Driven Design) pattern that helps in modeling. Technologies: C# .Net, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Razor, JavaScript, HTML5,CSS, and other technology.",
 						"contact": [{
 							"type": "site",
@@ -291,8 +291,8 @@ const curriculo_en = {
 						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
-						"startDate": "01/03/2021",
-						"endDate": "01/07/2021",
+						"startDate": "05/04/2021",
+						"endDate": "27/06/2021",
 						"description": "I am working with HR management systems and a system that helps to analyze and recruit the best candidates available for any organization. As a full-stack developer, I work with .Net C #, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Angularjs, Angular, JavaScript HTML5, and CSS.",
 						"contact": [{
 							"type": "site",
@@ -317,9 +317,9 @@ const curriculo_en = {
 						"company": "AXXIOM",
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
-						"position": "Remotely Development Analyst",
-						"startDate": "01/12/2020",
-						"endDate": "18/04/2021",
+						"position": "Development Analyst",
+						"startDate": "10/12/2020",
+						"endDate": "23/04/2021",
 						"description": "I was part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
 						"contact": [{
 							"type": "site",
@@ -345,8 +345,8 @@ const curriculo_en = {
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
 						"position": "Development Analyst",
-						"startDate": "01/04/2014",
-						"endDate": "01/11/2016",
+						"startDate": "08/04/2014",
+						"endDate": "11/12/2016",
 						"description": "I was part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
 						"contact": [{
 							"type": "site",
@@ -372,8 +372,8 @@ const curriculo_en = {
 						"image": "img/company/flagintelliwan-200x128.jpg",
 						"sigla": "Flag",
 						"position": "Software Developer",
-						"startDate": "01/04/2013",
-						"endDate": "01/04/2014",
+						"startDate": "03/04/2013",
+						"endDate": "28/03/2014",
 						"description": "Responsible for the specialist medical system for children's cranium. Languages: C#, JavaScript and SQL. Develops: Windows Forms, WebForms, ASP.NET MVC 3, SQL Server, HTML and CSS.",
 						"contact": [{
 							"type": "site",
@@ -399,8 +399,8 @@ const curriculo_en = {
 						"image": "img/company/tsa-200×128.jpg",
 						"sigla": "TSA",
 						"position": "Development Analyst trainee",
-						"startDate": "01/06/2012",
-						"endDate": "01/04/2013",
+						"startDate": "18/10/2012",
+						"endDate": "28/03/2013",
 						"description": ".NET programmer, systems analyst and business process automation, development on the Microsoft platform. Integrated Development and Software Environment: Microsoft Visual Studio 2008 and 2010, Visio 2010 and Firebug SVN. Languages: JavaScript, C # and SQL. Development: Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON and Web services.",
 						"contact": [{
 							"type": "site",
@@ -426,8 +426,8 @@ const curriculo_en = {
 						"image": "img/company/Techbiz-200x128.jpg",
 						"sigla": "tbiz",
 						"position": "Software Development Intern",
-						"startDate": "01/06/2011",
-						"endDate": "01/06/2012",
+						"startDate": "24/10/2011",
+						"endDate": "15/10/2012",
 						"description": "Analysis and development of Infraero customer systems with creation and maintenance of systems for all airport control. I was part of a team that was responsible for the development and maintenance of systems with technologies .NET 4.0, Asp.NET, MVC, Entity Framework, JQuery. With that, I read the UML and Use Cases and helped with corrections and document improvements. I developed test cases. Test development script creation using Selenium to maintain system quality and black box testing. Executed Tests through Test Backlog. Developed the documentation of the software approval process. Creation of test scenarios to streamline the approval process. Control of the task approval process.",
 						"contact": [{
 							"type": "site",
@@ -453,8 +453,8 @@ const curriculo_en = {
 						"image": "img/company/Direcional-200x128.jpg",
 						"sigla": "direcional",
 						"position": "Software Development Intern",
-						"startDate": "01/08/2010",
-						"endDate": "01/08/2011",
+						"startDate": "11/08/2010",
+						"endDate": "10/08/2011",
 						"description": "Internal system development and analysis for the firm. I assisted in the study of the company's needs, development, testing, and issue creation for systems written in C# and ASP.Net, mostly for real estate financing and civil engineering. Look for and locate software and hardware solutions. Monitoring the demands of the firm in order to check how they are verified and the shortcomings of the organization's existence. Entity and Analysis Auxiliary Search Reading Diagram in the Search of Microsoft SQL Server Usage, Financing Data, and Auxiliary Sales in Corporate Decision Maintain resolution agreements with consumers through a succession of steps, such as phone calls and emails, until a technical issue is resolved. Users receive assistance with ERP (UAU) and HR systems. Maintenance and computer configuration assistance.",
 						"contact": [{
 							"type": "site",
@@ -642,7 +642,7 @@ const curriculo_pt = {
 		"skills":[
 		{
 			"title": "FRONT END",
-			"description": "AngularJS, Reactjs e React native",
+			"description": "Flutter e Vue js",
 			"state":"Improving",
 			"percentage":"30",
 			"stateVisible":true,
@@ -686,7 +686,7 @@ const curriculo_pt = {
 					},
 					{
 						"title": "Sistemas Mobile",
-						"technology": "Java, React Native",
+						"technology": "Dart, Flutter, Swift, kotlin",
 						"url":"wwww.google.com",
 						"startDate": "01/01/2020",
 						"endDate": "01/01/2020",
@@ -744,7 +744,7 @@ const curriculo_pt = {
 		}],
 		"experience": 
 		{
-			"description": "Analista Desenvolvedor (Java e C# Dot Net) com vivência em equipe de Desenvolvimento de Pesquisa (P&D), onde ultilizava Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C#, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery dentre outras tecnologias. Também possuo experiência em processo de desenvolvimento iterativo e incremental para a gestão e desenvolvimento de software usando metodologias ágeis.",
+			"description": "Analista Desenvolvedor (Java, C#, Dot Net, Dart, Flutter, Ruby on Rails) com vivência em equipe de Desenvolvimento de Pesquisa (P&D), onde ultilizava Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C#, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery dentre outras tecnologias. Também possuo experiência em processo de desenvolvimento iterativo e incremental para a gestão e desenvolvimento de software usando metodologias ágeis.",
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [		{
@@ -779,8 +779,8 @@ const curriculo_pt = {
 						"image": "img/company/syntagium-200x60.png",
 						"sigla": "Syntagium",
 						"position": "Software Developer (full-stack)",
-						"startDate": "01/11/2021",
-						"endDate": "21/12/2021",
+						"startDate": "23/10/2021",
+						"endDate": "17/12/2021",
 						"description": "Fui contratado para auxiliar a equipe a finalizar a entrega do Sistema ProClain no prazo combinado. Estou trabalhando como desenvolvedor C # usando ASP .Net Zero, C #, dotnet core 3.1 sendo arquitetura MVC e também estou usando um padrão DDD (Domain-Driven Design) que ajuda na modelagem. Tecnologias: C # .Net, ASP.Net MVC, WebAPI estando no back-end e ao lado do front-end Razor, JavaScript, HTML5, CSS e outras tecnologias.",
 						"contact": [{
 							"type": "site",
@@ -801,8 +801,8 @@ const curriculo_pt = {
 						"image": "img/company/staffing-200x60.png",
 						"sigla": "Staffing",
 						"position": "Software Developer (full-stack)",
-						"startDate": "01/03/2021",
-						"endDate": "01/07/2021",
+						"startDate": "05/04/2021",
+						"endDate": "27/06/2021",
 						"description": "Estou trabalhando com sistemas de gestão de RH e um sistema que ajuda a analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalho com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
 						"contact": [{
 							"type": "site",
@@ -828,8 +828,8 @@ const curriculo_pt = {
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
 						"position": "Analista Desenvolvedor Remoto",
-						"startDate": "01/12/2020",
-						"endDate": "18/04/2021",
+						"startDate": "10/12/2020",
+						"endDate": "23/04/2021",
 						"description": "Fazia parte da equipe do setor de P&D onde realisei pesquisas, análises, testes e projetos de desenvolvimento destinados ao setor de Sistema de Distribuição de Energia Elétrica no Brasil.",
 						"contact": [{
 							"type": "site",
@@ -855,8 +855,8 @@ const curriculo_pt = {
 						"image": "img/company/axxiom-200x128.jpg",
 						"sigla": "AXXIOM",
 						"position": "Analista Desenvolvedor",
-						"startDate": "01/04/2014",
-						"endDate": "01/11/2016",
+						"startDate": "08/04/2014",
+						"endDate": "11/12/2016",
 						"description": "Fazia parte da equipe do setor de P&D que realizava pesquisas, análises, testes e projetos de desenvolvimento destinados ao setor de Sistema de Distribuição de Energia Elétrica no Brasil.",
 						"contact": [{
 							"type": "site",
@@ -882,8 +882,8 @@ const curriculo_pt = {
 						"image": "img/company/flagintelliwan-200x128.jpg",
 						"sigla": "Flag",
 						"position": "Desenvolvedor Software",
-						"startDate": "01/04/2013",
-						"endDate": "01/04/2014",
+						"startDate": "03/04/2013",
+						"endDate": "28/03/2014",
 						"description": "Responsável pelo sistema de clínica médica especialista em crânio infantil. Linguagens: C#, JavaScript e SQL. Desenvolvimento: Windows Forms, WebForms, ASP.NET MVC 3, SQL Server, HTML e CSS.",
 						"contact": [{
 							"type": "site",
@@ -909,8 +909,8 @@ const curriculo_pt = {
 						"image": "img/company/tsa-200×128.jpg",
 						"sigla": "TSA",
 						"position": "Estagiário Analista Desenvolvedor",
-						"startDate": "01/06/2012",
-						"endDate": "01/04/2013",
+						"startDate": "18/10/2012",
+						"endDate": "28/03/2013",
 						"description": "Programador .NET, analista de sistemas e automação de processos de negócios, desenvolvimento na plataforma Microsoft. Desenvolvimento Integrado e Ambiente de Software: Microsoft Visual Studio 2008 e 2010, Visio 2010 e Firebug SVN. Linguagens: JavaScript, C# e SQL. Desenvolvimento: Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON e Web services.",
 						"contact": [{
 							"type": "site",
@@ -936,8 +936,8 @@ const curriculo_pt = {
 						"image": "img/company/Techbiz-200x128.jpg",
 						"sigla": "tbiz",
 						"position": "Estagiário Desenvolver de Software",
-						"startDate": "01/06/2011",
-						"endDate": "01/06/2012",
+						"startDate": "24/10/2011",
+						"endDate": "15/10/2012",
 						"description": "Análise e desenvolvimento de sistemas de clientes da Infraero com criação e manutenção de sistemas para todo o controle aeroportuário. Fazia parte de uma equipe que era responsável pelo desenvolvimento e manutenção de sistemas com tecnologias .NET 4.0, Asp.NET, MVC, Entity Framework, JQuery. Com isso fazia a leitura de UML e Casos de Uso e ajudando com correções e melhorias de documentos.Desenvolvia caso de testes. Criação de script de desenvolvimento de testes utilizando Selenium para manter a qualidade do sistema e teste de caixa preta. Executava Testes através de Backlog de Testes. Desenvolvia a documentação do processo de aprovação do software. Criação de cenários de teste para agilizar o processo de aprovação. Controle do processo de aprovação de tarefas.",
 						"contact": [{
 							"type": "site",
@@ -964,8 +964,8 @@ const curriculo_pt = {
 						"image": "img/company/Direcional-200x128.jpg",
 						"sigla": "direcional",
 						"position": "Estagiário Desenvolvimento de Software",
-						"startDate": "01/08/2010",
-						"endDate": "01/08/2011",
+						"startDate": "11/08/2010",
+						"endDate": "10/08/2011",
 						"description": "Desenvolvimento e análise dos sistemas internos da empresa. Desenvolvimento de sistemas em C# e ASP.Net, principalmente para financiamento imobiliário e engenharia civil, onde auxiliei na análise das necessidades da empresa, codificação, testes e correções de problemas. Pesquisar e identificar soluções para problemas de software e hardware Acompanhamento das necessidades da empresa de forma a verificar as limitações e deficiências da existência da empresa. Leitura e análise de Diagrama de Relacionamento de Entidade para auxiliar na elaboração de relatórios em Microsoft SQL Server, utilizando dados de vendas e financiamento imobiliário para auxiliar na tomada de decisões corporativas. Criação de documentação mantida, como casos de uso e diagramas Acompanhe os problemas do sistema de computador até a resolução, dentro dos prazos acordados Converse com os clientes por meio de uma série de ações, seja por telefone, e-mail ou chat, até que eles resolvam um problema técnico. Suporte aos usuários em relação aos sistemas ERP (UAU) e RH. Suporte em manutenção e configurações de computadores.",
 						"contact": [{
 							"type": "site",
