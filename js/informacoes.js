@@ -233,7 +233,7 @@ const curriculo_en = {
 			  ,
 		"experience": 
 		{
-			"description": "Developer Analyst (Java and C # Dot Net, Dart, Flutter, Ruby on Rails) with experience in Research Development (R&D) team, using Java EE, Java SE, Hibernate, Spring Framework, Dot Net, C #, MVC4, Entity Framework, SQL Server, MySQL, HTML, CSS, jQuery and other technologies. I also have experience in the iterative and incremental development process for software management and development using agile methodologies.",
+			"description": "As a highly skilled and experienced software developer and mobile solution architect, I am passionate about solving complex problems with performant code. I specialize in utilizing technologies such as Ruby on Rails, Java, C# Dot .Net, MS SQL, MongoDB, WebAPI, webhook and a variety of integration methods on the back-end, and Dart, Flutter on the mobile side. I have experience working on eCommerce platforms, specifically in the grocery and liquor shop sector, catering to supermarkets and bottle shops across Australia and New Zealand. I have a strong background in mobile application development, web development, and experience in using a variety of integration methods. I have led teams in the past and am able to work well under pressure to meet deadlines and deliver high-quality products. I am able to communicate technical details in a non-technical manner and am able to provide support and troubleshoot the systems in use. I have knowledge of the software development life cycle and am able to handle the entire process from requirement gathering to implementation, testing, and maintenance. I have a track record of developing and maintaining high-quality systems for the electricity distribution sector, HR management and recruitment systems, and ProClain Systems. I also have experience in organizing digital inclusion of the elderly and teaching basic informatics. My role is to lead the development of high-quality, reliable and compliant systems that meet the needs of the clients and the market.",
 			"totalExperience": function (){ return totalExperience(this.jobs);},
 		
 		"jobs": [
@@ -244,7 +244,7 @@ const curriculo_en = {
 						"position": "Software Developer",
 						"startDate": "01/12/2021",
 						"endDate": "",
-						"description": "Working with Ruby on rails and Dart on flutter.",
+						"description": "As a full-stack software developer, I am passionate about solving complex problems using performant code. I specialize in using technologies such as Ruby on Rails, MongoDB, WebAPI, and webhooks to develop and maintain the back-end for the Shop and MyFoodLink APIs, as well as external API. I am part of a team that develops an eCommerce application, a fully hosted specialist platform for grocery and liquor shops, catering to supermarkets and bottle shops across Australia and New Zealand. As a mobile solution architect, I lead the development of the Shop app which is built cross-platform for both Android and IOS using Dart and Flutter technologies. I have a strong background in web development, mobile application development, and experience in using a variety of integration methods. I am able to work with a team and able to communicate technical details in a non-technical manner. I am also able to provide support and troubleshoot the systems in use, and maintain the system to meet the evolving needs of the organization and the users. Overall, my role is to ensure that the eCommerce platform and mobile app meet the needs of the clients and the market and deliver high-quality solutions for both grocery and liquor shops.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -271,7 +271,7 @@ const curriculo_en = {
 						"position": "Software Developer (full-stack)",
 						"startDate": "23/10/2021",
 						"endDate": "17/12/2021",
-						"description": "I was hired to help the team finish the delivery of the ProClain System within the agreed timeframe. I am working as a C# developer using ASP .Net Zero, C#, dotnet core 3.1 being MVC architecture and I am also using a DDD (Domain-Driven Design) pattern that helps in modeling. Technologies: C# .Net, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Razor, JavaScript, HTML5,CSS, and other technology.",
+						"description": "As a full-stack software developer, I was brought on to assist the team in completing the delivery of the ProClain System within the agreed timeframe. My role is to work as a C# developer using ASP .Net Zero, C#, dotnet core 3.1, utilizing the MVC architecture and applying the DDD (Domain-Driven Design) pattern to model the system. I have expertise in utilizing C# .Net, ASP.Net MVC, WebAPI for the back-end development and Razor, JavaScript, HTML5, CSS, and other technologies for the front-end development. These technologies allow me to design and implement solutions that support the entire range of ProClain System's functions and features. I am experienced in working with the Agile development methodologies and I am able to work well under pressure to meet the deadlines and deliver a high-quality product. I am also able to work with the team and communicate technical details in a non-technical manner. I am also able to provide support and troubleshoot the systems in use, and maintain the system to meet the evolving needs of the organization and the users. Overall, my role is to ensure that the ProClain System is delivered on time and meets the needs of the clients and the market.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -293,7 +293,7 @@ const curriculo_en = {
 						"position": "Software Developer (full-stack)",
 						"startDate": "05/04/2021",
 						"endDate": "27/06/2021",
-						"description": "I am working with HR management systems and a system that helps to analyze and recruit the best candidates available for any organization. As a full-stack developer, I work with .Net C #, ASP.Net MVC, WebAPI being on the back-end and alongside the front-end Angularjs, Angular, JavaScript HTML5, and CSS.",
+						"description": "As a full-stack software developer, I am responsible for the development and maintenance of HR management systems and candidate analysis and recruitment systems. These systems are designed to help organizations identify and hire the best candidates available. I have experience in utilizing .Net C#, ASP.Net MVC, and WebAPI technologies for the back-end development, and AngularJS, Angular, JavaScript, HTML5, and CSS for the front-end development. This allows me to design and implement solutions that support the entire range of HR management and recruitment processes. Furthermore, I am familiar with the software development life cycle and able to handle the entire process from requirement gathering to implementation, testing, and maintenance. In addition, I am able to work with a team and able to communicate technical details in a non-technical manner. I am also able to provide support and troubleshoot the systems in use, and maintain the system to meet the evolving needs of the organization and the users. Overall, my role is to ensure that the developed systems meet the needs of the clients and the market.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -320,7 +320,7 @@ const curriculo_en = {
 						"position": "Development Analyst",
 						"startDate": "10/12/2020",
 						"endDate": "23/04/2021",
-						"description": "I was part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
+						"description": "As a midio/senior software development analyst, I was an integral member of the R&D team that conducted research, analysis, testing, and development projects for the electricity distribution system sector in Brazil. My role involved leading a team of engineers and developers in gathering and analyzing data and requirements for new projects, as well as conducting extensive testing to ensure the quality and reliability of the developed systems. With my extensive experience in developing software solutions, I have a deep understanding of the specific needs of the electricity distribution sector in Brazil and have been able to improve the performance, efficiency and safety of the systems. I have also knowledge of the regulations and standards related to the electricity distribution sector in Brazil and have been able to ensure that the developed systems comply with the laws and regulations of the country. I also created and maintained technical documentation, such as software design documents, test plans, and user manuals, and provided technical support and troubleshooting for the systems in use. As a midio/senior analyst, I was responsible for mentoring and guiding junior team members, and providing leadership and direction on projects. I also worked closely with clients and stakeholders to understand their needs and ensure that the developed systems met their requirements. Overall, my role was to lead the development of high-quality, reliable and compliant systems that met the needs of the clients and the market.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -347,7 +347,7 @@ const curriculo_en = {
 						"position": "Development Analyst",
 						"startDate": "08/04/2014",
 						"endDate": "11/12/2016",
-						"description": "I was part of the R&D team that carried out research, analysis, tests and development projects for the Electricity Distribution System sector in Brazil.",
+						"description": "As a software development analyst, I was part of the R&D team that was responsible for conducting research, analysis, testing, and development projects for the electricity distribution system sector in Brazil. My role involved collaborating with a team of engineers and developers to gather and analyze data and requirements for new projects, as well as conducting testing to ensure the quality and reliability of the developed systems. I have experience in developing software solutions that can improve the performance, efficiency and safety of the electricity distribution systems. I also have knowledge of the regulations and standards related to the electricity distribution sector in Brazil. I was also responsible for creating and maintaining technical documentation, such as software design documents, test plans, and user manuals. Additionally, I was responsible for providing technical support and troubleshooting for the systems in use.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -374,7 +374,7 @@ const curriculo_en = {
 						"position": "Software Developer",
 						"startDate": "03/04/2013",
 						"endDate": "28/03/2014",
-						"description": "Responsible for the specialist medical system for children's cranium. Languages: C#, JavaScript and SQL. Develops: Windows Forms, WebForms, ASP.NET MVC 3, SQL Server, HTML and CSS.",
+						"description": "As a software developer, my main responsibility is the development and maintenance of a specialized medical system for children's cranial care. I have expertise in utilizing C#, JavaScript, and SQL languages in the development of this system. My experience includes creating Windows Forms, WebForms, ASP.NET MVC 3, utilizing SQL Server as the database, HTML, and CSS for the front-end.						In this role, I collaborate closely with medical professionals to understand the specific requirements and needs of the system, and develop solutions that effectively support the diagnosis and treatment of cranial conditions in children. I am also responsible for testing and quality assurance of the system, to ensure that it meets the necessary standards and functions correctly. Additionally, I am responsible for maintaining and updating the system to meet the evolving needs of the medical team and patients.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -401,7 +401,7 @@ const curriculo_en = {
 						"position": "Development Analyst trainee",
 						"startDate": "18/10/2012",
 						"endDate": "28/03/2013",
-						"description": ".NET programmer, systems analyst and business process automation, development on the Microsoft platform. Integrated Development and Software Environment: Microsoft Visual Studio 2008 and 2010, Visio 2010 and Firebug SVN. Languages: JavaScript, C # and SQL. Development: Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON and Web services.",
+						"description": "As a software engineer, I am experienced in the development of systems and automation of business processes on the Microsoft platform using .NET technology. I have utilized integrated development and software environments such as Microsoft Visual Studio 2008 and 2010, Visio 2010 and Firebug SVN. My expertise includes programming in various languages such as JavaScript, C#, and SQL. In terms of development, I have experience with Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON, and Web services. I am able to design and implement solutions that support the organization's operations and processes. Additionally, I am familiar with the software development life cycle and able to handle the entire process from requirement gathering to implementation, testing, and maintenance. Furthermore, I am able to work with a team and able to communicate technical details in a non-technical manner.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -428,7 +428,7 @@ const curriculo_en = {
 						"position": "Software Development Intern",
 						"startDate": "24/10/2011",
 						"endDate": "15/10/2012",
-						"description": "Analysis and development of Infraero customer systems with creation and maintenance of systems for all airport control. I was part of a team that was responsible for the development and maintenance of systems with technologies .NET 4.0, Asp.NET, MVC, Entity Framework, JQuery. With that, I read the UML and Use Cases and helped with corrections and document improvements. I developed test cases. Test development script creation using Selenium to maintain system quality and black box testing. Executed Tests through Test Backlog. Developed the documentation of the software approval process. Creation of test scenarios to streamline the approval process. Control of the task approval process.",
+						"description": "As a software engineer, I was responsible for the analysis and development of Infraero customer systems, specifically the creation and maintenance of systems for airport control. I was part of a team that utilized .NET 4.0, Asp.NET, MVC, Entity Framework, and JQuery technologies to design and implement solutions that supported the company's operations and processes. In addition to the development, I was involved in the design and documentation process. I read and interpreted UML and Use Cases, provided feedback, and helped with improvements. I also created and executed test cases, utilizing Selenium for script creation, to ensure the quality of the systems and performed black-box testing. Furthermore, I was responsible for maintaining and updating the documentation of the software approval process, including the creation of test scenarios to streamline the process, and managed the task approval process.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -455,7 +455,7 @@ const curriculo_en = {
 						"position": "Software Development Intern",
 						"startDate": "11/08/2010",
 						"endDate": "10/08/2011",
-						"description": "Development and analysis of internal systems for the civil engineering company. C# .Net.",
+						"description": "As a Software Development Intern, I was responsible for the development and analysis of internal systems for a civil engineering company. I utilized C# and .NET technology to design and implement solutions that supported the company's operations and processes. This included creating custom software applications to automate tasks, integrate with existing systems, and manage data more efficiently. I also performed extensive testing and troubleshooting to ensure that the systems were reliable and met the company's specific requirements. Additionally, I provided ongoing maintenance and support to ensure that the systems were up to date and functioning properly.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -482,7 +482,7 @@ const curriculo_en = {
 						"position": "Computing instructor",
 						"startDate": "05/10/2013",
 						"endDate": "05/10/2013",
-						"description": "On October 5, 2013, the event \"3 AÇÃO SOCIAL NEWTON PAIVA\" was held. The Information System Course organized a stand for the digital inclusion of the elderly, where I taught basic informatics (Windows, Word and Internet).",
+						"description": "On October 5, 2013, the \"3 AÇÃO SOCIAL NEWTON PAIVA\" event was held. The Information Systems Course organized a booth to promote digital inclusion among the elderly, where I provided instruction on basic computer skills, including the use of Windows, Word, and the Internet.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -1024,48 +1024,48 @@ const curriculo_pt = {
 
 const locale_pt = {
 	"home.title": "",
-	"home.i.am.software.developer": "Sou Desenvolvedor de <br> Software",
+	"home.i.am.software.developer": "Eu sou um desenvolvedor de software",
 	"home.hello.my.name.is": "<span class='text-primary'>Olá,</span> meu nome é",
-	
-	"about.title": "Eu sou <br> <span class='text-primary'> Programador de Software </span> <br> com habilidades em",
+
+	"about.title": "Eu sou um <br> <span class='text-primary'> desenvolvedor de software </span> <br> com habilidades em",
 	"about.me": "Sobre mim",
 	"about.me.years.work.experience": "ANOS <br> DE <br> EXPERIÊNCIA",
-	
+
 	"experience": "Experiência",
 	"experience.currently":"Atualmente",
-	
-	"skill.title": "Minhas Habilidades <span class='text-primary'> estão em </span> desenvolvimento",
-	"skill.impact.frase": "Desenvolvendo algoritmos para resolver seus problemas.",
-   
-	"project.title": "Projects",
-	"project.subtitle": "Últimos projetos",
 
-	"serverce.title": "Services Provided",
-	
-	"graduation.title": "Formação",
-	"graduation.subtitle": "Graduação",
-	
-	"contato.subtitle": "Diferentes formas de contato",
-	"contato.description": "Olá, segue abaixo algumas maneiras de me encontrar. Sintam-se a vontade para me contatar.",
-	"contato.address": "Hobart, TAS - Austrália",
-	"contato.second.subtitle": "Vamos trocar uma ideia? <span class='text-primary'> Será um prazer conhecê-lo. </span>",
-	"contato.form.send.label.name": "Seu nome",
-	"contato.form.send.label.email": "Seu E-mail",
-	"contato.form.send.label.msg": "Mensagem",
+	"skill.title": "Minhas habilidades <span class='text-primary'> incluem </span> desenvolvimento",
+	"skill.impact.phrase": "Desenvolvimento de algoritmos para resolver problemas.",
 
-	"menu.label.home": "Página Inicial",
+	"project.title": "Projetos",
+	"project.subtitle": "Projetos recentes",
+
+	"service.title": "Serviços Oferecidos",
+
+	"graduation.title": "Educação",
+	"graduation.subtitle": "Graduações",
+
+	"contact.subtitle": "Diferentes formas de me contatar",
+	"contact.description": "Olá, abaixo você verá algumas formas de me encontrar. Sinta-se à vontade para me contatar.",
+	"contact.address": "Hobart, TAS - Austrália",
+	"contact.second.subtitle": "Quer trocar idéias? <span class='text-primary'>Eu ficaria feliz em conhecê-lo.</span>",
+	"contact.form.send.label.name": "Nome *",
+	"contact.form.send.label.email": "Email *",
+	"contact.form.send.label.msg": "Mensagem *",
+
+	"menu.label.home": "Início",
 	"menu.label.about": "Sobre mim",
 	"menu.label.experience": "Experiência",
 	"menu.label.skill": "Habilidades",
 	"menu.label.project": "Projetos",
-	"menu.label.serverce": "Servirços",
-	"menu.label.formation": "Formações",
+	"menu.label.service": "Serviços",
+	"menu.label.education": "Educação",
 	"menu.label.recommendation": "Recomendações",
 	"menu.label.contact": "Contato",
-	
-	"msg.erro.send.email": "{0}, infelizmente sua mensagem não foi enviada. Tente mais tarde, se o erro persistir, envie-me uma mensagem diretamente para marllondrion@gmail.com. Desculpe pela inconveniência.",
-	"msg.success.send.email": "Muito Obrigado por entrar em contato comigo {0}. Sua mensagem foi enviada com sucesso, eu irei te responder assim que possivel.",
-	
+
+	"msg.error.send.email": "{0}, infelizmente sua mensagem não foi enviada. Por favor, tente novamente mais tarde ou envie-me uma mensagem diretamente no marllondrion@gmail.com. Desculpe pelo inconveniente.",
+	"msg.success.send.email": "Obrigado por entrar em contato comigo {0}. Sua mensagem foi enviada com sucesso e responderei o mais breve possível.",
+		
 	"btn.contact.me": "Enviar",
 	"btn.read.more": "Mais informações",
 	"btn.change.the.language": "English",	
@@ -1073,52 +1073,51 @@ const locale_pt = {
 
 const locale_en = {
 	"home.title": "",
-	"home.i.am.software.developer": "I'm a Software <br> Developer",
-	"home.hello.my.name.is": "<span class='text-primary'>Hello,</span> my name's",
+	"home.i.am.software.developer": "I am a software engineer",
+	"home.hello.my.name.is": "<span class='text-primary'>Hello,</span> my name is",
 	
-	"about.title": "I'm a <br> <span class='text-primary'> Software Developer </span> <br>  with skills in",
+	"about.title": "I am a <br> <span class='text-primary'>software developer</span> <br> with skills in",
 	"about.me": "About me",
 	"about.me.years.work.experience": "YEARS <br> WORK <br> EXPERIENCE",
-   
+
 	"experience": "Experience",
 	"experience.currently":"Currently",
-	
-	"skill.title": "My skills <span class='text-primary'> are </span> developing",
-	"skill.impact.frase": "Develop algorithms to solve your problems.",
-   
-	"project.title": "Projects",
-	"project.subtitle": "Lastest projects",
-	
-	"serverce.title": "Services Provided",
-	
-	"graduation.title": "Formations",
-	"graduation.subtitle": "Graduations",
 
-	"contato.subtitle": "Different forms of contact",
-	"contato.description": "Hi, below you will see some ways to find me. Feel free to contact me.",
-	"contato.address": "Hobart, TAS - Austrália",
-	"contato.second.subtitle": "Let's exchange an idea? <span class='text-primary'> it will be a pleasure to meet you. </span>",
-	"contato.form.send.label.name": "Name *",
-	"contato.form.send.label.email": "E-mail *",
-	"contato.form.send.label.msg": "Message *",
+	"skill.title": "My skills <span class='text-primary'>include</span> developing",
+	"skill.impact.phrase": "Developing algorithms to solve problems.",
+
+	"project.title": "Projects",
+	"project.subtitle": "Recent projects",
+
+	"service.title": "Services Offered",
+
+	"graduation.title": "Education",
+	"graduation.subtitle": "Degrees",
+
+	"contact.subtitle": "Different ways to contact me",
+	"contact.description": "Hi, you can find different ways to contact me below. Feel free to reach out to me.",
+	"contact.address": "Hobart, TAS - Australia",
+	"contact.second.subtitle": "Want to exchange ideas? <span class='text-primary'>I'd be happy to meet you.</span>",
+	"contact.form.send.label.name": "Name *",
+	"contact.form.send.label.email": "Email *",
+	"contact.form.send.label.msg": "Message *",
 
 	"menu.label.home": "Home",
 	"menu.label.about": "About me",
 	"menu.label.experience": "Experience",
 	"menu.label.skill": "Skills",
 	"menu.label.project": "Projects",
-	"menu.label.serverce": "Service",
-	"menu.label.formation": "Formations",
-	"menu.label.recommendation": "Recommendation",
+	"menu.label.service": "Services",
+	"menu.label.education": "Education",
+	"menu.label.recommendation": "Recommendations",
 	"menu.label.contact": "Contact",
 
-	"msg.erro.send.email": "{0}, unfortunately your message was not sent. Try later, if this error persists, please send me a message directly at marllondrion@gmail.com. Sorry for the inconvenience.",
-	"msg.success.send.email": "Thank you very much for contacting me {0}. Your message was sent successfully, I will reply to you as soon as possible.",
-	
-   "btn.change.the.language": "Português",
+	"msg.error.send.email": "{0}, unfortunately your message was not sent. Please try again later or send me a message directly at marllondrion@gmail.com. Sorry for the inconvenience.",
+	"msg.success.send.email": "Thank you for contacting me {0}. Your message was sent successfully and I will reply as soon as possible.",
+
+	"btn.change.the.language": "Português",
 	"btn.contact.me": "Send",
-	"btn.read.more": "Read More",
-   
+	"btn.read.more": "Read More", 
   };
   
 const anchorsMap = new Map();
@@ -1127,8 +1126,8 @@ anchorsMap.set('about', 'menu.label.about');
 anchorsMap.set('experience', 'menu.label.experience');
 anchorsMap.set('skills', 'menu.label.skill');
 anchorsMap.set('projects', 'menu.label.project');
-anchorsMap.set('services', 'menu.label.serverce');
-anchorsMap.set('graduations', 'menu.label.formation');
+anchorsMap.set('services', 'menu.label.service');
+anchorsMap.set('graduations', 'menu.label.education');
 //anchorsMap.set('recommendation', 'menu.label.recommendation');
 anchorsMap.set('contact', 'menu.label.contact');
 
