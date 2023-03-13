@@ -77,8 +77,8 @@
 				<li><a class="nav-link" data-menuanchor="experience" href="#experience">{{'menu.label.experience'|translate}} </a></li>
 				<li><a class="nav-link" data-menuanchor="skills" href="#skills">{{'menu.label.skill'|translate}} </a></li>
 				<li><a class="nav-link" data-menuanchor="projects" href="#projects">{{'menu.label.project'|translate}} </a></li>
-				<li><a class="nav-link" data-menuanchor="services" href="#services">{{'menu.label.serverce'|translate}}</a></li>
-				<li><a class="nav-link" data-menuanchor="graduations" href="#graduations">{{'menu.label.formation'|translate}} </a></li>
+				<li><a class="nav-link" data-menuanchor="services" href="#services">{{'menu.label.service'|translate}}</a></li>
+				<li><a class="nav-link" data-menuanchor="graduations" href="#graduations">{{'menu.label.education'|translate}} </a></li>
 				<!--li><a class="nav-link" data-menuanchor="recommendation" href="#recommendation">{{'menu.label.recommendation'|translate}}</a></li-->
 				<li><a class="nav-link" data-menuanchor="contact" href="#contact">{{'menu.label.contact'|translate}}</a></li>
 			</ul>
@@ -220,7 +220,7 @@
 								<span data-ng-bind-html="'skill.title' | translate | htmlSafe"></span>
 							</h2>
 							<p>
-								{{'skill.impact.frase'|translate}}
+								{{'skill.impact.phrase'|translate}}
 							</p>
 							<div class="mt-5 pt-2">
 								<div class="progress-item" ng-repeat="item in info.skills">
@@ -403,12 +403,12 @@
 							<div class="row">
 								<div class="col-md-4">
 									<h2 class="text-white">
-										{{'contato.subtitle'|translate}}
+										{{'contact.subtitle'|translate}}
 									</h2>
 									<p class="text-muted">
-										{{'contato.description'|translate}}
+										{{'contact.description'|translate}}
 									</p>
-									<h3 class="text-white mt-5 pt-5">{{'contato.address'|translate}}</h3>
+									<h3 class="text-white mt-5 pt-5">{{'contact.address'|translate}}</h3>
 									<h3 class="text-white">
 										<a href="tel:{{ info.PersonalInformation.contact.mobile }}" >
 											{{ info.PersonalInformation.contact.mobile }}
@@ -425,21 +425,21 @@
 								</div>
 								<div class="col-md-5 offset-md-2">
 									<h3 class="text-white mt-0">
-										<span data-ng-bind-html="'contato.second.subtitle' | translate | htmlSafe"></span>
+										<span data-ng-bind-html="'contact.second.subtitle' | translate | htmlSafe"></span>
 									</h3>
 									<div class="mt-4">
 										<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 										<form action="?" method="POST" id="sendEmail" class="js-ajax-form" >
 											<div class="form-group">
-												<input type="text" name="name" ng-model="form.name" ng-value='' ng-trim='true' class="form-control" required="" placeholder="{{'contato.form.send.label.name'|translate}}">
+												<input type="text" name="name" ng-model="form.name" ng-value='' ng-trim='true' class="form-control" required="" placeholder="{{'contact.form.send.label.name'|translate}}">
 											</div>
 											<div class="form-group">
 												<input type="email" name="email" ng-model='form.email' ng-value='' ng-trim='true' ng-maxlength="1000" class="form-control" required=""
-													placeholder="{{'contato.form.send.label.email'|translate}}">
+													placeholder="{{'contact.form.send.label.email'|translate}}">
 											</div>
 											<div class="form-group">
 												<textarea rows="2" name="message" ng-model='form.message' ng-value='' ng-trim='true' class="form-control" required=""
-													placeholder="{{'contato.form.send.label.msg'|translate}}"></textarea>
+													placeholder="{{'contact.form.send.label.msg'|translate}}"></textarea>
 											</div>
 											<input id="success-message" type="hidden" value="{{'msg.success.send.email'|translate}}">
 											<input id="error-message" type="hidden" value="{{'msg.erro.send.email'|translate}}">
@@ -477,6 +477,11 @@
 		</div>
 	</div>
 </body>
+
+<!-- VUE.js -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<!-- https://stackoverflow.com/questions/5270227/how-to-hide-show-more-text-within-a-certain-length-like-youtube#:~:text=Show%20More%2C%20Show%20Less%20(Only%20when%20needed)%20No%20JQuery -->
+
 
 <!-- Angularjs 1.8.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
