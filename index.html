@@ -518,28 +518,22 @@
 
 
 $(document).ready(function() {
-	function addMoreellipses(_this, content, showChar, ellipsestext = "..."){
+	var moretext = "less";
+	var lesstext = "more";
+	
+	function addMoreellipses(_this, content, showChar){
 		
 		if(content.length > showChar) {
 				var c = content.substr(0, showChar);
-				var h = content.substr(showChar-1, content.length - showChar);
-				var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+				var h = content.substr(showChar, content.length - showChar);
+				var html = c + '<span class="moreellipses"></span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
 				$(_this).html(html);
 			}
 	}
-	
-	var moretext = "less";
-	var lesstext = "more";
-	$('.desc200').each(function() {
-		addMoreellipses(this, $(this).html(), 200)
-	});
+
 
 	$('.desc300').each(function() {
 		addMoreellipses(this, $(this).html(), 300)
-	});
-
-	$('.desc400').each(function() {
-		addMoreellipses(this, $(this).html(), 400)
 	});
 
 	$('.desc500').each(function() {
