@@ -77,15 +77,6 @@
         // 
         // const now = new Date("2023-06-13T09:00:00");
 
-
-
-
-
-
-
-
-
-
         var endTime = new Date("2023-05-05T17:00:00");
         
         // First Holiday
@@ -93,16 +84,13 @@
         var timeDiffMs = endTime.getTime() - now.getTime();
         if (timeDiffMs <= 0)
         {
-
-        debugger;
-
           text = 'Your vacation is over!';
-          endTime = new Date("2023-05-22T04:30:00");
+          endTime = new Date("2023-05-12T04:30:00");
           timeDiffMs = endTime.getTime() - now.getTime();
           if (timeDiffMs <= 0)
           {
             showTime = false;
-            endTime = new Date("2023-05-25T12:30:00");
+            endTime = new Date("2023-05-24T12:30:00");
             timeDiffMs = endTime.getTime() - now.getTime();
             if (timeDiffMs <= 0)
             {
