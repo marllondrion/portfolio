@@ -169,7 +169,7 @@
 		<div class="intro">
 			<div class="scroll-wrap">
 				<div class="container">
-					<div class="desc500">{{ info.experience.description }}</div>
+					<div class="desc510">{{ info.experience.description }}</div>
 					<div class="mt-5 pt-5">
 						<div class="experience-item">
 							<div class="row row-experience " ng-repeat="item in info.experience.jobs">
@@ -540,6 +540,10 @@ $(document).ready(function() {
 		addMoreellipses(this, $(this).html(), 500)
 	});
 
+
+	$('.desc510').each(function() {
+		addMoreellipses(this, $(this).html(), 510)
+	});
 
 	$(".morelink").click(function(){
 		if($(this).hasClass("less")) {
