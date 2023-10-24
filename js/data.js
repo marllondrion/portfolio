@@ -130,7 +130,7 @@ const curriculo_en = {
 		"skills":[
 		{
 			"title": "FRONT END",
-			"description": "Flutter, Vue js",
+			"description": "Flutter, Angular",
 			"state":{"name":"Improving", "visible":true},
 			"percentage":"30",
 			"icon": "fa fa-search"
@@ -635,7 +635,7 @@ const curriculo_pt = {
 		"skills":[
 		{
 			"title": "FRONT END",
-			"description": "Flutter e Vue js",
+			"description": "Flutter e Angular",
 			"state":"Improving",
 			"percentage":"30",
 			"stateVisible":true,
