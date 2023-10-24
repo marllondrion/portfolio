@@ -4,10 +4,10 @@ const curriculo_en = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Balmain St",
-			"n": "21a",
-			"unit": "Unit 7",
-			"suburb": "Glenorchy",
+			"st": "Hillside Crescent",
+			"n": "20",
+			"unit": "",
+			"suburb": "West Hobart",
 			"city": "",
 			"cityAbbreviation ": "",
 			"state": "Tasmania",
@@ -186,8 +186,6 @@ const curriculo_en = {
 						"img": "img/bg/portfolio/bg.jpg",
 					}
 			]},
-		
-				
 				"services": [
 				  {
 					"title": "Software developer",
@@ -244,7 +242,7 @@ const curriculo_en = {
 						"position": "Software Developer",
 						"startDate": "01/12/2021",
 						"endDate": "",
-						"description": "MyFoodLink is an eCommerce application and fully hosted specialist platform for grocery and liquor shops in Australia and New Zealand. They provide a comprehensive solution for supermarkets and bottle shops, catering to the specific needs of the industry. As a full-stack software developer, I develop and maintain the back-end for the Shop and MyFoodLink APIs, specializing in Ruby on Rails, MongoDB, WebAPI, and webhooks. I also lead the development of the cross-platform Shop app using Dart and Flutter for Android and iOS. With expertise in web and mobile application development and various integration methods, I ensure the eCommerce platform and mobile app deliver high-quality solutions for grocery and liquor shops.",
+						"description": "MyFoodLink is an eCommerce application and fully hosted specialist platform for grocery and liquor shops in Australia and New Zealand. We provide a comprehensive solution for supermarkets and bottle shops, catering to the specific needs of the industry. As a full-stack software developer, I develop and maintain the back-end for the Shop and MyFoodLink APIs, specializing in Ruby on Rails, MongoDB, PostgreSQL, WebAPIs, and Webhooks. I also lead the development of the cross-platform Shop app using Dart and Flutter for Android and iOS. With expertise in web and mobile application development and various integration methods, I ensure the eCommerce platform and mobile app deliver high-quality solutions for grocery and liquor shops. Utilizing DevOps methodologies, I spearheaded the development of a streamlined CI/CD pipeline through GitHub Actions. This automated deployment system efficiently handles over 50 distinct iOS and Android applications within a remarkable time frame of less than 3 hours, requiring only two to three simple clicks. Implementing this solution has effectively eliminated the need to assign two to three resources for a duration of 1 Month, saving over 360 hours of work.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -278,7 +276,6 @@ const curriculo_en = {
 							"class": "fa fa-link",
 							"value": "https://syntagium.com.au/"
 						},
-						
 						{
 							"type": "rede-social",
 							"nome": "Linkedin",
@@ -482,7 +479,7 @@ const curriculo_en = {
 						"position": "Computing instructor",
 						"startDate": "05/10/2013",
 						"endDate": "05/10/2013",
-						"description": "Newton is an educational institution, and as a computing instructor, I participated in their '3 AÇÃO SOCIAL NEWTON PAIVA' event, where I provided instruction on basic computer skills to promote digital inclusion among the elderly.",
+						"description": "Newton is an educational institution, and as a computing instructor, I participated in their '3rd NEWTON PAIVA SOCIAL ACTION' event, where I provided instruction on basic computer skills to promote digital inclusion among the elderly.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -500,15 +497,11 @@ const curriculo_en = {
 							"nome": "Linkedin",
 							"class": "fa fa-linkedin",
 							"value": "https://www.linkedin.com/school/newtonpaiva/"
-						}]
-						
-					
+						}]					
 					}
-
 				]
 		}
 };
-
 
 const curriculo_pt = {	
 	"PersonalInformation": {
@@ -516,10 +509,10 @@ const curriculo_pt = {
 		"surname": "Batista de Alcino",
 		"birthDate": "24/09/1991",
 		"address": {
-			"st": "Balmain St",
-			"n": "21a",
-			"unit": "Unit 7",
-			"suburb": "Glenorchy",
+			"st": "Hillside Crescent",
+			"n": "20",
+			"unit": "",
+			"suburb": "West Hobart",
 			"city": "",
 			"cityAbbreviation ": "",
 			"state": "Tasmania",
@@ -561,7 +554,7 @@ const curriculo_pt = {
 		}
 		},
 		"education":{
-			"description":"Bacharel em Sistemas de Informação no Brasil e cursando diploma de Tecnologia da Informação em Melbourne Austrália.",
+			"description":"Bacharel em Sistemas de Informação no Brasil e Pos em Tecnologia da Informação em Melbourne Austrália.",
 			"formations": [{
 			"companyName": "Newton Paiva",
 			"image": "img/company/Newton7.png",
@@ -781,7 +774,7 @@ const curriculo_pt = {
 						"position": "Software Developer (full-stack)",
 						"startDate": "23/10/2021",
 						"endDate": "17/12/2021",
-						"description": "Fui contratado para auxiliar a equipe a finalizar a entrega do Sistema ProClain no prazo combinado. Estou trabalhando como desenvolvedor C # usando ASP .Net Zero, C #, dotnet core 3.1 sendo arquitetura MVC e também estou usando um padrão DDD (Domain-Driven Design) que ajuda na modelagem. Tecnologias: C # .Net, ASP.Net MVC, WebAPI estando no back-end e ao lado do front-end Razor, JavaScript, HTML5, CSS e outras tecnologias.",
+						"description": "Fui contratado para auxiliar a equipe a finalizar a entrega do Sistema ProClain no prazo combinado. Trabalhei como desenvolvedor C# usando ASP .Net Zero, C#, dotnet core 3.1 sendo arquitetura MVC e com padrão DDD (Domain-Driven Design) que ajuda na modelagem. Tecnologias: C# .Net, ASP.Net MVC, WebAPI estando no back-end e ao lado do front-end Razor, JavaScript, HTML5, CSS e outras tecnologias.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -803,7 +796,7 @@ const curriculo_pt = {
 						"position": "Software Developer (full-stack)",
 						"startDate": "05/04/2021",
 						"endDate": "27/06/2021",
-						"description": "Estou trabalhando com sistemas de gestão de RH e um sistema que ajuda a analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalho com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
+						"description": "Trabalhei com sistemas de gestão de RH e onde tinha o objetivo de analisar e recrutar os melhores candidatos disponíveis para qualquer organização. Como desenvolvedor full-stack, trabalhei com .Net C#, ASP.Net MVC, WebAPI no back-end e ao lado do front-end Angularjs, Angular, JavaScript, HTML5 e CSS.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -911,7 +904,7 @@ const curriculo_pt = {
 						"position": "Estagiário Analista Desenvolvedor",
 						"startDate": "18/10/2012",
 						"endDate": "28/03/2013",
-						"description": "Programador .NET, analista de sistemas e automação de processos de negócios, desenvolvimento na plataforma Microsoft. Desenvolvimento Integrado e Ambiente de Software: Microsoft Visual Studio 2008 e 2010, Visio 2010 e Firebug SVN. Linguagens: JavaScript, C# e SQL. Desenvolvimento: Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON e Web services.",
+						"description": "Fazia da equipe de programadores .NET, analista de sistemas e automação de processos de negócios, desenvolvimento na plataforma Microsoft. Desenvolvimento Integrado e Ambiente de Software: Microsoft Visual Studio 2008 e 2010, Visio 2010 e Firebug SVN. Linguagens: JavaScript, C# e SQL. Desenvolvimento: Windows Forms, ASP.NET MVC 3, SQL Server, NHibernate, SQL Server, HTML, CSS, JSON e Web services.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -938,7 +931,7 @@ const curriculo_pt = {
 						"position": "Estagiário Desenvolver de Software",
 						"startDate": "24/10/2011",
 						"endDate": "15/10/2012",
-						"description": "Análise e desenvolvimento de sistemas de clientes da Infraero com criação e manutenção de sistemas para todo o controle aeroportuário. Fazia parte de uma equipe que era responsável pelo desenvolvimento e manutenção de sistemas com tecnologias .NET 4.0, Asp.NET, MVC, Entity Framework, JQuery. Com isso fazia a leitura de UML e Casos de Uso e ajudando com correções e melhorias de documentos.Desenvolvia caso de testes. Criação de script de desenvolvimento de testes utilizando Selenium para manter a qualidade do sistema e teste de caixa preta. Executava Testes através de Backlog de Testes. Desenvolvia a documentação do processo de aprovação do software. Criação de cenários de teste para agilizar o processo de aprovação. Controle do processo de aprovação de tarefas.",
+						"description": "Análise e desenvolvimento de sistemas de clientes da Infraero com criação e manutenção de sistemas para todo o controle aeroportuário. Fazia parte de uma equipe que era responsável pelo desenvolvimento e manutenção de sistemas com tecnologias .NET 4.0, Asp.NET, MVC, Entity Framework, JQuery. Com isso fazia a leitura de UML e Casos de Uso e ajudando com correções e melhorias de documentos. Desenvolvia caso de testes. Criação de script de desenvolvimento de testes utilizando Selenium para manter a qualidade do sistema e teste de caixa preta. Executava Testes através de Backlog de Testes. Desenvolvia a documentação do processo de aprovação do software. Criação de cenários de teste para agilizar o processo de aprovação. Controle do processo de aprovação de tarefas.",
 						"contact": [{
 							"type": "site",
 							"nome": "site",
@@ -958,7 +951,6 @@ const curriculo_pt = {
 							"value": "https://www.linkedin.com/company/techbizbrasil/"
 						}]
 					},
-			 
 					{
 						"company": "Direcional Engenharia",
 						"image": "img/company/Direcional-200x128.jpg",
@@ -986,7 +978,6 @@ const curriculo_pt = {
 							"value": "https://www.linkedin.com/company/direcional-engenharia/"
 						}]
 					},
-			 
 					{
 						"company": "Newton",
 						"image": "img/company/NewtonPaiva-200x128.jpg",
@@ -1013,9 +1004,7 @@ const curriculo_pt = {
 							"class": "fa fa-linkedin",
 							"value": "https://www.linkedin.com/school/newtonpaiva/"
 						}]
-					
 					}
-
 				]
 		}
 };
@@ -1128,9 +1117,8 @@ anchorsMap.set('skills', 'menu.label.skill');
 anchorsMap.set('projects', 'menu.label.project');
 anchorsMap.set('services', 'menu.label.service');
 anchorsMap.set('graduations', 'menu.label.education');
-//anchorsMap.set('recommendation', 'menu.label.recommendation');
 anchorsMap.set('contact', 'menu.label.contact');
-
+//anchorsMap.set('recommendation', 'menu.label.recommendation');
 
 var sumTotalExperience = function(date1, date2, total){
 	var aux =  Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / (1000 * 3600 * 24))/ 365.25;
@@ -1141,9 +1129,10 @@ var sumTotalExperience = function(date1, date2, total){
 var totalExperience = function(jobs){
 	var total = 0;				
 	jobs.forEach(element => {
-		total =	sumTotalExperience(element.startDate.convertToDate()
-		,element.endDate.isEmpty()? new Date() : element.endDate.convertToDate()
-		, total)
+		total =	sumTotalExperience(
+			element.startDate.convertToDate()
+			, element.endDate.isEmpty()? new Date() : element.endDate.convertToDate()
+			, total)
 	});
 	return Math.floor(total);
 }
