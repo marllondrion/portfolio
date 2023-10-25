@@ -62,7 +62,7 @@
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "fbjs-scripts": "^0.8.3",
+    "fbjs-scripts": "^3.0.1",
     "fsevents": "^1.2.11",
     "grunt": "^1.0.4",
     "grunt-bower-install-simple": "1.2.4",
