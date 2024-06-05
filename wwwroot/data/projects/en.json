@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "title": "Development of web pages",
+            "technology": "HTML5, CCS3 and AngularJS",
+            "url": "wwww.google.com",
+            "startDate": "01/01/2020",
+            "endDate": "01/01/2020",
+            "img": "img/bg/portfolio/bg.jpg"
+        },
+        {
+            "title": "Web System",
+            "technology": "node, Rest",
+            "url": "wwww.google.com",
+            "startDate": "01/01/2020",
+            "endDate": "01/01/2020",
+            "img": "img/bg/portfolio/bg.jpg"
+        },
+        {
+            "title": "Mobile System",
+            "technology": "Dart, Flutter, Swift, kotlin",
+            "url": "wwww.google.com",
+            "startDate": "01/01/2020",
+            "endDate": "01/01/2020",
+            "img": "img/bg/portfolio/bg.jpg"
+        },
+        {
+            "title": "Desktop application",
+            "technology": "Java Swing, JavaX and Windows Forms",
+            "url": "wwww.google.com",
+            "startDate": "01/01/2020",
+            "endDate": "01/01/2020",
+            "img": "img/bg/portfolio/bg.jpg"
+        }
+    ]
+
+}

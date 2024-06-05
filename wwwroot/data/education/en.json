@@ -1,0 +1,87 @@
+{
+    "data": {
+        "description": "Bachelor of Computer Information Systems in Brazil and studying Diploma of Information Technology in Melbourne Australia.",
+        "formations": [
+            {
+                "companyName": "Newton Paiva",
+                "image": "img/company/Newton7.png",
+                "description": "dasdsa",
+                "courseName": "Computer Information Systems",
+                "courseDescription": "During the course was explored strategies to work in teams within organizations, how to analyze and evaluate the information processing needs and building solutions agile and able to meet the technological and market change. Got experience in systems analysis, systems design, architecture design, software development, Process development (SCRUM and XP), Databases and Programming (web services, desktop and mobile) with emphasis on JAVA liguagem.",
+                "courseType": "Bachelor's degree",
+                "courseLoad": "",
+                "courseDuration": "4 years",
+                "courseImage": "",
+                "courseStartDate": "01/02/2015",
+                "courseEndDate": "02/02/2015",
+                "courseSite": "http://newtonpaiva.br/graduacao/sistemas-de-informacao",
+                "contact": [
+                    {
+                        "type": "rede-social",
+                        "name": "Facebook",
+                        "class": "fa fa-facebook",
+                        "value": "https://www.facebook.com/newton.paiva.50"
+                    },
+                    {
+                        "type": "rede-social",
+                        "name": "Twitter",
+                        "class": "fa fa-twitter",
+                        "value": "https://twitter.com/newtonpaiva"
+                    },
+                    {
+                        "type": "rede-social",
+                        "name": "Linkedin",
+                        "class": "fa fa-linkedin-square",
+                        "value": "https://www.linkedin.com/edu/school?id=10566&trk=tyah&trkInfo=clickedVertical%3Aschool%2Cidx%3A2-1-2%2CtarId%3A1437699038926%2Ctas%3Anewton%20paiva"
+                    },
+                    {
+                        "type": "site",
+                        "name": "Site",
+                        "class": "fa fa-globe",
+                        "value": "http://www.newton.br"
+                    }
+                ]
+            },
+            {
+                "companyName": "RGIT Australia trading as Royal Greenhill Institute of Technology",
+                "image": "img/company/RGIT-Australia.jpg",
+                "description": "This qualification has a strong core ICT base including develop a knowledge management strategy, building a data warehouse, implement a knowledge management strategy, direct complex ICT projects, interact with clients on a business level and manage innovation with continuous improvement.",
+                "courseName": "Information Technology - IT",
+                "courseDescription": "The Advanced Diploma in Information Technology that provides intermediate to advanced skills and knowledge so that an individual is competent to plan, design, implement, manage and monitor a business information and communication technology (ICT) system as an independent ICT specialist or as part of a design team responsible for advanced systems with an emphasis on business.",
+                "courseType": "Adv Diploma",
+                "courseLoad": "",
+                "courseDuration": "76 weeks",
+                "courseImage": "",
+                "courseStartDate": "20/04/2020",
+                "courseEndDate": "01/10/2021",
+                "courseSite": "https://rgit.edu.au/information-technology/advanced-diploma-of-information-technology/",
+                "contact": [
+                    {
+                        "type": "rede-social",
+                        "name": "Facebook",
+                        "class": "fa fa-facebook",
+                        "value": "https://www.facebook.com/rgitaus"
+                    },
+                    {
+                        "type": "rede-social",
+                        "name": "Twitter",
+                        "class": "fa fa-twitter",
+                        "value": "https://twitter.com/rgitaustralia"
+                    },
+                    {
+                        "type": "rede-social",
+                        "name": "Linkedin",
+                        "class": "fa fa-linkedin-square",
+                        "value": "https://www.linkedin.com/company/rgit-australia/"
+                    },
+                    {
+                        "type": "site",
+                        "name": "Site",
+                        "class": "fa fa-globe",
+                        "value": "https://rgit.edu.au/"
+                    }
+                ]
+            }
+        ]
+    }
+}

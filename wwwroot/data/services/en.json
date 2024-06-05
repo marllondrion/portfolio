@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+          "title": "Software developer",
+          "description": "Experience in Commercial Software, Electrical Engineering System and Artificial Intelligence Software.",
+          "icon": "fa fa-code fa-5x"
+        },
+        {
+          "title": "Systems Research & Development",
+          "description": "Skills in research and systems development in order to bring evolution and innovation in the country's energy sector.",
+          "icon": "fa fa-search fa-5x"
+        },
+        {
+          "title": "Consultancy",
+          "description": "Consulting in software development, architecture and modeling.",
+          "icon": "fa fa-connectdevelop fa-5x"
+        },
+        {
+          "title": "Software Tester",
+          "description": "Experience in software testing, in order to minimize errors, thus increasing the quality of the system.",
+          "icon": "fa fa-bug fa-5x"
+        },
+        {
+          "title": "Configuration Management",
+          "description": "Experience in software management in the R&D sector.",
+          "icon": " fa fa-cog fa-5x"
+        },
+        {
+          "title": "System analysis",
+          "description": "Modeling and data structure according to customer needs.",
+          "icon": " fa fa-area-chart fa-5x"
+        },
+        {
+          "title": "Software prototyping",
+          "description": "Knowledge in software prototyping, to survey requirements together with the client.",
+          "icon": "fa fa-desktop fa-5x"
+        },
+        {
+          "title": "Agile Software Development",
+          "description": "Implementation of the agile software development culture.",
+          "icon": "fa fa-repeat fa-5x"
+        }
+      ]
+}

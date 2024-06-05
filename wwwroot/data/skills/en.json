@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "title": "FRONT END",
+            "description": "Flutter, Angular",
+            "state": {
+                "name": "Improving",
+                "visible": true
+            },
+            "percentage": "30",
+            "icon": "fa fa-search"
+        },
+        {
+            "title": "BACK END (JAVA, C#, Dart, Ruby)",
+            "description": "Java, C#, .Net",
+            "state": {
+                "name": "",
+                "visible": false
+            },
+            "percentage": "70",
+            "icon": "fa fa-connectdevelop"
+        },
+        {
+            "title": "TESTING SOFTWARE",
+            "description": "Usability test, Functional test, Integration test, Performance test, among others.",
+            "state": {
+                "name": "Improving",
+                "visible": false
+            },
+            "percentage": "50",
+            "icon": "fa fa-bug"
+        }
+    ]
+}
