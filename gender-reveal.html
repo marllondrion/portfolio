@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Reveal Countdown</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #9be7ff 50%, #ff9a9e 50%);
+            color: #333;
+            position: relative;
+        }
+        .countdown {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            border-radius: 80px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        .countdown h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff69b4;
+        }
+        .countdown p {
+            font-size: 3rem;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #ff1493;
+        }
+        .countdown span {
+            display: block;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .countdown .label {
+            font-size: 1rem;
+            color: #777;
+        }
+        .countdown .time {
+            font-size: 4rem;
+            color: #ff1493;
+        }
+        .elephants {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 0;
+        }
+        .elephants img {
+            max-width: 20%;
+            max-height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown">
+        <h1>Gender Reveal Countdown</h1>
+        <div id="timer-container">
+            <p class="time" id="timer"></p>
+        </div>
+        <span>We can't wait to share the surprise with you!</span>
+    </div>
+    <div class="elephants">
+        <img src="boy.png" alt="Baby Boy Elephant">
+        <img src="girl.png" alt="Baby Girl Elephant">
+    </div>
+    <script>
+        const targetDate = new Date("June 16, 2024 10:00:00 GMT+1000").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            var timeLabel = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (days == 0 && hours >= 1){
+                timeLabel = hours + "h " + minutes + "m " + seconds + "s ";
+            }if (days == 0 && hours == 0 && minutes >= 1) {
+                timeLabel = minutes + "m " + seconds + "s ";
+            } if (days == 0 && hours == 0 && minutes == 0){
+                timeLabel = seconds + "s ";
+            }
+
+            document.getElementById("timer").innerHTML = timeLabel;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("timer").innerHTML = "Let's go!";
+                window.location.href = "https://www.youtube.com/watch?v=EMWvlC_CdyY";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
