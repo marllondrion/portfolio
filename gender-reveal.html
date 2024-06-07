@@ -70,17 +70,29 @@
 </head>
 <body>
     <div class="countdown">
-        <h1>Gender Reveal Countdown</h1>
+        <h1 id="firstText">Gender Reveal Countdown</h1>
         <div id="timer-container">
             <p class="time" id="timer"></p>
         </div>
-        <span>We can't wait to share the surprise with you!</span>
+        <span id="secondText">O link para a transmissão do chá revelação estará disponível aqui em breve.</span>
     </div>
     <div class="elephants">
         <img src="boy.png" alt="Baby Boy Elephant">
         <img src="girl.png" alt="Baby Girl Elephant">
     </div>
     <script>
+        let userLanguage = (navigator.language || navigator.userLanguage).split('-');
+        if(userLanguage == 'pt')
+        {
+            document.getElementById("firstText").innerHTML = "Contagem regressiva de revelação de gênero";
+            document.getElementById("secondText").innerHTML = "O link para a transmissão do chá revelação estará disponível aqui em breve.";
+        }
+        else
+        {
+            document.getElementById("firstText").innerHTML = "Gender Reveal Countdown";
+            document.getElementById("secondText").innerHTML = "The link to the revelation tea broadcast will be available here soon.";
+        }
+
         const targetDate = new Date("June 16, 2024 10:15:00 GMT+1000").getTime();
 
         const countdownFunction = setInterval(function() {
@@ -100,7 +112,6 @@
             } if (days == 0 && hours == 0 && minutes == 0){
                 timeLabel = seconds + "s ";
             }
-
             document.getElementById("timer").innerHTML = timeLabel;
 
             if (distance < 0) {
