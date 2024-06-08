@@ -77,25 +77,22 @@
         <span id="secondText">O link para a transmissão do chá revelação estará disponível aqui em breve.</span>
     </div>
     <div class="elephants">
-        <img src="boy.png" alt="Baby Boy Elephant">
-        <img src="girl.png" alt="Baby Girl Elephant">
+        <img class="boy" src="boy.png" alt="Baby Boy Elephant">
+        <img class="girl" src="girl.png" alt="Baby Girl Elephant">
     </div>
     <script>
-        let userLanguage = (navigator.language || navigator.userLanguage).split('-');
-        if(userLanguage == 'pt')
-        {
-            document.getElementById("firstText").innerHTML = "Contagem regressiva de revelação de gênero";
-            document.getElementById("secondText").innerHTML = "O link para a transmissão do chá revelação estará disponível aqui em breve.";
-        }
-        else
-        {
-            document.getElementById("firstText").innerHTML = "Gender Reveal Countdown";
-            document.getElementById("secondText").innerHTML = "The link to the revelation tea broadcast will be available here soon.";
-        }
-
+        const firstTextPt = "Contagem regressiva de revelação de gênero";
+        const firstTextEn = "Gender Reveal Countdown";
+        const secondTextPt = "O link para a transmissão do chá revelação estará disponível aqui em breve.";
+        const secondTextEn = "The link to the revelation tea broadcast will be available here soon.";
         const targetDate = new Date("June 16, 2024 10:15:00 GMT+1000").getTime();
 
+        function isPortuguese(){(navigator.language || navigator.userLanguage).split('-')[0] == 'pt'}
+        document.getElementById("firstText").innerHTML = isPortuguese ? firstTextPt : firstTextEn;
+        document.getElementById("secondText").innerHTML = isPortuguese ? secondTextPt : secondTextEn;
+
         const countdownFunction = setInterval(function() {
+            
             const now = new Date().getTime();
             const distance = targetDate - now;
 
