@@ -4,10 +4,10 @@ import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Journey } from './components/sections/Journey';
-import { Skills } from './components/sections/Skills';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 import { CardGridSection } from './components/sections/CardGridSection';
+import { CategoryGridSection } from './components/sections/CategoryGridSection';
 
 const App: React.FC = () => {
   const { data } = useApp();
@@ -24,12 +24,19 @@ const App: React.FC = () => {
         <Hero data={data.hero} />
         <About data={data.about} />
         <Journey data={data.experience} />
-        <Skills data={data.skills} />
+
+
+        {/* SKILLS (CategoryGridSection) */}
+        <CategoryGridSection
+          id="skills"
+          title={data.skills.title}
+          categories={data.skills.categories}
+        />
 
         {/* EDUCATION (CardGridSection) */}
         <CardGridSection
           id="education"
-          bgTitle="ACADEMIA"
+          bgTitle={data.education.title}
           items={data.education.items.map((item: any) => ({
             title: item.degree,
             subtitle: item.institution,
