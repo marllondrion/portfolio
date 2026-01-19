@@ -164,7 +164,7 @@ export const content = {
             categories: [
                 {
                     name: "Languages & Platforms",
-                    list: ["C#", "Java", "Ruby", "Dart", "TypeScript", "JavaScript", "HTML", "CSS"]
+                    list: ["C#", "Java", "Ruby", "Dart", "TypeScript", "JavaScript", "HTML", "CSS", "Bash"]
                 },
                 {
                     name: "Data & Persistence",
@@ -173,10 +173,6 @@ export const content = {
                 {
                     name: "Frameworks & Libraries",
                     list: ["ASP.NET Core/Framework", "Spring", "Rails", "React", "Vue.js", "Angular", "jQuery", "JSF", "PrimeFaces", "Flutter"]
-                },
-                {
-                    name: "Architecture & Practices",
-                    list: ["RESTful APIs", "Webhook Integrations", "Microservices", "API Gateway", "JWT", "OAuth 2.0", "DDD", "Design Patterns", "BDD", "TDD", "Agile"]
                 },
                 {
                     name: "Cloud & DevOps",
@@ -385,7 +381,6 @@ export const content = {
         skills: {
             title: "Expertise Principal",
             categories: [
-
                 {
                     name: "Linguagens & Plataformas",
                     list: ["C#", "Java", "Ruby", "Dart", "TypeScript", "JavaScript", "HTML", "CSS"]
@@ -405,6 +400,7 @@ export const content = {
                 {
                     name: "Cloud & DevOps",
                     list: ["Terraform", "AWS (EC2, Lambda, S3, RDS, EventBridge)", "Azure (VMs, Functions, Blob, DB, Event Grid)", "GitHub Actions", "CI/CD", "Git", "DevOps"]
+
                 },
                 {
                     name: "Competências Profissionais",
