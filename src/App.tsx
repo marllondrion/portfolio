@@ -65,6 +65,7 @@ const App: React.FC = () => {
         <CategoryGridSection
           id="skills"
           title={data.skills.title}
+          subtitle={data.skills.subtitle}
           categories={data.skills.categories}
         />
 
