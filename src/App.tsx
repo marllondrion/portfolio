@@ -1,7 +1,7 @@
 import React from 'react';
 import { useApp } from './AppContext';
 import { Navbar } from './components/layout/Navbar';
-import { Hero } from './components/sections/Hero';
+import { HeroSection } from './components/sections/HeroSection';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 import { CardGridSection } from './components/sections/CardGridSection';
@@ -21,7 +21,17 @@ const App: React.FC = () => {
       <Navbar />
 
       <main>
-        <Hero data={data.hero} />
+        <HeroSection
+          greeting={data.hero.greeting}
+          name={data.hero.name}
+          title={data.hero.title}
+          subtitle={data.hero.subtitle}
+          ctaPrimary={{ label: data.hero.cta_primary, href: "#journey" }}
+          ctaSecondary={{ label: data.hero.cta_secondary, href: "#contact" }}
+          visualTitle={data.hero.bg_image_title}
+          visualMaskText={data.hero.bg_image_text}
+          visualImagePath={data.hero.bg_image_path}
+        />
 
         {/* ABOUT (SplitTextSection) */}
         <SplitTextSection
