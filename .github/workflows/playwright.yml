@@ -44,4 +44,4 @@ jobs:
         cd terraform
         terraform init
         terraform apply -auto-approve
-        aws s3 sync ../dist s3://my-portfolio-vite-app-drion-dev --delete
+        aws s3 sync ../dist s3://portfolio-drion-dev --delete
