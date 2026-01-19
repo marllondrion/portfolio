@@ -33,7 +33,6 @@ const App: React.FC = () => {
           ctaSecondary={{ label: data.hero.cta_secondary, href: "#contact" }}
           visualTitle={data.hero.bg_image_title}
           visualMaskText={data.hero.bg_image_text}
-          visualImagePath={data.hero.bg_image_path}
         />
 
         {/* ABOUT (SplitTextSection) */}

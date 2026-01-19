@@ -1,5 +1,6 @@
 import React from 'react';
 import { RevealSection } from '../ui/RevealSection';
+import heroImage from '../../assets/images/hero-image.png';
 
 interface HeroProps {
     id?: string;
@@ -11,7 +12,6 @@ interface HeroProps {
     ctaSecondary: { label: string; href: string };
     visualTitle: string;
     visualMaskText: string;
-    visualImagePath: string;
 }
 
 export const HeroSection: React.FC<HeroProps> = ({
@@ -23,8 +23,7 @@ export const HeroSection: React.FC<HeroProps> = ({
     ctaPrimary,
     ctaSecondary,
     visualTitle,
-    visualMaskText,
-    visualImagePath
+    visualMaskText
 }) => {
 
     /**
@@ -91,7 +90,7 @@ export const HeroSection: React.FC<HeroProps> = ({
                                           bg-clip-text text-transparent [-webkit-background-clip:text] 
                                           grayscale group-hover:grayscale-0 transition-all duration-700 
                                           select-none h-full w-full text-justify break-all"
-                                style={{ backgroundImage: `url(${visualImagePath})` }}>
+                                style={{ backgroundImage: `url(${heroImage})` }}>
                                 {renderMaskText(visualMaskText)}
                             </div>
                         </div>

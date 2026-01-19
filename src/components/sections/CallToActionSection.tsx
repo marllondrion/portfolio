@@ -15,7 +15,7 @@ interface CallToActionProps {
 }
 
 export const CallToActionSection: React.FC<CallToActionProps> = ({
-    id,
+    id = 'call-to-action',
     title,
     subtitle,
     links = []
