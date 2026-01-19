@@ -116,7 +116,7 @@ export const content = {
             ]
         },
         education: {
-            title: "Academic Foundation",
+            title: "Education",
             items: [
                 {
                     degree: "Master of IT (Software Development)",

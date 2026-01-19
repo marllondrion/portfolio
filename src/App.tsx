@@ -3,11 +3,11 @@ import { useApp } from './AppContext';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
-import { Journey } from './components/sections/Journey';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 import { CardGridSection } from './components/sections/CardGridSection';
 import { CategoryGridSection } from './components/sections/CategoryGridSection';
+import { TimelineSection } from './components/sections/TimelineSection';
 
 const App: React.FC = () => {
   const { data } = useApp();
@@ -23,7 +23,20 @@ const App: React.FC = () => {
       <main>
         <Hero data={data.hero} />
         <About data={data.about} />
-        <Journey data={data.experience} />
+        {/* JOURNEY (TimelineSection) */}
+        <TimelineSection
+          id="journey"
+          title={data.experience.title}
+          subtitle={data.experience.subtitle}
+          items={data.experience.items.map((item: any) => ({
+            title: item.role,
+            subtitle: item.company,
+            link: item.website,
+            tagLeft: item.period,
+            tagRight: item.location,
+            bullets: item.bullets
+          }))}
+        />
 
 
         {/* SKILLS (CategoryGridSection) */}
