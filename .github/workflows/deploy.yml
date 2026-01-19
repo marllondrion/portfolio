@@ -1,0 +1,49 @@
+name: Build and Deploy to AWS
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install Dependencies & Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v5.1.1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init & Apply
+        working-directory: ./terraform
+        run: |
+          terraform init
+          terraform apply -auto-approve
+
+      - name: Deploy to S3
+        run: aws s3 sync ./dist s3://portfolio-drion-dev --delete
+
+      # This clears the cache so changes appear instantly
+      - name: Invalidate CloudFront Cache
+        run: |
+          DIST_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[?Origins.Items[0].Id=='S3-Website'].Id" --output text)
+          aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*"
