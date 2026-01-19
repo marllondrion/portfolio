@@ -133,10 +133,14 @@ export const content = {
             ]
         },
         contact: {
-            title: "Let's build something elite.",
-            subtitle: "Currently available for high-impact architectural opportunities.",
-            email: "marllondrion@gmail.com",
-            phone: "+61 0410 389 445"
+            title: "Let's build",
+            subtitle: "something elite.",
+            links: [
+                { label: "marllondrion@gmail.com", type: "email", icon: "", href: "mailto:marllondrion@gmail.com" },
+                { label: "+61 0410 389 445", type: "phone", icon: "", href: "tel:+610410389445" },
+                { label: "LinkedIn", type: "social", icon: "", href: "https://linkedin.com/in/yourprofile" },
+                { label: "GitHub", type: "social", icon: "", href: "https://github.com/yourusername" }
+            ]
         }
     },
     pt: {
@@ -272,10 +276,14 @@ export const content = {
             ]
         },
         contact: {
-            title: "Vamos construir algo de elite.",
-            subtitle: "Disponível para oportunidades arquiteturais de alto impacto.",
-            email: "marllondrion@gmail.com",
-            phone: "+61 0410 389 445"
+            title: "Vamos construir",
+            subtitle: "algo de elite.",
+            links: [
+                { label: "marllondrion@gmail.com", type: "email", icon: "", href: "mailto:marllondrion@gmail.com" },
+                { label: "+61 0410 389 445", type: "phone", icon: "", href: "tel:+610410389445" },
+                { label: "LinkedIn", type: "social", icon: "", href: "https://linkedin.com/in/yourprofile" },
+                { label: "GitHub", type: "social", icon: "", href: "https://github.com/yourusername" }
+            ]
         }
     }
 };

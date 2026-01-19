@@ -1,13 +1,16 @@
 import React from 'react';
 import { useApp } from './AppContext';
 import { Navbar } from './components/layout/Navbar';
-import { HeroSection } from './components/sections/HeroSection';
-import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
-import { CardGridSection } from './components/sections/CardGridSection';
-import { CategoryGridSection } from './components/sections/CategoryGridSection';
-import { TimelineSection } from './components/sections/TimelineSection';
-import { SplitTextSection } from './components/sections/SplitTextSection';
+
+import {
+  HeroSection,
+  SplitTextSection,
+  TimelineSection,
+  CategoryGridSection,
+  CardGridSection,
+  CallToActionSection
+} from './components/sections';
 
 const App: React.FC = () => {
   const { data } = useApp();
@@ -44,8 +47,6 @@ const App: React.FC = () => {
           rightList={data.about.objectives_list}
         />
 
-
-
         {/* JOURNEY (TimelineSection) */}
         <TimelineSection
           id="journey"
@@ -60,7 +61,6 @@ const App: React.FC = () => {
             bullets: item.bullets
           }))}
         />
-
 
         {/* SKILLS (CategoryGridSection) */}
         <CategoryGridSection
@@ -82,7 +82,12 @@ const App: React.FC = () => {
           }))} />
 
 
-        <Contact data={data.contact} />
+        <CallToActionSection
+          id="contact"
+          title={data.contact.title}
+          subtitle={data.contact.subtitle}
+          links={data.contact.links}
+        />
       </main>
       <Footer />
     </div>
