@@ -40,7 +40,7 @@ jobs:
           terraform apply -auto-approve
 
       - name: Deploy to S3
-        run: aws s3 sync ./dist s3://my-portfolio-vite-app-drion-dev --delete
+        run: aws s3 sync ./dist s3://portfolio-drion-dev --delete
 
       # This clears the cache so changes appear instantly
       - name: Invalidate CloudFront Cache
