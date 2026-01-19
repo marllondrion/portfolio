@@ -34,3 +34,10 @@ lerna-debug.log*
 # TypeScript build info
 tsconfig.app.tsbuildinfo
 tsconfig.node.tsbuildinfo
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

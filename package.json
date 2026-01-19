@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.57.0",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
@@ -31,7 +32,7 @@
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "This React project is for my portfolio.",
   "main": "eslint.config.js",
   "repository": {
     "type": "git",
