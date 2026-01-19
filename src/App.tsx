@@ -2,12 +2,12 @@ import React from 'react';
 import { useApp } from './AppContext';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
-import { About } from './components/sections/About';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 import { CardGridSection } from './components/sections/CardGridSection';
 import { CategoryGridSection } from './components/sections/CategoryGridSection';
 import { TimelineSection } from './components/sections/TimelineSection';
+import { SplitTextSection } from './components/sections/SplitTextSection';
 
 const App: React.FC = () => {
   const { data } = useApp();
@@ -22,7 +22,20 @@ const App: React.FC = () => {
 
       <main>
         <Hero data={data.hero} />
-        <About data={data.about} />
+
+        {/* ABOUT (SplitTextSection) */}
+        <SplitTextSection
+          id="about"
+          title={data.about.title}
+          description={data.about.description}
+          leftListTitle={data.about.achievements}
+          leftList={data.about.achievements_list}
+          rightListTitle={data.about.objectives}
+          rightList={data.about.objectives_list}
+        />
+
+
+
         {/* JOURNEY (TimelineSection) */}
         <TimelineSection
           id="journey"
