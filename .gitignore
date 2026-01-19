@@ -47,3 +47,4 @@ tsconfig.node.tsbuildinfo
 .terraform.tfstate.lock.info
 node_modules/
 dist/
+.DS_Store
