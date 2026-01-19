@@ -41,3 +41,9 @@ tsconfig.node.tsbuildinfo
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+node_modules/
+dist/
