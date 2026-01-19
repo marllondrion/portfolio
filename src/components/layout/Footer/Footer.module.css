@@ -1,0 +1,15 @@
+@reference "../../../index.css";
+
+.footerContainer {
+    /* Layout & Spacing */
+    @apply pt-20 pb-10 text-center;
+
+    /* Typography */
+    @apply font-black uppercase;
+    @apply text-[8px] md:text-[10px];
+    @apply tracking-[0.5em] md:tracking-[1em];
+
+    /* Visuals & Colors */
+    @apply opacity-20 text-slate-900 dark:text-white;
+    @apply transition-opacity duration-300 hover:opacity-100;
+}
