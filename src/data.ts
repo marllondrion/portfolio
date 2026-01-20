@@ -15,8 +15,7 @@ export const content = {
             subtitle: "Senior full stack engineer with 10+ years across C#, Java, Ruby, and Flutter, delivering high‑performance e‑commerce and enterprise systems.",
             cta_primary: "Explore Journey",
             cta_secondary: "Get in Touch",
-            bg_image_title: "Core Expertise",
-            bg_image_text: "C#, ASP.NET, ASP.NET MVC, ASP.NET Core, Entity Framework, NHibernate, JUnit, Java, Spring Boot, Spring Web Flow, Hibernate, JPA, JSF, PrimeFaces, Ruby, Ruby on Rails, RSpec, MongoMapper, JavaScript, Angular, AngularJS, Vue.js, jQuery, AJAX, Dart, Flutter, Bash, HTML, CSS, Databases, Data Management, Relational, Microsoft SQL, MySQL, PostgreSQL, NoSQL, MongoDB, NoSQL Concepts, Data Modelling, Data Integrity, RESTful APIs, Webhook Integrations, OAuth 2.0, Microservices Architecture, JWT, API Gateway, Cross‑Platform Mobile Development, Behavior‑Driven Development, Design Principles, Design Patterns, Domain‑Driven Design, Modelling, Specification Languages, UML, Unified Modelling Language, OCL, Object Constraint Language, Git, DevOps, GitHub Actions, CI/CD, Continuous Integration, Continuous Delivery, AWS (EC2, Lambda, S3, EBS, RDS, EventBridge), Azure (Virtual Machines, Functions, Blob Storage, Database, Event Grid), IDEs, JetBrains, VS Code, Testing, Test‑Driven Development, Debugging, Troubleshooting, Hotfix Deployment, System Integration, CI Workflow, Automation, Automated Testing, Process Automation, Optimization, Team Collaboration, Mentoring, Problem Solving, Time Management, Adaptability, Leadership, Code Review, Technical Documentation, Development Methodologies, Agile Practices, Sprint Planning."
+            bg_image_title: "Core Expertise"
         },
         about: {
             title: "About Me",
@@ -234,8 +233,7 @@ export const content = {
             subtitle: "Engenheiro Full Stack com mais de 10 anos de experiência em C#, Java, Ruby e Flutter, entregando soluções de alta performance para e‑commerce e sistemas corporativos.",
             cta_primary: "Ver Trajetória",
             cta_secondary: "Contato",
-            bg_image_title: "Core Expertise",
-            bg_image_text: "C#, ASP.NET, ASP.NET MVC, ASP.NET Core, Entity Framework, NHibernate, JUnit, Java, Spring Boot, Spring Web Flow, Hibernate, JPA, JSF, PrimeFaces, Ruby, Ruby on Rails, RSpec, Mongo Mapper, JavaScript, Angular, AngularJS, Vue.js, jQuery, AJAX, Dart, Flutter, Bash, HTML, CSS, Bancos de Dados, Gestão de Dados, Relacional, Microsoft SQL, MySQL, PostgreSQL, NoSQL, MongoDB, Conceitos NoSQL, Modelagem de Dados, Integridade de Dados, RESTful APIs, Integrações Webhook, OAuth 2.0, Arquitetura de Microsserviços, JWT, API Gateway, Desenvolvimento Mobile Cross‑Platform, Behavior‑Driven Development, Princípios de Design, Padrões de Projeto, Domain‑Driven Design, Modelagem, Linguagens de Especificação, UML, Unified Modelling Language, OCL, Object Constraint Language, Git, DevOps, GitHub Actions, CI/CD, Continuous Integration, Continuous Delivery, AWS (EC2, Lambda, S3, EBS, RDS, EventBridge), Azure (Virtual Machines, Functions, Blob Storage, Database, Event Grid), IDEs, JetBrains, VS Code, Testes, Test‑Driven Development, Depuração, Troubleshooting, Hotfix Deployment, Integração de Sistemas, Workflow de CI, Automação, Testes Automatizados, Automação de Processos, Otimização, Colaboração em Equipe, Mentoria, Resolução de Problemas, Gestão de Tempo, Adaptabilidade, Liderança, Code Review, Documentação Técnica, Metodologias de Desenvolvimento, Práticas Ágeis, Sprint Planning."
+            bg_image_title: "Core Expertise"
         },
         about: {
             title: "Sobre Mim",
