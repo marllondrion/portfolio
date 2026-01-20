@@ -1,0 +1,112 @@
+@reference "../../../index.css";
+
+.container {
+    @apply space-y-16 md:space-y-32 relative;
+}
+
+.backgroundTitle {
+    @apply font-display text-5xl sm:text-6xl md:text-[90px];
+    @apply font-black tracking-tighter text-center leading-none opacity-80 uppercase;
+    @apply text-slate-900 dark:text-white/20;
+
+    /* Increased visibility for Dark Mode to 20% white */
+    color: rgba(15, 23, 42, 0.08);
+    /* Light Mode */
+
+    :global(.dark) & {
+        color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+.grid {
+    @apply grid md:grid-cols-2 gap-8 md:gap-12 relative z-10;
+}
+
+/* --- Liquid Glass Card --- */
+.card {
+    @apply p-8 md:p-16 lg:p-20 rounded-[2.5rem] md:rounded-[4rem] transition-all shadow-2xl;
+    @apply flex flex-col justify-between h-full min-h-[350px] md:min-h-[450px] border;
+
+    background-color: rgba(3, 7, 18, 0.45);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-color: rgba(255, 255, 255, 0.08);
+
+    /* --- STAGGER ANIMATION --- */
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.8s ease,
+        background-color 0.5s ease,
+        border-color 0.5s ease;
+    transition-delay: calc(var(--index) * 0.15s);
+    will-change: transform, opacity;
+
+    /* Light Mode Override */
+    :global(html:not(.dark)) & {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-color: rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(20px) saturate(120%);
+    }
+}
+
+:global(.active) .card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    @apply border-brand-500/40 -translate-y-2;
+}
+
+.iconBox {
+    @apply w-16 h-16 md:w-24 md:h-24 bg-brand-600 rounded-2xl md:rounded-[2.5rem];
+    @apply flex items-center justify-center text-white text-3xl md:text-5xl font-black;
+    @apply shadow-2xl shadow-brand-600/30 transition-transform;
+}
+
+.card:hover .iconBox {
+    @apply scale-110;
+}
+
+.contentWrapper {
+    @apply space-y-8;
+}
+
+.textGroup {
+    @apply space-y-4 md:space-y-6;
+}
+
+.cardTitle {
+    @apply text-3xl md:text-4xl lg:text-5xl font-black leading-tight transition-colors;
+    @apply text-slate-900;
+    /* Light mode default */
+
+    :global(.dark) & {
+        @apply text-white;
+    }
+}
+
+.card:hover .cardTitle {
+    @apply text-brand-600 dark:text-brand-500;
+}
+
+.subtitle {
+    @apply text-lg md:text-2xl font-bold;
+    @apply text-slate-600;
+
+    :global(.dark) & {
+        @apply text-slate-400;
+    }
+}
+
+.footer {
+    @apply flex justify-between items-end border-t mt-12 pt-6;
+    @apply text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] opacity-40;
+    @apply text-slate-900 border-slate-200;
+
+    :global(.dark) & {
+        @apply text-white border-white/10;
+    }
+}
