@@ -1,5 +1,9 @@
 @reference "../../../index.css";
 
+:global(.dark) .footerContainer {
+    @apply text-white/60 hover:text-white/40 transition-colors;
+}
+
 .footerContainer {
     /* Layout & Spacing */
     @apply pt-20 pb-10 text-center;
