@@ -1,0 +1,67 @@
+@reference "../../../index.css";
+
+:global(.dark) .title {
+    @apply text-white hover:text-white/40 transition-colors;
+}
+
+.section {
+    @apply pb-10 pt-10 md:pt-20;
+}
+
+.container {
+    @apply text-center space-y-16 lg:space-y-32 max-w-5xl mx-auto;
+}
+
+/* Heading Area */
+.headingWrapper {
+    @apply space-y-6;
+}
+
+.title {
+    @apply font-display text-5xl sm:text-7xl md:text-[7vw] font-black leading-[0.85] tracking-tighter uppercase;
+    @apply text-slate-900 dark:text-white;
+}
+
+.highlight {
+    @apply gradient-text;
+}
+
+/* Interaction Area */
+.interactionWrapper {
+    @apply space-y-12 lg:space-y-20;
+
+}
+
+/* Primary Group links */
+.primaryGroup {
+    @apply flex flex-col gap-4;
+}
+
+.primaryLink {
+    @apply text-xl sm:text-2xl md:text-[1.5vw] font-display font-black block tracking-tighter leading-none break-all px-4;
+    @apply text-slate-700 dark:text-white transition-all;
+    @apply hover:text-brand-600 dark:hover:text-brand-500;
+}
+
+/* Secondary links Container */
+.secondaryGroup {
+    @apply flex flex-wrap justify-center items-center gap-8 md:gap-16 font-black;
+    @apply text-[9px] md:text-[10px] tracking-[0.3em] uppercase px-6;
+}
+
+/* Individual Secondary Link */
+.secondaryLink {
+    @apply transition-all text-slate-900/40;
+
+    /* Improve visibility in Dark Mode */
+    :global(.dark) & {
+        @apply text-white/50;
+    }
+
+    /* Hover states */
+    @apply hover:text-brand-600 hover:opacity-100;
+
+    :global(.dark) &:hover {
+        @apply text-brand-500 opacity-100;
+    }
+}

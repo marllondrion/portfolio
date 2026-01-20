@@ -1,0 +1,103 @@
+@reference "../../../index.css";
+
+.gridContainer {
+    @apply grid lg:grid-cols-2 gap-16 lg:gap-32 items-start;
+}
+
+.contentCol {
+    @apply space-y-8 md:space-y-12;
+}
+
+.titleArea {
+    @apply space-y-4;
+}
+
+.title {
+    @apply font-display text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9];
+    @apply text-slate-900;
+
+    :global(.dark) & {
+        @apply text-white;
+    }
+}
+
+.accentBar {
+    @apply w-16 md:w-24 h-1 md:h-2 bg-brand-600 rounded-full;
+}
+
+.description {
+    @apply text-xl md:text-2xl leading-relaxed font-medium;
+    @apply text-slate-600 dark:text-slate-400;
+}
+
+/* --- Left List Glass Card --- */
+.leftCard {
+    @apply p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-xl border;
+
+    /* Applying your Liquid Glass standard */
+    background-color: rgba(3, 7, 18, 0.45);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-color: rgba(255, 255, 255, 0.08);
+
+    :global(html:not(.dark)) & {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-color: rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(20px) saturate(120%);
+    }
+}
+
+.listTitle {
+    @apply font-black text-brand-500 uppercase text-[10px] tracking-[0.4em] mb-6 md:mb-10 flex items-center gap-4;
+}
+
+.listTitleBar {
+    @apply w-8 md:w-12 h-[2px] bg-brand-500;
+}
+
+.listItem {
+    @apply flex gap-4 items-start p-4 rounded-2xl border transition-all;
+    @apply bg-slate-200/50 border-slate-200 text-slate-900;
+
+    :global(.dark) & {
+        @apply bg-white/3 border-white/5 text-white;
+    }
+}
+
+.listIndex {
+    @apply w-6 h-6 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 font-black text-[10px];
+}
+
+.leftCardList {
+    @apply grid gap-4;
+}
+
+.leftCardText {
+    @apply text-sm md:text-lg font-bold opacity-80;
+}
+
+/* --- Right Side Column --- */
+.rightCol {
+    @apply grid gap-6 md:gap-8 lg:mt-16;
+}
+
+.rightListTitle {
+    @apply font-black text-brand-500 uppercase text-[10px] tracking-[0.4em] lg:text-right lg:pr-12;
+}
+
+.rightCard {
+    @apply p-6 md:p-10 rounded-2xl md:rounded-[3rem] border transition-all shadow-lg;
+    @apply bg-slate-200/50 border-slate-200 hover:border-brand-500;
+
+    :global(.dark) & {
+        @apply bg-white/4 border-white/5 hover:border-brand-500;
+    }
+}
+
+.rightCardText {
+    @apply font-black text-lg md:text-xl transition-colors leading-tight;
+}
+
+.rightCard:hover .rightCardText {
+    @apply text-brand-600 dark:text-brand-500;
+}

@@ -55,11 +55,9 @@ export const RevealSection: React.FC<RevealSectionProps> = ({
 
             <div
                 ref={ref}
-                className={`
-          w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 
+                className={`w-full max-w-[1440px] h-full min-h-full mx-auto px-6 md:px-12 lg:px-16 
           reveal ${isActive ? 'active' : ''} 
           ${innerClassName} 
-          relative z-10
         `}
             >
                 {children}

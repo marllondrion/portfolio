@@ -1,0 +1,125 @@
+@reference "../../../index.css";
+
+.grid {
+    @apply grid lg:grid-cols-2 gap-12 lg:gap-20 items-center;
+}
+
+/* --- Left Column --- */
+.contentArea {
+    @apply space-y-10 md:space-y-12 text-center lg:text-left;
+}
+
+.badge {
+    @apply inline-flex items-center gap-3 px-4 py-1.5 md:px-6 md:py-2 bg-brand-600/10 border border-brand-600/20 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-brand-500;
+}
+
+.badgeDot {
+    @apply w-1.5 h-1.5 md:w-2 md:h-2 bg-brand-500 rounded-full animate-ping;
+}
+
+.nameTitle {
+    @apply font-display text-5xl sm:text-7xl md:text-8xl xl:text-[95px] font-black leading-[0.9] tracking-tight text-slate-600 dark:text-white;
+
+    :global(.dark) & {
+        @apply text-white;
+    }
+}
+
+.description {
+    @apply text-lg md:text-2xl dark:text-slate-400 text-slate-600 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed;
+}
+
+.ctaWrapper {
+    @apply flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6 pt-4;
+}
+
+.btnPrimary {
+    @apply bg-brand-600 text-white px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-[2rem];
+    @apply font-black text-base md:text-lg shadow-2xl shadow-brand-600/40;
+    @apply hover:scale-105 active:scale-95 transition-all duration-300;
+}
+
+.btnSecondary {
+    @apply px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-[2rem];
+    @apply font-black text-base md:text-lg border-2 transition-all duration-300;
+    @apply flex items-center justify-center;
+
+    /* Light Mode: Soft slate glass */
+    background-color: rgba(241, 245, 249, 0.5);
+    border-color: theme('colors.slate.200');
+    color: theme('colors.slate.900');
+    backdrop-filter: blur(8px);
+
+    /* Dark Mode: Deep liquid glass */
+    :global(.dark) & {
+        background-color: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.08);
+        color: theme('colors.white');
+    }
+}
+
+.btnSecondary:hover {
+    @apply scale-105;
+
+    /* Hover state: increase brightness and blur */
+    background-color: rgba(241, 245, 249, 0.8);
+    border-color: theme('colors.slate.300');
+
+    :global(.dark) & {
+        background-color: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+}
+
+.btnSecondary:active {
+    @apply scale-95;
+}
+
+/* --- Right Column (The Visual) --- */
+.visualWrapper {
+    @apply flex justify-center lg:justify-end relative mt-10 lg:mt-0;
+}
+
+.auraGlow {
+    @apply absolute inset-0 bg-brand-600/10 md:bg-brand-600/20 blur-[100px] md:blur-[180px] rounded-full transition-all duration-1000;
+}
+
+.visualWrapper:hover .auraGlow {
+    @apply bg-brand-600/30;
+}
+
+.maskContainer {
+    @apply relative z-10 w-64 h-64 sm:w-80 sm:h-80;
+    @apply md:w-[450px] md:h-[450px] xl:w-[550px] xl:h-[550px];
+    @apply rounded-[3rem] md:rounded-[6rem];
+    @apply border-8 md:border-16 dark:border-white/10 border-white/30;
+    @apply overflow-hidden shadow-2xl transition-all duration-1000 bg-slate-900 flex items-center justify-center;
+
+    /* Initial state: lg:rotate-2 */
+    transform: rotate(2deg);
+}
+
+.visualWrapper:hover .maskContainer {
+    transform: rotate(0deg);
+}
+
+.maskInner {
+    @apply relative w-full h-full p-4 md:p-8 flex flex-col justify-center overflow-hidden;
+}
+
+.maskTitle {
+    @apply mb-4 text-xs md:text-sm font-black uppercase tracking-widest text-slate-500/50 self-center;
+}
+
+.maskText {
+    @apply font-mono text-[7px] md:text-[9px] leading-[8px] md:leading-[10px] font-black tracking-tighter bg-cover bg-center bg-no-repeat grayscale select-none h-full w-full text-justify break-all transition-all duration-700;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.visualWrapper:hover .maskText {
+    @apply grayscale-0;
+}

@@ -7,6 +7,32 @@
     --color-brand-600: #1a27ff;
 }
 
+/* By keeping these as @utility, they work with @apply in your modules.
+  They also automatically work as global .glass-card classes in your HTML.
+*/
+@utility glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    @variant dark {
+        background: rgba(15, 23, 42, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
+
+@utility gradient-text {
+    background: linear-gradient(135deg, #6366f1 10%, #a855f7 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@utility grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+/* This line tells Tailwind how to handle the .dark class in the HTML tag */
 @variant dark (&:where(.dark, .dark *));
 
 /* --- RESET & SCROLLBAR --- */
@@ -25,13 +51,19 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    /* Added default dark background since your default is dark */
+    @apply bg-slate-950 text-white;
+}
+
+/* When light mode is active, override body */
+:root:not(.dark) body {
+    @apply bg-slate-50 text-slate-900;
 }
 
 /* --- LAYOUT ENGINE (SCROLL SNAP) --- */
 .snap-container {
     height: 100vh;
     overflow-y: auto;
-    /* 'proximity' allows scrolling to the footer without getting stuck at the top. */
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -48,30 +80,6 @@ body {
     position: relative;
     overflow: hidden;
     padding: 120px 0;
-    /* Space for the Navbar */
-}
-
-/* --- VISUAL COMPONENTS --- */
-.glass-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.dark .glass-card {
-    background: rgba(15, 23, 42, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.gradient-text {
-    background: linear-gradient(135deg, #6366f1 10%, #a855f7 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.grid-pattern {
-    background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0);
-    background-size: 40px 40px;
 }
 
 /* --- ANIMATIONS --- */
@@ -108,10 +116,8 @@ body {
     }
 }
 
-/* --- RESPONSIVENESS (MOBILE & TABLET) --- */
+/* --- RESPONSIVENESS --- */
 @media (max-width: 1024px) {
-
-    /* Disable Snap on Mobile to avoid scroll bugs */
     .snap-container {
         scroll-snap-type: none;
         height: auto;
@@ -124,7 +130,6 @@ body {
         scroll-snap-align: none;
         padding: 80px 20px;
         display: block;
-        /* Content flows naturally downwards */
     }
 
     .reveal {
@@ -132,7 +137,6 @@ body {
         transition-duration: 0.5s;
     }
 
-    /* Ensures that the background aura does not cause horizontal scrolling */
     .bg-aura {
         width: 100vw;
         height: 100vw;
@@ -140,7 +144,6 @@ body {
     }
 }
 
-/* Adjustment for small screens */
 @media (max-height: 700px) {
     .snap-container {
         scroll-snap-type: none;

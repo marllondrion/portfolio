@@ -1,0 +1,157 @@
+@reference "../../../index.css";
+
+/* Ensure mobile links turn white/active when dark mode is on */
+:global(.dark) .mobileMenuLinks a {
+    @apply text-white/60 hover:text-white transition-colors;
+}
+
+:global(.dark) .logoText {
+    @apply text-white;
+}
+
+:global(.dark) .navLink {
+    @apply text-white/60 hover:text-white;
+}
+
+:global(.dark) .langBtn {
+    @apply text-white/60 hover:text-white;
+}
+
+:global(html:not(.dark)) .langBtn {
+    @apply text-slate-900/60 hover:text-slate-900;
+}
+
+:global(.dark) .burgerLine {
+    background-color: theme('colors.white');
+}
+
+:global(.dark) .hamburger:hover .burgerLine {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.navWrapper {
+    @apply fixed top-0 w-full z-50 p-4 md:p-6 pointer-events-none;
+}
+
+.navLink {
+    @apply hover:text-brand-500 dark:hover:text-brand-500 hover:opacity-100 transition-all py-2;
+}
+
+/* Brand/Logo Section */
+.logoGroup {
+    @apply flex items-center gap-3 md:gap-4 cursor-pointer;
+}
+
+.logoText {
+    @apply font-display font-black text-base md:text-xl tracking-tighter uppercase;
+    @apply dark:text-white text-slate-900;
+}
+
+.navContainer,
+.mobileMenuOverlay {
+    @apply shadow-2xl pointer-events-auto border transition-all duration-500;
+
+    /* --- LIQUID GLASS (DEEP DARK) --- */
+    background-color: rgba(3, 7, 18, 0.45);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-color: rgba(255, 255, 255, 0.08);
+
+    /* Light Mode Override */
+    :global(html:not(.dark)) & {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-color: rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(20px) saturate(120%);
+    }
+}
+
+.navContainer {
+    @apply max-w-[1440px] mx-auto rounded-[1.5rem] md:rounded-[2rem];
+    @apply px-6 md:px-8 h-16 md:h-20 flex items-center justify-between;
+}
+
+/* Mobile Menu Overlay Specifics */
+.mobileMenuOverlay {
+    @apply lg:hidden absolute top-24 left-4 right-4 rounded-2xl p-6;
+    @apply transition-all duration-300 transform;
+    /* Ensure the mobile menu has a slightly higher z-index to stay above aura effects */
+    z-index: 100;
+}
+
+.mobileMenuLinks {
+    @apply flex flex-col gap-6 text-[10px] font-black uppercase tracking-[0.4em];
+    @apply dark:text-white/60 text-slate-900/60;
+}
+
+/* Hamburger UI Lines - ensuring they are crisp on the glass */
+.burgerLine {
+    @apply w-6 h-0.5 dark:bg-white bg-slate-900 transition-all duration-300;
+}
+
+/* Rest of your existing styles (logoGroup, logoIcon, actions, etc.) */
+.logoGroup {
+    @apply flex items-center gap-3 md:gap-4 cursor-pointer;
+}
+
+.logoIcon {
+    @apply w-10 h-10 md:w-12 md:h-12 bg-brand-600 rounded-xl md:rounded-2xl;
+    @apply flex items-center justify-center font-display text-white text-xl md:text-2xl;
+    @apply font-black group-hover:rotate-12 transition-transform shadow-xl shadow-brand-600/20;
+}
+
+.logoText {
+    @apply font-display font-black text-base md:text-xl tracking-tighter uppercase;
+    @apply dark:text-white text-slate-900;
+}
+
+/* Desktop Navigation */
+.desktopMenu {
+    @apply hidden lg:flex gap-8 xl:gap-10 text-[10px] font-black uppercase tracking-[0.4em];
+    @apply dark:text-white/40 text-slate-900/40;
+}
+
+.actions {
+    @apply flex items-center gap-4 md:gap-6 border-l;
+    @apply dark:border-white/5 border-slate-200 pl-4 md:pl-8;
+}
+
+.langBtn {
+    @apply font-black text-[10px] uppercase hover:text-brand-500;
+    @apply dark:hover:text-brand-500 transition-all py-2 dark:text-white text-slate-900;
+}
+
+.themeBtn {
+    @apply w-8 h-8 md:w-10 md:h-10 bg-slate-200;
+    @apply dark:bg-white/5 hover:bg-brand-600/10;
+    @apply rounded-lg md:rounded-xl flex items-center justify-center transition-all;
+    @apply border border-transparent dark:border-white/5;
+}
+
+.hamburger {
+    @apply lg:hidden w-8 h-8 flex flex-col justify-center items-center gap-1.5;
+}
+
+/* Actions Area */
+.actions {
+    @apply flex items-center gap-4 md:gap-6 border-l dark:border-white/5 border-slate-200 pl-4 md:pl-8;
+}
+
+.langBtn {
+    @apply font-black text-[10px] uppercase hover:text-brand-500 dark:hover:text-brand-500 hover:opacity-100 transition-all py-2;
+    @apply transition-colors dark:text-white text-slate-900;
+}
+
+.themeBtn {
+    @apply w-8 h-8 md:w-10 md:h-10 bg-slate-200 dark:bg-white/5;
+    @apply hover:bg-brand-600/10 rounded-lg md:rounded-xl flex items-center justify-center;
+    @apply transition-all border border-transparent dark:border-white/5;
+}
+
+/* Ensure the Logo and Links have high contrast on the dark glass */
+.logoText,
+.langBtn,
+.navLink,
+.hamburger,
+.themeBtn {
+    @apply transition-colors duration-300;
+}
