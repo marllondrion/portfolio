@@ -1,0 +1,118 @@
+@reference "../../../index.css";
+
+.sectionWrapper {
+    @apply p-8 md:p-20 lg:p-24 relative overflow-hidden mx-auto max-w-[1600px] md:rounded-[4rem] border-y;
+    @apply transition-colors duration-500;
+
+    /* Light Mode */
+    background-color: #f8fafc;
+    /* slate-50 */
+    border-color: theme('colors.slate.200');
+
+    /* Dark Mode Override */
+    :global(.dark) & {
+        background-color: #0a0f1a;
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Hardware accelerated background glow */
+.bgGlow {
+    @apply absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full pointer-events-none;
+    background-color: rgba(51, 76, 255, 0.1);
+
+    /* brand-500/10 */
+    filter: blur(120px);
+    transform: translateZ(0);
+}
+
+.contentContainer {
+    @apply max-w-[1200px] mx-auto relative z-10;
+}
+
+.header {
+    @apply flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20;
+}
+
+.title {
+    @apply font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9];
+    @apply text-slate-900;
+
+    :global(.dark) & {
+        @apply text-white;
+    }
+}
+
+.titleWord {
+    @apply block;
+}
+
+.titleHighlight {
+    @apply text-brand-500 block;
+}
+
+.subtitle {
+    @apply max-w-xs font-medium uppercase tracking-widest text-[10px];
+    @apply text-slate-500;
+
+    :global(.dark) & {
+        @apply text-slate-400;
+    }
+}
+
+/* Grid Layout */
+.grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16;
+}
+
+.categoryGroup {
+    @apply flex flex-col gap-8 transition-all duration-700 opacity-0 translate-y-8;
+}
+
+/* Staggered Reveal Logic */
+:global(.active) .categoryGroup {
+    @apply opacity-100 translate-y-0;
+}
+
+.categoryHeader {
+    @apply flex items-center gap-3;
+}
+
+.categoryAccent {
+    @apply h-[2px] w-8 bg-brand-500;
+}
+
+.categoryName {
+    @apply font-black uppercase text-[12px] tracking-[0.2em];
+    @apply text-slate-800;
+
+    :global(.dark) & {
+        @apply text-slate-200;
+    }
+}
+
+/* Skill Tags Logic */
+.skillList {
+    @apply flex flex-wrap gap-2;
+}
+
+.skillTag {
+    @apply px-4 py-2 text-sm font-bold rounded-lg transition-all duration-300 cursor-default shadow-sm border;
+
+    /* Light Mode */
+    background-color: #ffffff;
+    border-color: theme('colors.slate.200');
+    color: theme('colors.slate.700');
+
+    /* Dark Mode */
+    :global(.dark) & {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: theme('colors.slate.300');
+    }
+}
+
+.skillTag:hover {
+    @apply border-brand-500 text-brand-500 -translate-y-1;
+    box-shadow: 0 10px 15px -3px rgba(51, 76, 255, 0.1);
+}
