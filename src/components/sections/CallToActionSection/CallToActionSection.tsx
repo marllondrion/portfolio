@@ -21,7 +21,7 @@ export const CallToActionSection: React.FC<CallToActionProps> = ({
     subtitle,
     links = []
 }) => {
-    const contactLinks = links.filter(link => link.type === "email" || link.type === "phone");
+    const primaryLinks = links.filter(link => link.type === "email" || link.type === "phone");
     const socialLinks = links.filter(link => link.type === "social");
 
     return (
@@ -39,13 +39,12 @@ export const CallToActionSection: React.FC<CallToActionProps> = ({
                 {/* Interaction Area */}
                 <div className={styles.interactionWrapper}>
 
-                    {/* Primary Contact (Email/Phone) */}
-                    <div className={styles.contactGroup}>
-                        {contactLinks.map((link, index) => (
+                    <div className={styles.primaryGroup}>
+                        {primaryLinks.map((link, index) => (
                             <a
                                 key={index}
                                 href={link.href}
-                                className={styles.contactLink}
+                                className={styles.primaryLink}
                             >
                                 {link.label || link.href.replace('mailto:', '').replace('tel:', '')}
                             </a>

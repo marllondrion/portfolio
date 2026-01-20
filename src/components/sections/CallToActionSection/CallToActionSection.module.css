@@ -1,5 +1,9 @@
 @reference "../../../index.css";
 
+:global(.dark) .title {
+    @apply text-white hover:text-white/40 transition-colors;
+}
+
 .section {
     @apply pb-10 pt-10 md:pt-20;
 }
@@ -25,16 +29,17 @@
 /* Interaction Area */
 .interactionWrapper {
     @apply space-y-12 lg:space-y-20;
+
 }
 
-/* Primary Contact (Email/Phone) */
-.contactGroup {
+/* Primary Group links */
+.primaryGroup {
     @apply flex flex-col gap-4;
 }
 
-.contactLink {
+.primaryLink {
     @apply text-xl sm:text-2xl md:text-[1.5vw] font-display font-black block tracking-tighter leading-none break-all px-4;
-    @apply text-slate-900 dark:text-white transition-all;
+    @apply text-slate-700 dark:text-white transition-all;
     @apply hover:text-brand-600 dark:hover:text-brand-500;
 }
 
