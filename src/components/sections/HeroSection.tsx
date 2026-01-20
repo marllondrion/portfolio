@@ -75,7 +75,7 @@ export const HeroSection: React.FC<HeroProps> = ({
                     <div className="absolute inset-0 bg-brand-600/10 md:bg-brand-600/20 blur-[100px] md:blur-[180px] rounded-full group-hover:bg-brand-600/30 transition-all duration-1000"></div>
 
                     <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] xl:w-[550px] xl:h-[550px] 
-                                    rounded-[3rem] md:rounded-[6rem] border-8 md:border-[16px] dark:border-white/10 border-white 
+                                    rounded-[3rem] md:rounded-[6rem] border-8 md:border-16 dark:border-white/10 border-white 
                                     overflow-hidden shadow-2xl lg:rotate-2 group-hover:rotate-0 transition-all duration-1000 
                                     bg-slate-900 flex items-center justify-center">
 

@@ -37,7 +37,7 @@ export const SplitTextSection: React.FC<SplitTextSectionProps> = ({
                         )}
                         <div className="grid gap-4">
                             {leftList.map((item, i) => (
-                                <div key={i} className="flex gap-4 items-start p-4 bg-slate-200/50 dark:bg-white/[0.03] rounded-2xl border dark:border-white/5 border-slate-200">
+                                <div key={i} className="flex gap-4 items-start p-4 bg-slate-200/50 dark:bg-white/3 rounded-2xl border dark:border-white/5 border-slate-200">
                                     <span className="w-6 h-6 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 font-black text-[10px]">
                                         {i + 1 < 10 ? `0${i + 1}` : i + 1}
                                     </span>
@@ -56,7 +56,7 @@ export const SplitTextSection: React.FC<SplitTextSectionProps> = ({
                     </h4>
                 )}
                 {rightList.map((item, i) => (
-                    <div key={i} className="p-6 md:p-10 bg-slate-200/50 dark:bg-white/[0.04] rounded-2xl md:rounded-[3rem] border dark:border-white/5 border-slate-200 hover:border-brand-500 transition-all group shadow-lg">
+                    <div key={i} className="p-6 md:p-10 bg-slate-200/50 dark:bg-white/4 rounded-2xl md:rounded-[3rem] border dark:border-white/5 border-slate-200 hover:border-brand-500 transition-all group shadow-lg">
                         <p className="font-black text-lg md:text-2xl group-hover:text-brand-500 transition-colors leading-tight text-slate-900 dark:text-white">
                             {item}
                         </p>
