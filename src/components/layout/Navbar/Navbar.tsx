@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
                 {/* Logo/Brand */}
                 <div className={styles.logoGroup}>
                     <div className={styles.logoIcon}>M</div>
-                    <span className={styles.logoText}>marllon.drion.dev</span>
+                    <span className={styles.logoText}>Marllon Drion</span>
                 </div>
 
                 {/* Desktop Navigation */}
