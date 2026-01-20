@@ -9,31 +9,34 @@ export const content = {
             contact: "Contact"
         },
         hero: {
-            greeting: "Senior Software Engineer",
+            greeting: "Senior Full Stack Software Engineer",
             name: "Marllon Drion",
-            title: "Building Scalable Digital Ecosystems",
-            subtitle: "Senior full stack engineer with 10+ years across C#, Java, Ruby, and Flutter, delivering high‑performance e‑commerce and enterprise systems.",
+            title: "Architecting Scalable Enterprise Solutions",
+            subtitle: "14+ years architecting mission-critical software across energy infrastructure, omnichannel e-commerce, and enterprise systems. Specialised in system integration at scale, regulatory compliance, DevOps automation, and technical leadership.",
             cta_primary: "Explore Journey",
             cta_secondary: "Get in Touch",
             bg_image_title: "Core Expertise"
         },
         about: {
             title: "About Me",
-            description: "Senior Software Engineer and Full Stack Developer based in Brisbane, passionate about building scalable, high‑performance solutions. With 10+ years of experience across e‑commerce, energy, and enterprise systems, I specialise in integrating complex platforms, modernising legacy stacks, and improving deployment efficiency using tools like Ruby on Rails, .NET, Java, Flutter, and cloud‑native services.",
+            description: "Senior Full Stack Software Engineer and Systems Architect based in Brisbane with 14+ years of progressive experience across Australia and Brazil. Specialised in designing scalable, mission-critical solutions spanning e-commerce infrastructure, renewable energy systems, and enterprise platforms. Expert in third-party system integration, regulatory compliance (PCI DSS, energy sector standards), DevOps automation, and technical team leadership.",
             achievements: "Key Achievements",
-            objectives: "Future Objectives",
+            objectives: "Strategic Vision",
             achievements_list: [
-                "Reduced development cycle by 50% by migrating native mobile apps to Flutter for cross‑platform delivery.",
-                "Boosted optimised app deployment time by 85% for 40+ clients using CI/CD and automated GitHub Actions workflows.",
-                "Integrated 10+ POS systems, 10+ payment gateways, and 10+ third‑party services into e‑commerce platforms, unifying physical and online retail.",
-                "Improved monitoring efficiency by 30% for energy grid management systems in the electricity distribution sector.",
-                "Increased software performance by 25% on legacy energy-sector systems through optimisation and refactoring."
+                "Architected omnichannel e-commerce platform integrating 25+ third-party systems (POS, payment gateways, couriers, marketplaces) serving 2,000+ independent retailers across Australia and New Zealand.",
+                "Reduced mobile development cycle by 50% through strategic migration from native iOS/Android to unified Flutter/Dart framework, enabling single codebase across platforms.",
+                "Optimised deployment efficiency by 85% for 40+ enterprise clients via comprehensive GitHub Actions CI/CD pipeline automation and hotfix deployment strategies.",
+                "Led PCI DSS compliance transformation across payment processing infrastructure, implementing secure data handling, encryption protocols, and audit frameworks supporting 2,000+ retailers.",
+                "Designed renewable energy grid integration systems managing on-grid solar/wind networks for Brazilian utilities serving 18 million customers across 774 municipalities.",
+                "Delivered 25% software performance improvements on legacy energy-sector systems through optimisation, profiling, and algorithmic refactoring.",
+                "Aggregated and unified recruitment data from 30+ diverse websites into centralised HR system, reducing time-to-hire and improving candidate visibility."
             ],
             objectives_list: [
-                "Architect globally distributed microservices and event‑driven architectures on AWS and Azure.",
-                "Deepen expertise in cloud‑native AI integrations across web and mobile products.",
-                "Mentor and grow high‑performance engineering teams, raising standards in code quality and delivery.",
-                "Drive end‑to‑end modernisation of legacy enterprise platforms using proven design and domain‑driven practices."
+                "Obtain Azure certifications (AZ-900, AZ-204) and deepen cloud architecture expertise to strengthen enterprise cloud infrastructure design capabilities.",
+                "Advance toward Software Architect certification (TOGAF or equivalent) and establish thought leadership in system design and enterprise architecture.",
+                "Lead architectural design of globally distributed microservices and event-driven architectures on AWS and Azure, specialising in system resilience and observability.",
+                "Deepen expertise in cloud-native AI integrations and real-time data processing systems for next-generation web and mobile products.",
+                "Establish technical leadership as software architect and team mentor, elevating code quality standards, architectural rigour, and delivery excellence across engineering organisations."
             ]
         },
         experience: {
@@ -47,15 +50,18 @@ export const content = {
                     period: "12/2021 - 12/2025",
                     location: "Hobart, Australia",
                     bullets: [
-                        "Designed and maintained e‑commerce platforms using Ruby on Rails and MongoDB, with RESTful APIs, webhooks, and Vue.js frontends.",
-                        "Conducted code reviews, enforced best practices, and managed deployments of production applications.",
-                        "Integrated 10+ POS systems and 10+ payment gateways, including loyalty and gift card programs, unifying physical and online stores.",
-                        "Connected 5+ courier services (Uber Direct, DoorDash, Drive Yello) and major marketplaces (DoorDash, Uber Eats, Menulog) plus 10+ other third‑party systems to enhance business functionality.",
-                        "Led PCI DSS compliance across payment features by implementing secure data handling, encryption, and secure payment flows.",
-                        "Reduced mobile development cycle by 50% by migrating native apps to Flutter and Dart for a single cross‑platform codebase.",
-                        "Cut mobile deployment lead time by 70% via automated PR workflows and improved CI, and improved optimised app deployment time by 85% for 40+ clients using CI/CD and automated hotfix delivery."
+                        "Led end-to-end platform development for B2B2C e-commerce SaaS serving 2,000+ independent grocery and liquor retailers across Australia and New Zealand, managing omnichannel retail infrastructure and quick-commerce operations.",
+                        "Architected and delivered 25+ third-party integrations spanning 10+ POS systems, 10+ payment gateways (loyalty, gift cards), 5+ courier services (Uber Direct, DoorDash, Drive Yello), and major marketplaces (DoorDash, Uber Eats, Menulog), unifying physical and online retail operations.",
+                        "Designed RESTful APIs and webhook-based event architecture enabling asynchronous processing and decoupled third-party system communication; implemented integration error handling, retry logic, and data transformation layers.",
+                        "Engineered backend services using Ruby on Rails with MongoDB for high-throughput order management and real-time inventory synchronisation across 2,000+ retailer deployments.",
+                        "Developed Vue.js frontend dashboards enabling store managers to configure product catalogues, manage marketplace presence, monitor orders, and track delivery in real-time.",
+                        "Led PCI DSS compliance implementation across all payment-related features; architected secure payment flows, data encryption, tokenisation, and audit frameworks enabling 2,000+ retailers to process payments securely.",
+                        "Championed mobile strategy: migrated platform-specific native iOS/Android codebase to unified Flutter/Dart framework, reducing code duplication by 50% and accelerating feature delivery.",
+                        "Designed comprehensive GitHub Actions CI/CD pipeline automating pull-request checks, testing, multi-stage deployments, and hotfix procedures; reduced mobile deployment lead time by 70% and optimised app deployment for 40+ clients by 85%.",
+                        "Conducted technical design reviews and code audits; mentored junior developers on architectural patterns, system design, and integration best practices.",
+                        "Managed production incident response and deployed hotfixes to maintain platform stability and service continuity across distributed retailer deployments."
                     ],
-                    tech: ["Ruby on Rails", "Flutter", "MongoDB", "Vue.js", "GitHub Actions", "REST APIs", "Webhooks", "PCI DSS"]
+                    tech: ["Ruby on Rails", "Flutter/Dart", "MongoDB", "Vue.js", "GitHub Actions", "RESTful APIs", "Webhooks", "PCI DSS", "AWS (EC2, RDS, S3, Lambda)", "Redis", "Domain-Driven Design"]
                 },
                 {
                     company: "Syntagium Consulting",
@@ -64,97 +70,110 @@ export const content = {
                     period: "10/2021 - 01/2022",
                     location: "Sydney, Australia",
                     bullets: [
-                        "Completed a 3‑month enterprise project ahead of schedule, delivering production‑ready features before contract end.",
-                        "Delivered enterprise web solutions using C# ASP.NET Core 3.1 with MVC architecture.",
-                        "Modelled complex domains using Domain‑Driven Design principles to align software with business workflows.",
-                        "Designed and developed RESTful APIs to meet client integration and reporting requirements.",
-                        "Collaborated in Agile sprints, contributing to planning, estimation, and continuous delivery of high‑quality increments."
+                        "Delivered enterprise application days ahead of schedule on 3-month contract, exceeding client expectations and enabling earlier go-live.",
+                        "Architected layered enterprise application using C# ASP.NET Core 3.1 with MVC pattern, ensuring clear separation between presentation, business logic, and data access layers.",
+                        "Applied Domain-Driven Design principles to model complex business domains; designed aggregate roots, bounded contexts, and ubiquitous language reflecting client organisational structure.",
+                        "Designed and implemented RESTful APIs with semantic HTTP methods, proper status codes, error handling, and validation; ensured consistency with enterprise integration patterns.",
+                        "Implemented Entity Framework Core ORM with query optimisation, lazy loading, and selective data loading strategies for performance-critical operations.",
+                        "Achieved >80% code coverage through comprehensive unit and integration testing using xUnit; enforced architectural standards through code review and technical governance.",
+                        "Collaborated in Agile sprints, contributing to planning, estimation, and continuous delivery; coordinated with product stakeholders to clarify requirements and validate system behaviour."
                     ],
-                    tech: ["C#", "ASP.NET Core", "MVC", "DDD", "REST APIs", "Agile"]
+                    tech: ["C#", "ASP.NET Core 3.1", "Entity Framework Core", "DDD", "xUnit", "REST APIs", "SQL Server", "Agile/Scrum"]
                 },
                 {
                     company: "Staffing Group",
+                    website: "https://staffing.com.au",
                     role: "Software Engineer",
                     period: "04/2021 - 06/2021",
                     location: "Melbourne, Australia",
                     bullets: [
-                        "Developed HR management and recruitment systems using .NET, C#, and AngularJS.",
-                        "Integrated data from 30+ external websites to streamline candidate and job interfaces.",
-                        "Improved system reliability through extensive testing, debugging, and performance tuning."
+                        "Developed HR management and recruitment systems aggregating candidate data from 30+ diverse websites and recruitment platforms into unified candidate management interface.",
+                        "Designed .NET/C# backend services consuming and normalising data from heterogeneous sources (job boards, applicant tracking systems, social media), implementing deduplication and entity resolution logic.",
+                        "Built AngularJS frontend enabling HR managers to search, filter, and manage aggregated candidate pools; implemented responsive user interfaces and form validation.",
+                        "Implemented comprehensive data validation and error handling ensuring data quality and consistency across 30+ integration sources; performed systematic root cause analysis on integration failures.",
+                        "Optimised query performance for large candidate datasets through database indexing strategies and caching mechanisms; improved system reliability through extensive testing and debugging."
                     ],
-                    tech: [".NET", "C#", "AngularJS", "Testing"]
+                    tech: [".NET", "C#", "AngularJS", "SQL Server", "Data Integration", "Testing/Debugging"]
                 },
                 {
                     company: "Axxiom - Technology and Innovation",
-                    role: "Programming Analyst",
+                    website: "https://www.axxiom.com.br",
+                    role: "Programming Analyst | Researcher",
                     period: "12/2020 - 04/2021",
                     location: "Belo Horizonte, Brazil",
                     bullets: [
-                        "Contributed to systems managing on‑grid renewable energy networks for electricity distribution companies.",
-                        "Increased monitoring efficiency by 30% by enhancing core monitoring and reporting functionalities.",
-                        "Enabled better management of renewable energy integration into existing power grids.",
-                        "Designed backend services using .NET technologies, ensuring regulatory compliance and robust documentation.",
-                        "Provided ongoing support and maintenance for deployed solutions in production environments."
+                        "Contributed to mission-critical renewable energy grid integration systems managing on-grid solar/wind networks for Brazilian electricity distribution sector (serving 18 million customers).",
+                        "Designed .NET backend services monitoring renewable energy generation, managing power distribution, and optimising grid stability; implemented energy flow calculations and grid balancing algorithms.",
+                        "Integrated with SCADA systems and grid monitoring infrastructure; handled real-time energy data streams and implemented dashboard interfaces displaying generation metrics and renewable energy contribution.",
+                        "Increased monitoring efficiency by 30% through enhanced system functionalities, real-time analytics, and predictive alerting capabilities; enabled grid operators to detect anomalies faster and respond to instability.",
+                        "Ensured compliance with Brazilian energy sector regulations (ANEEL standards, grid operator requirements); created technical documentation and provided ongoing support for deployed solutions."
                     ],
-                    tech: [".NET", "SQL Server", "Energy & Utilities"]
+                    tech: [".NET", "C#", "SQL Server", "SCADA Integration", "Real-time Data Processing", "Energy Sector Compliance", "MPS.Br Level C (CMMI Level 2)"]
                 },
                 {
                     company: "Axxiom - Technology and Innovation",
-                    role: "Software Developer Analyst",
+                    website: "https://www.axxiom.com.br",
+                    role: "Software Developer Analyst | Researcher",
                     period: "04/2014 - 11/2016",
                     location: "Belo Horizonte, Brazil",
                     bullets: [
-                        "Participated in R&D projects building software for the electricity sector focused on automation and compliance.",
-                        "Designed and developed web applications using ASP.NET MVC, NHibernate, and SQL Server, as well as Java SE/EE, JSF, Hibernate, and MS SQL.",
-                        "Developed and maintained a system for managing legal processes, automating workflows and ensuring regulatory compliance.",
-                        "Implemented JSF, Spring Web Flow, AJAX, and PrimeFaces for rich, data‑driven UIs.",
-                        "Improved software performance by 25%, reducing processing time and improving user satisfaction."
+                        "Participated in R&D projects building production software for electricity sector automation and compliance; developed systems directly for CEMIG (serving 18 million customers across 774 municipalities).",
+                        "Architected full-stack web applications using ASP.NET MVC, NHibernate, and SQL Server; designed domain models, database schemas, and business logic reflecting complex energy management workflows.",
+                        "Designed and maintained legal process management system automating workflows, ensuring regulatory compliance, and implementing audit trails for enterprise client requirements.",
+                        "Implemented Java EE applications using JSF, Spring Web Flow, and Hibernate; developed PrimeFaces-based rich user interfaces with AJAX for dynamic real-time interactions.",
+                        "Led comprehensive performance optimisation initiative: identified database bottlenecks through profiling, implemented query optimisation, multi-level caching strategies, and algorithmic improvements, achieving 25% overall performance gain.",
+                        "Collaborated with business analysts, legal domain experts, and utility company operators to validate system behaviour and gather operational feedback."
                     ],
-                    tech: ["ASP.NET MVC", "NHibernate", "SQL Server", "Java", "JSF", "Spring Web Flow", "PrimeFaces"]
+                    tech: ["ASP.NET MVC", "Java EE", "JSF", "Spring Web Flow", "NHibernate", "Hibernate", "SQL Server", "PrimeFaces", "AJAX", "Performance Optimisation"]
                 },
                 {
                     company: "Flag Intelliwan",
+                    website: "https://www.flag.com.br",
                     role: ".NET C# Software Developer",
                     period: "04/2013 - 03/2014",
                     location: "Belo Horizonte, Brazil",
                     bullets: [
-                        "Developed logistics and distribution solutions for national distributors and manufacturers.",
-                        "Contributed to secure, high‑quality software delivery for an ISO 27001 certified, Microsoft Gold Partner organisation."
+                        "Developed logistics and distribution software for major Brazilian distributors and manufacturers, supporting supply chain optimisation and operational efficiency.",
+                        "Designed C# and .NET business logic implementing supply chain workflows (inventory management, order fulfilment, route optimisation, shipment tracking).",
+                        "Collaborated with logistics domain experts to validate system behaviour against real-world supply chain requirements; optimised database queries and indexing for high-transaction-volume operations."
                     ],
-                    tech: [".NET", "C#", "Logistics"]
+                    tech: [".NET Framework", "C#", "SQL Server", "Logistics Domain"]
                 },
                 {
                     company: "TSA (Automation Systems Technology)",
+                    website: "https://www.tsatec.com.br",
                     role: ".NET C# Junior Software Engineer",
                     period: "10/2012 - 04/2013",
                     location: "Belo Horizonte, Brazil",
                     bullets: [
-                        "Supported development of automation and control systems for mining, energy, oil & gas, and steel industries.",
-                        "Contributed to integrated solutions connecting industrial systems and enterprise platforms."
+                        "Supported development of automation and control systems for energy-intensive industries (mining, energy, oil & gas, steel); learned industrial automation domain and systems thinking.",
+                        "Developed C# and .NET software implementing automation logic and operational monitoring for complex industrial environments."
                     ],
-                    tech: [".NET", "C#", "Industrial Automation"]
+                    tech: [".NET Framework", "C#", "Industrial Automation"]
                 },
                 {
                     company: "TechBiz IT",
-                    role: "Software Developer and QA Tester Intern (.NET C# & Selenium IDE)",
+                    website: "https://www.techbizit.com.br",
+                    role: "Software Developer and QA Tester (.NET C# & Selenium IDE)",
                     period: "10/2011 - 10/2012",
                     location: "Nova Lima, Brazil",
                     bullets: [
-                        "Developed and tested custom software solutions for public sector and enterprise clients.",
-                        "Used Selenium IDE and .NET to improve application quality and regression coverage."
+                        "Developed and tested custom software solutions for public sector and enterprise clients; used Selenium IDE and .NET to improve application quality and regression coverage.",
+                        "Gained foundational experience in object-oriented design, relational databases, and enterprise software development practices."
                     ],
-                    tech: [".NET", "C#", "Selenium IDE", "QA"]
+                    tech: [".NET Framework", "C#", "Selenium IDE", "QA Testing"]
                 },
                 {
                     company: "Direcional Engineering",
-                    role: "Software Developer Intern (Java)",
+                    website: "https://www.direcional.com.br",
+                    role: "Software Developer (Java)",
                     period: "08/2010 - 08/2011",
                     location: "Belo Horizonte, Brazil",
                     bullets: [
-                        "Developed Java‑based applications as part of an in‑house engineering software team.",
-                        "Gained foundational experience in object‑oriented design, databases, and enterprise development."
+                        "Developed Java-based applications as part of in-house engineering software team; established foundational experience in object-oriented design, databases, and enterprise development.",
+                        "Contributed to engineering software solutions for construction and project management domain."
                     ],
-                    tech: ["Java", "SQL"]
+                    tech: ["Java", "SQL", "Object-Oriented Design"]
                 }
             ]
         },
@@ -162,24 +181,32 @@ export const content = {
             title: "Core Expertise",
             categories: [
                 {
-                    name: "Languages & Platforms",
-                    list: ["C#", "Java", "Ruby", "Dart", "TypeScript", "JavaScript", "HTML", "CSS", "Bash"]
+                    name: "Backend Architecture & Design",
+                    list: ["C#", ".NET Core/.NET Framework", "Ruby on Rails", "Java/Spring", "ASP.NET MVC", "Domain-Driven Design (DDD)", "SOLID Principles", "Clean Architecture", "Onion Architecture", "RESTful API Design", "Microservices Patterns", "System Integration Architecture"]
+                },
+                {
+                    name: "Frontend & Mobile",
+                    list: ["Vue.js", "React", "Angular/AngularJS", "Flutter/Dart", "HTML5/CSS3", "JavaScript/TypeScript", "Responsive Design", "Cross-Platform Development"]
                 },
                 {
                     name: "Data & Persistence",
-                    list: ["PostgreSQL", "MSSQL", "MySQL", "MongoDB", "Entity Framework", "NHibernate", "Data Modelling", "Data Integrity"]
+                    list: ["PostgreSQL", "Microsoft SQL Server", "MySQL", "MongoDB", "Entity Framework", "NHibernate", "Hibernate", "JPA", "Data Modelling", "Query Optimisation", "Caching Strategies"]
                 },
                 {
-                    name: "Frameworks & Libraries",
-                    list: ["ASP.NET Core/Framework", "Spring", "Rails", "React", "Vue.js", "Angular", "jQuery", "JSF", "PrimeFaces", "Flutter"]
+                    name: "Integration & APIs",
+                    list: ["Third-Party API Integration", "Webhook Architecture", "OAuth 2.0 / JWT", "API Gateway Patterns", "Multi-Source Data Aggregation", "Payment Gateway Integration", "SCADA Systems", "Event-Driven Architecture"]
                 },
                 {
                     name: "Cloud & DevOps",
-                    list: ["Terraform", "AWS (EC2, Lambda, S3, RDS, EventBridge)", "Azure (VMs, Functions, Blob, DB, Event Grid)", "GitHub Actions", "CI/CD", "Git", "DevOps"]
+                    list: ["AWS (EC2, Lambda, S3, RDS, EventBridge)", "Azure (VMs, Functions, Blob Storage, Event Grid)", "GitHub Actions", "CI/CD Pipeline Design", "Docker", "Terraform", "Infrastructure-as-Code", "Deployment Automation", "Git/GitHub"]
                 },
                 {
-                    name: "Professional Skills",
-                    list: ["Performance Optimization", "Team Collaboration", "Mentoring", "Problem Solving", "Time Management", "Leadership", "Code Review", "Technical Documentation"]
+                    name: "Security & Compliance",
+                    list: ["PCI DSS Compliance", "Secure Payment Processing", "Data Encryption", "OAuth 2.0", "Regulatory Compliance (Energy Sector)", "Security Auditing", "Secure API Design", "Compliance Frameworks", "ITIL Principles"]
+                },
+                {
+                    name: "Professional & Leadership",
+                    list: ["Systems Architecture", "Technical Leadership", "Code Review & Mentoring", "Team Collaboration", "Performance Optimisation", "Problem Solving", "Technical Documentation", "Agile/Scrum", "Cross-Functional Communication", "MPS.Br", "CMMI", "SOLID Design Principles"]
                 }
             ]
         },
@@ -213,7 +240,7 @@ export const content = {
                 { label: "marllondrion@gmail.com", type: "email", icon: "", href: "mailto:marllondrion@gmail.com" },
                 { label: "+61 0410 389 445", type: "phone", icon: "", href: "tel:+61410389445" },
                 { label: "LinkedIn", type: "social", icon: "", href: "https://linkedin.com/in/marllondrion" },
-                { label: "GitHub", type: "social", icon: "", href: "https://github.com/yourusername" }
+                { label: "GitHub", type: "social", icon: "", href: "https://github.com/marllondrion" }
             ]
         }
     },
@@ -229,29 +256,32 @@ export const content = {
         hero: {
             greeting: "Engenheiro de Software Sênior",
             name: "Marllon Drion",
-            title: "Construindo Ecossistemas Digitais Escaláveis",
-            subtitle: "Engenheiro Full Stack com mais de 10 anos de experiência em C#, Java, Ruby e Flutter, entregando soluções de alta performance para e‑commerce e sistemas corporativos.",
+            title: "Arquitetando Soluções Corporativas Escaláveis",
+            subtitle: "14+ anos arquitetando software em infraestrutura de energia, e-commerce omnichannel e sistemas corporativos. Especializado em integração de sistemas em escala, conformidade regulatória, automação DevOps e liderança técnica.",
             cta_primary: "Ver Trajetória",
             cta_secondary: "Contato",
-            bg_image_title: "Core Expertise"
+            bg_image_title: "Expertise Principal"
         },
         about: {
             title: "Sobre Mim",
-            description: "Engenheiro de Software Sênior e Desenvolvedor Full Stack, atualmente em Brisbane, focado em construir soluções escaláveis e de alta performance. Com mais de 10 anos de experiência em varejo digital, energia e sistemas corporativos, atuo na integração de plataformas complexas, modernização de legados e otimização de esteiras de deploy com Ruby on Rails, .NET, Java, Flutter e serviços em nuvem.",
+            description: "Engenheiro de Software Sênior e Arquiteto de Sistemas com 14+ anos de experiência progressiva em Brasil e Austrália. Especializado em projetar soluções escaláveis e críticas para infraestrutura de energia renovável, plataformas de e-commerce omnichannel e sistemas corporativos. Especialista em integração de sistemas terceirizados, conformidade regulatória (PCI DSS, padrões do setor energético), automação DevOps e liderança técnica de equipes.",
             achievements: "Principais Conquistas",
-            objectives: "Objetivos Futuros",
+            objectives: "Visão Estratégica",
             achievements_list: [
-                "Redução de 50% no ciclo de desenvolvimento ao migrar apps nativos para Flutter com código base único.",
-                "Aumento de 85% na eficiência de deploy para mais de 40 clientes corporativos via CI/CD e GitHub Actions.",
-                "Integração de mais de 10 sistemas de PDV, 10 gateways de pagamento e diversos serviços de terceiros em plataformas de e‑commerce.",
-                "Aumento de 30% na eficiência de monitoramento em sistemas de gestão de rede elétrica.",
-                "Melhoria de 25% na performance de sistemas legados do setor elétrico por meio de otimização e refatoração."
+                "Arquitetei plataforma de e-commerce omnichannel integrando 25+ sistemas terceirizados (PDV, gateways de pagamento, entregadores, marketplaces) servindo 2.000+ varejistas independentes na Austrália e Nova Zelândia.",
+                "Redução de 50% no ciclo de desenvolvimento mobile através de migração estratégica de iOS/Android nativo para framework unificado Flutter/Dart, possibilitando código único entre plataformas.",
+                "Otimizei eficiência de deploy em 85% para 40+ clientes corporativos via pipeline CI/CD abrangente em GitHub Actions e estratégias de hotfix deployment.",
+                "Liderei transformação de conformidade PCI DSS em infraestrutura de processamento de pagamentos, implementando data handling seguro, protocolos de criptografia e frameworks de auditoria para 2.000+ varejistas.",
+                "Projetei sistemas de integração de rede de energia renovável gerenciando redes solares/eólicas on-grid para utilidades brasileiras servindo 18 milhões de clientes em 774 municípios.",
+                "Entreguei melhorias de 25% na performance de software em sistemas legados do setor energético através de otimização, profiling e refatoração algorítmica.",
+                "Agregui e unifiquei dados de recrutamento de 30+ websites diversos em sistema centralizado de RH, reduzindo time-to-hire e melhorando visibilidade de candidatos."
             ],
             objectives_list: [
-                "Arquitetar soluções de microsserviços e eventos distribuídos globalmente em AWS e Azure.",
-                "Aprofundar a integração de IA nativa em nuvem em aplicações web e mobile.",
-                "Mentorar equipes de engenharia de alta performance, elevando padrões de qualidade e entrega.",
-                "Liderar jornadas de modernização de plataformas legadas com foco em DDD e boas práticas de arquitetura."
+                "Obter certificações Azure (AZ-900, AZ-204) e aprofundar expertise em arquitetura cloud para fortalecer capacidades de design de infraestrutura cloud corporativa.",
+                "Avançar rumo à certificação de Arquiteto de Software (TOGAF ou equivalente) e estabelecer liderança intelectual em design de sistemas e arquitetura corporativa.",
+                "Liderar design arquitetural de microsserviços distribuídos globalmente e arquiteturas orientadas a eventos em AWS e Azure, especializando-me em resiliência e observabilidade de sistemas.",
+                "Aprofundar expertise em integrações cloud-native de IA e sistemas de processamento de dados em tempo real para produtos web e mobile de próxima geração.",
+                "Estabelecer liderança técnica como arquiteto de software e mentor de equipes, elevando padrões de qualidade de código, rigor arquitetural e excelência de entrega em organizações de engenharia."
             ]
         },
         experience: {
@@ -261,19 +291,22 @@ export const content = {
                 {
                     company: "Myfoodlink",
                     website: "https://myfoodlink.com.au",
-                    role: "Engenheiro de Software Full Stack Sênior",
+                    role: "Engenheiro de Software Full Stack Sênior | Arquiteto de Integração",
                     period: "12/2021 - 12/2025",
                     location: "Hobart, Austrália",
                     bullets: [
-                        "Desenvolvimento e manutenção de plataformas de e‑commerce com Ruby on Rails e MongoDB, utilizando RESTful APIs, integrações via webhooks e frontend em Vue.js.",
-                        "Condução de code reviews, definição de boas práticas e gestão de deploys em produção.",
-                        "Integração de 10+ sistemas de PDV e 10+ gateways de pagamento, incluindo programas de fidelidade e gift cards, unificando lojas físicas e online.",
-                        "Integração de 5+ serviços de entrega (Uber Direct, DoorDash, Drive Yello), grandes marketplaces (DoorDash, Uber Eats, Menulog) e 10+ outros serviços terceiros, ampliando funcionalidades de negócio.",
-                        "Liderança na garantia de conformidade PCI DSS em fluxos de pagamento, com foco em criptografia e manipulação segura de dados.",
-                        "Redução de 50% no ciclo de desenvolvimento mobile ao migrar apps nativos para Flutter e Dart.",
-                        "Redução de 70% no tempo de deploy mobile com automação de Pull Requests via GitHub Actions e aumento de 85% na eficiência de deploy para 40+ clientes usando CI/CD e hotfixes automatizados."
+                        "Liderei desenvolvimento end-to-end da plataforma B2B2C SaaS de e-commerce servindo 2.000+ varejistas independentes de supermercados e bebidas na Austrália e Nova Zelândia, gerenciando infraestrutura de varejo omnichannel e operações de quick-commerce.",
+                        "Arquitetei e entreguei 25+ integrações terceirizadas abrangendo 10+ sistemas de PDV, 10+ gateways de pagamento (fidelidade, gift cards), 5+ serviços de entrega (Uber Direct, DoorDash, Drive Yello) e marketplaces principais (DoorDash, Uber Eats, Menulog), unificando operações de varejo físico e online.",
+                        "Projetei APIs RESTful e arquitetura orientada a eventos baseada em webhooks possibilitando processamento assíncrono e comunicação desacoplada entre sistemas terceirizados; implementei camadas de tratamento de erros, retry logic e transformação de dados.",
+                        "Engenheiro de serviços backend usando Ruby on Rails com MongoDB para gerenciamento de pedidos de alto throughput e sincronização de inventário em tempo real em 2.000+ deployments de varejistas.",
+                        "Desenvolvi dashboards frontend em Vue.js possibilitando gerentes de loja configurar catálogos de produtos, gerenciar presença em marketplaces, monitorar pedidos e rastrear entregas em tempo real.",
+                        "Liderei implementação de conformidade PCI DSS em todas as features de pagamento; arquitetei fluxos de pagamento seguro, criptografia de dados, tokenização e frameworks de auditoria possibilitando 2.000+ varejistas processar pagamentos com segurança.",
+                        "Campeonei estratégia mobile: migrei codebase nativo iOS/Android específico de plataforma para framework unificado Flutter/Dart, reduzindo duplicação de código em 50% e acelerando entrega de features.",
+                        "Projetei pipeline GitHub Actions CI/CD abrangente automatizando verificações de pull-request, testes, deploys multi-stage e procedimentos de hotfix; reduzi lead time de deploy mobile em 70% e otimizei deployment de app para 40+ clientes em 85%.",
+                        "Conduzi design reviews técnicos e auditorias de código; mentorizei desenvolvedores juniores em padrões arquiteturais, design de sistemas e boas práticas de integração.",
+                        "Gerenciei resposta a incidentes em produção e despachei hotfixes para manter estabilidade de plataforma e continuidade de serviço em deployments distribuídos de varejistas."
                     ],
-                    tech: ["Ruby on Rails", "Flutter", "MongoDB", "Vue.js", "GitHub Actions", "REST APIs", "Webhooks", "PCI DSS"]
+                    tech: ["Ruby on Rails", "Flutter/Dart", "MongoDB", "Vue.js", "GitHub Actions", "RESTful APIs", "Webhooks", "PCI DSS", "AWS (EC2, RDS, S3, Lambda)", "Redis", "Domain-Driven Design"]
                 },
                 {
                     company: "Syntagium Consulting",
@@ -282,97 +315,110 @@ export const content = {
                     period: "10/2021 - 01/2022",
                     location: "Sydney, Austrália",
                     bullets: [
-                        "Conclusão de projeto corporativo em contrato de 3 meses, entregando antes do prazo previsto.",
-                        "Entrega de soluções corporativas utilizando C# ASP.NET Core 3.1 e arquitetura MVC.",
-                        "Modelagem de sistemas com princípios de Domain‑Driven Design (DDD).",
-                        "Design e desenvolvimento de APIs RESTful alinhadas às necessidades de integração do cliente.",
-                        "Atuação em sprints Ágeis, contribuindo em planejamento, estimativas e entregas contínuas."
+                        "Entreguei aplicação corporativa dias antes do prazo em contrato de 3 meses, superando expectativas do cliente e possibilitando go-live antecipado.",
+                        "Arquitetei aplicação corporativa em camadas usando C# ASP.NET Core 3.1 com padrão MVC, garantindo separação clara entre presentation, business logic e data access layers.",
+                        "Apliquei princípios de Domain-Driven Design para modelar domínios de negócios complexos; projetei aggregate roots, bounded contexts e ubiquitous language refletindo estrutura organizacional do cliente.",
+                        "Projetei e implementei APIs RESTful com métodos HTTP semânticos, status codes apropriados, tratamento de erros e validação; garantindo consistência com padrões de integração corporativa.",
+                        "Implementei Entity Framework Core ORM com otimização de queries, lazy loading e data loading seletivo para operações críticas de performance.",
+                        "Alcancei >80% de cobertura de código através de testes unitários e de integração abrangentes usando xUnit; apliquei padrões arquiteturais através de code review e governança técnica.",
+                        "Colaborei em sprints Ágeis, contribuindo em planejamento, estimativas e entrega contínua; coordenei com stakeholders de produto para clarificar requisitos e validar comportamento do sistema."
                     ],
-                    tech: ["C#", "ASP.NET Core", "MVC", "DDD", "REST APIs", "Ágil"]
+                    tech: ["C#", "ASP.NET Core 3.1", "Entity Framework Core", "DDD", "xUnit", "REST APIs", "SQL Server", "Agile/Scrum"]
                 },
                 {
                     company: "Staffing Group",
+                    website: "https://staffing.com.au",
                     role: "Engenheiro de Software",
                     period: "04/2021 - 06/2021",
                     location: "Melbourne, Austrália",
                     bullets: [
-                        "Desenvolvimento de sistemas de RH e recrutamento utilizando .NET, C# e AngularJS.",
-                        "Integração de dados de 30+ sites externos para otimizar interfaces e fluxos de recrutamento.",
-                        "Foco em confiabilidade através de testes extensivos, depuração e ajustes de performance."
+                        "Desenvolvi sistemas de gestão de RH e recrutamento agregando dados de candidatos de 30+ websites e plataformas de recrutamento diversos em interface centralizada de gestão de candidatos.",
+                        "Projetei serviços backend .NET/C# consumindo e normalizando dados de fontes heterogêneas (job boards, sistemas de rastreamento de candidatos, redes sociais), implementando lógica de deduplicação e entity resolution.",
+                        "Construí frontend AngularJS possibilitando gerentes de RH buscar, filtrar e gerenciar pools de candidatos agregados; implementei interfaces responsivas e validação de formulários.",
+                        "Implementei validação de dados abrangente e tratamento de erros garantindo qualidade de dados e consistência em 30+ fontes de integração; realizei análise sistemática de root cause em falhas de integração.",
+                        "Otimizei performance de queries em datasets grandes de candidatos através de estratégias de indexação de banco de dados e mecanismos de caching; melhorei confiabilidade de sistema através de testes e debugging extensivos."
                     ],
-                    tech: [".NET", "C#", "AngularJS", "Testes"]
+                    tech: [".NET", "C#", "AngularJS", "SQL Server", "Integração de Dados", "Testing/Debugging"]
                 },
                 {
                     company: "Axxiom - Tecnologia e Inovação",
+                    website: "https://www.axxiom.com.br",
                     role: "Analista de Programação",
                     period: "12/2020 - 04/2021",
                     location: "Belo Horizonte, Brasil",
                     bullets: [
-                        "Contribuição em sistemas de gestão de redes de energia renovável para o setor de distribuição elétrica.",
-                        "Aumento de 30% na eficiência de monitoramento por meio de melhorias em funcionalidades e relatórios.",
-                        "Melhoria na gestão da integração de energia renovável à rede existente.",
-                        "Design de serviços backend com .NET, garantindo conformidade regulatória e documentação técnica.",
-                        "Suporte contínuo e manutenção em soluções em produção."
+                        "Contribuí para sistemas de integração de rede de energia renovável críticos para missão, gerenciando redes solares/eólicas on-grid para setor de distribuição de eletricidade brasileiro (servindo 18 milhões de clientes).",
+                        "Projetei serviços backend .NET monitorando geração de energia renovável, gerenciando distribuição de energia e otimizando estabilidade de rede; implementei cálculos de fluxo de energia e algoritmos de balanceamento de rede.",
+                        "Integrei com sistemas SCADA e infraestrutura de monitoramento de rede; gerenciei fluxos de dados de energia em tempo real e implementei interfaces de dashboard exibindo métricas de geração e contribuição de energia renovável.",
+                        "Aumentei eficiência de monitoramento em 30% através de funcionalidades de sistema aprimoradas, analytics em tempo real e alerting preditivo; possibilitei operadores de rede detectar anomalias mais rápido e responder à instabilidade.",
+                        "Garantir conformidade com regulações brasileiras do setor de energia (padrões ANEEL, requisitos de operador de rede); criei documentação técnica e forneci suporte contínuo para soluções deployadas."
                     ],
-                    tech: [".NET", "SQL Server", "Energia & Utilities"]
+                    tech: [".NET", "C#", "SQL Server", "SCADA Integration", "Processamento de Dados em Tempo Real", "Conformidade do Setor Energético", "MPS.Br Level C (CMMI Level 2)"]
                 },
                 {
                     company: "Axxiom - Tecnologia e Inovação",
+                    website: "https://www.axxiom.com.br",
                     role: "Analista Desenvolvedor de Software",
                     period: "04/2014 - 11/2016",
                     location: "Belo Horizonte, Brasil",
                     bullets: [
-                        "Participação em projetos de P&D para o setor elétrico, focados em automação e conformidade.",
-                        "Desenvolvimento de aplicações web usando ASP.NET MVC, NHibernate e SQL Server, além de Java SE/EE, JSF, Hibernate e MS SQL.",
-                        "Criação e manutenção de sistema de gestão de processos jurídicos, automatizando workflows e garantindo conformidade regulatória.",
-                        "Utilização de JSF, Spring Web Flow, AJAX e PrimeFaces para interfaces ricas.",
-                        "Aumento de 25% na performance de software, reduzindo tempo de processamento e melhorando a experiência do usuário."
+                        "Participei de projetos R&D construindo software de produção para automação do setor elétrico e conformidade; desenvolvi sistemas diretamente para CEMIG (servindo 18 milhões de clientes em 774 municípios).",
+                        "Arquitetei aplicações web full-stack usando ASP.NET MVC, NHibernate e SQL Server; projetei domain models, schemas de banco de dados e lógica de negócios refletindo workflows complexos de gestão de energia.",
+                        "Projetei e mantive sistema de gestão de processos jurídicos automatizando workflows, garantindo conformidade regulatória e implementando audit trails para requisitos de cliente corporativo.",
+                        "Implementei aplicações Java EE usando JSF, Spring Web Flow e Hibernate; desenvolvi interfaces ricas baseadas em PrimeFaces com AJAX para interações dinâmicas em tempo real.",
+                        "Liderei iniciativa abrangente de otimização de performance: identifiquei gargalos de banco de dados através de profiling, implementei otimização de queries, estratégias multi-level caching e melhorias algorítmicas, alcançando ganho de 25% em performance geral.",
+                        "Colaborei com analistas de negócios, especialistas em domínio jurídico e operadores de utilidades para validar comportamento de sistema e coletar feedback operacional."
                     ],
-                    tech: ["ASP.NET MVC", "NHibernate", "SQL Server", "Java", "JSF", "Spring Web Flow", "PrimeFaces"]
+                    tech: ["ASP.NET MVC", "Java EE", "JSF", "Spring Web Flow", "NHibernate", "Hibernate", "SQL Server", "PrimeFaces", "AJAX", "Otimização de Performance"]
                 },
                 {
                     company: "Flag Intelliwan",
+                    website: "https://www.flag.com.br",
                     role: "Desenvolvedor .NET C#",
                     period: "04/2013 - 03/2014",
                     location: "Belo Horizonte, Brasil",
                     bullets: [
-                        "Desenvolvimento de soluções de logística e distribuição para grandes distribuidores e fabricantes.",
-                        "Atuação em empresa certificada ISO 27001 e Microsoft Gold Partner, com foco em entregas seguras e de alta qualidade."
+                        "Desenvolvi software de logística e distribuição para grandes distribuidoras e fabricantes brasileiros, suportando otimização de cadeia de suprimentos e eficiência operacional.",
+                        "Projetei lógica de negócios C# e .NET implementando workflows de cadeia de suprimentos (gestão de inventário, fulfilment de pedidos, otimização de rotas, rastreamento de remessas).",
+                        "Colaborei com especialistas em domínio de logística para validar comportamento de sistema contra requisitos reais de cadeia de suprimentos; otimizei queries de banco de dados e indexação para operações de alto volume de transações."
                     ],
-                    tech: [".NET", "C#", "Logística"]
+                    tech: [".NET Framework", "C#", "SQL Server", "Logística"]
                 },
                 {
                     company: "TSA (Automation Systems Technology)",
+                    website: "https://www.tsatec.com.br",
                     role: "Engenheiro de Software Júnior (.NET C#)",
                     period: "10/2012 - 04/2013",
                     location: "Belo Horizonte, Brasil",
                     bullets: [
-                        "Apoio no desenvolvimento de sistemas de automação e controle para mineração, energia, óleo & gás e siderurgia.",
-                        "Contribuição em soluções integradas conectando sistemas industriais e plataformas corporativas."
+                        "Apoiei desenvolvimento de sistemas de automação e controle para indústrias com alto consumo energético (mineração, energia, óleo & gás, aço); aprendi domínio de automação industrial e systems thinking.",
+                        "Desenvolvi software C# e .NET implementando lógica de automação e monitoramento operacional para ambientes industriais complexos."
                     ],
-                    tech: [".NET", "C#", "Automação Industrial"]
+                    tech: [".NET Framework", "C#", "Automação Industrial"]
                 },
                 {
                     company: "TechBiz IT",
-                    role: "Estagiário Desenvolvedor e QA (.NET C# e Selenium IDE)",
+                    website: "https://www.techbizit.com.br",
+                    role: "Desenvolvedor e QA Tester (.NET C# & Selenium IDE)",
                     period: "10/2011 - 10/2012",
                     location: "Nova Lima, Brasil",
                     bullets: [
-                        "Desenvolvimento e testes de soluções sob medida para clientes do setor público e privado.",
-                        "Uso de Selenium IDE e .NET para ampliar a cobertura de regressão e qualidade das entregas."
+                        "Desenvolvi e testei soluções de software sob medida para clientes dos setores público e privado; usei Selenium IDE e .NET para melhorar qualidade de aplicação e cobertura de regressão.",
+                        "Ganhei experiência fundamental em design orientado a objetos, bancos de dados relacionais e práticas de desenvolvimento de software corporativo."
                     ],
-                    tech: [".NET", "C#", "Selenium IDE", "QA"]
+                    tech: [".NET Framework", "C#", "Selenium IDE", "QA Testing"]
                 },
                 {
                     company: "Direcional Engineering",
-                    role: "Estagiário Desenvolvedor (Java)",
+                    website: "https://www.direcional.com.br",
+                    role: "Desenvolvedor (Java)",
                     period: "08/2010 - 08/2011",
                     location: "Belo Horizonte, Brasil",
                     bullets: [
-                        "Desenvolvimento de aplicações em Java como parte de equipe interna de engenharia de software.",
-                        "Fortalecimento de fundamentos em orientação a objetos, bancos de dados e desenvolvimento corporativo."
+                        "Desenvolvi aplicações baseadas em Java como parte de equipe interna de software de engenharia; estabeleci experiência fundamental em design orientado a objetos, bancos de dados e desenvolvimento corporativo.",
+                        "Contribui para soluções de software de engenharia para domínio de construção e gestão de projetos."
                     ],
-                    tech: ["Java", "SQL"]
+                    tech: ["Java", "SQL", "Object-Oriented Design"]
                 }
             ]
         },
@@ -380,29 +426,32 @@ export const content = {
             title: "Expertise Principal",
             categories: [
                 {
-                    name: "Linguagens & Plataformas",
-                    list: ["C#", "Java", "Ruby", "Dart", "TypeScript", "JavaScript", "HTML", "CSS"]
+                    name: "Arquitetura & Design Backend",
+                    list: ["C#", ".NET Core/.NET Framework", "Ruby on Rails", "Java/Spring", "ASP.NET MVC", "Domain-Driven Design (DDD)", "Princípios SOLID", "Clean Architecture", "Onion Architecture", "Design de APIs RESTful", "Padrões de Microsserviços", "Arquitetura de Integração de Sistemas"]
+                },
+                {
+                    name: "Frontend & Mobile",
+                    list: ["Vue.js", "React", "Angular/AngularJS", "Flutter/Dart", "HTML5/CSS3", "JavaScript/TypeScript", "Design Responsivo", "Desenvolvimento Cross-Platform"]
                 },
                 {
                     name: "Dados & Persistência",
-                    list: ["PostgreSQL", "MSSQL", "MySQL", "MongoDB", "Entity Framework", "NHibernate", "Data Modelling", "Data Integrity"]
+                    list: ["PostgreSQL", "Microsoft SQL Server", "MySQL", "MongoDB", "Entity Framework", "NHibernate", "Hibernate", "JPA", "Modelagem de Dados", "Otimização de Queries", "Estratégias de Cache"]
                 },
                 {
-                    name: "Frameworks & Bibliotecas",
-                    list: ["ASP.NET Core/Framework", "Spring", "Rails", "React", "Vue.js", "Angular", "jQuery", "JSF", "PrimeFaces", "Flutter"]
-                },
-                {
-                    name: "Arquitetura & Boas Práticas",
-                    list: ["RESTful APIs", "Webhook Integrations", "Microservices", "API Gateway", "JWT", "OAuth 2.0", "DDD", "Design Patterns", "BDD", "TDD", "Agile"]
+                    name: "Integração & APIs",
+                    list: ["Integração de APIs Terceirizadas", "Arquitetura de Webhooks", "OAuth 2.0 / JWT", "Padrões de API Gateway", "Agregação de Dados Multi-Fonte", "Integração de Gateways de Pagamento", "Sistemas SCADA", "Arquitetura Orientada a Eventos"]
                 },
                 {
                     name: "Cloud & DevOps",
-                    list: ["Terraform", "AWS (EC2, Lambda, S3, RDS, EventBridge)", "Azure (VMs, Functions, Blob, DB, Event Grid)", "GitHub Actions", "CI/CD", "Git", "DevOps"]
-
+                    list: ["AWS (EC2, Lambda, S3, RDS, EventBridge)", "Azure (VMs, Functions, Blob Storage, Event Grid)", "GitHub Actions", "Design de Pipeline CI/CD", "Docker", "Terraform", "Infrastructure-as-Code", "Automação de Deployment", "Git/GitHub"]
                 },
                 {
-                    name: "Competências Profissionais",
-                    list: ["Otimização de Performance", "Colaboração em Equipe", "Mentoria", "Resolução de Problemas", "Gestão de Tempo", "Liderança", "Code Review", "Documentação Técnica"]
+                    name: "Segurança & Conformidade",
+                    list: ["Conformidade PCI DSS", "Processamento Seguro de Pagamentos", "Criptografia de Dados", "OAuth 2.0", "Conformidade Regulatória (Setor Energético)", "Auditoria de Segurança", "Design de API Seguro", "Frameworks de Conformidade", "Princípios ITIL"]
+                },
+                {
+                    name: "Profissional & Liderança",
+                    list: ["Arquitetura de Sistemas", "Liderança Técnica", "Code Review & Mentoria", "Colaboração em Equipe", "Otimização de Performance", "Resolução de Problemas", "Documentação Técnica", "Agile/Scrum", "Comunicação Cross-Funcional", "MPS.Br", "CMMI", "Princípios SOLID"]
                 }
             ]
         },
@@ -410,7 +459,7 @@ export const content = {
             title: "Base Acadêmica",
             items: [
                 {
-                    degree: "Mestrado em TI (Desenvolvimento de Software)",
+                    degree: "Mestrado em Tecnologia da Informação (Desenvolvimento de Software)",
                     institution: "University of Southern Queensland",
                     period: "09/2025 - Presente",
                     location: "Entrega Online, Austrália"
@@ -436,7 +485,7 @@ export const content = {
                 { label: "marllondrion@gmail.com", type: "email", icon: "", href: "mailto:marllondrion@gmail.com" },
                 { label: "+61 0410 389 445", type: "phone", icon: "", href: "tel:+61410389445" },
                 { label: "LinkedIn", type: "social", icon: "", href: "https://linkedin.com/in/marllondrion" },
-                { label: "GitHub", type: "social", icon: "", href: "https://github.com/yourusername" }
+                { label: "GitHub", type: "social", icon: "", href: "https://github.com/marllondrion" }
             ]
         }
     }
