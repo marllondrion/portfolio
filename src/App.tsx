@@ -17,7 +17,7 @@ const App: React.FC = () => {
 
   if (!data) return null;
 
-  const skilledList = data.skills.categories.flatMap(c =>
+  const skilledList = data.skills.categories.flatMap((c: any) =>
     [c.name, ...[...c.list].sort(() => Math.random() - 0.5)]
   );
 
