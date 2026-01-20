@@ -56,7 +56,6 @@
     /* Improve visibility in Dark Mode */
     :global(.dark) & {
         @apply text-white/50;
-        /* Increased from 40 to 50 for better legibility */
     }
 
     /* Hover states */
