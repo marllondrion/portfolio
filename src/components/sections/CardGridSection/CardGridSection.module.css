@@ -11,7 +11,6 @@
 
     /* Increased visibility for Dark Mode to 20% white */
     color: rgba(15, 23, 42, 0.08);
-    /* Light Mode */
 
     :global(.dark) & {
         color: rgba(255, 255, 255, 0.15);
