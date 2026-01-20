@@ -17,6 +17,10 @@ const App: React.FC = () => {
 
   if (!data) return null;
 
+  const skilledList = data.skills.categories.flatMap(c =>
+    [c.name, ...[...c.list].sort(() => Math.random() - 0.5)]
+  );
+
   return (
     <div className="snap-container bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white transition-colors duration-500 relative">
       <div className="fixed inset-0 grid-pattern dark:text-white text-slate-900 pointer-events-none opacity-[0.03] dark:opacity-[0.05]"></div>
@@ -32,7 +36,7 @@ const App: React.FC = () => {
           ctaPrimary={{ label: data.hero.cta_primary, href: "#journey" }}
           ctaSecondary={{ label: data.hero.cta_secondary, href: "#contact" }}
           visualTitle={data.hero.bg_image_title}
-          visualMaskText={data.hero.bg_image_text}
+          visualMaskText={skilledList.join(', ')}
         />
 
         {/* ABOUT (SplitTextSection) */}
