@@ -6,10 +6,12 @@ import styles from './TimelineSection.module.css';
 interface TimelineItem {
     title: string;
     subtitle: string;
+    description?: string;
     link?: string;
     tagLeft?: string;
     tagRight?: string;
     bullets: string[];
+    tags: string[];
 }
 
 export const TimelineSection: React.FC<{ id: string, title: string, subtitle: string, items: TimelineItem[] }> = ({ id, title, subtitle, items }) => (
@@ -23,6 +25,7 @@ export const TimelineSection: React.FC<{ id: string, title: string, subtitle: st
                 {items.map((item, i) => (
                     <div key={i} className={styles.card}>
                         <div className={styles.leftCol}>
+
                             <h3 className={styles.cardTitle}>{item.title}</h3>
                             {item.link && (
                                 <a
@@ -34,9 +37,23 @@ export const TimelineSection: React.FC<{ id: string, title: string, subtitle: st
                                     {item.subtitle} <IconExternal />
                                 </a>
                             )}
-                            <div className={styles.footer}>
+
+                            <div className={styles.infoRow}>
                                 <span>{item.tagLeft}</span>
                                 <span>{item.tagRight}</span>
+                            </div>
+                            <div className={styles.description}>
+                                {item.description}
+                            </div>
+
+                            <div className={styles.footer} >
+                                <div className={styles.tagsList}>
+                                    {item.tags.map((tag) => (
+                                        <span key={tag} className={styles.tag}>
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                         <div className={styles.rightCol}>

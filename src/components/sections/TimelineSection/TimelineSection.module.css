@@ -72,8 +72,27 @@
     @apply inline-flex items-center gap-3 text-brand-600 font-black text-lg md:text-xl tracking-tight hover:underline;
 }
 
+.infoRow {
+    @apply flex justify-between;
+    @apply text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] opacity-40;
+    @apply text-slate-900;
+
+    :global(.dark) & {
+        @apply text-slate-200;
+    }
+}
+
+.description {
+    @apply text-sm italic;
+    @apply italic text-justify wrap-break-word;
+
+    :global(.dark) & {
+        @apply text-slate-200;
+    }
+}
+
 .footer {
-    @apply flex justify-between items-end mt-12 pt-6 border-t;
+    @apply flex justify-between items-end mt-22 pt-6 border-t;
     @apply text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] opacity-40;
     @apply text-slate-900 border-slate-200;
 
@@ -97,4 +116,30 @@
 
 .bulletPoint {
     @apply text-brand-600 font-black;
+}
+
+/* Skill Tags Logic */
+.tagsList {
+    @apply flex flex-wrap gap-2;
+}
+
+.tag {
+    @apply px-4 py-2 text-sm font-bold rounded-lg transition-all duration-300 cursor-default shadow-sm border;
+
+    /* Light Mode */
+    background-color: #ffffff;
+    border-color: theme('colors.slate.200');
+    color: theme('colors.slate.700');
+
+    /* Dark Mode */
+    :global(.dark) & {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: theme('colors.slate.300');
+    }
+}
+
+.tag:hover {
+    @apply border-brand-500 text-brand-500 -translate-y-1;
+    box-shadow: 0 10px 15px -3px rgba(51, 76, 255, 0.1);
 }

@@ -61,7 +61,8 @@ const App: React.FC = () => {
             link: item.website,
             tagLeft: item.period,
             tagRight: item.location,
-            bullets: item.bullets
+            bullets: item.bullets,
+            tags: item.tech
           }))}
         />
 
