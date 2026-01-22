@@ -83,7 +83,8 @@ const App: React.FC = () => {
             subtitle: item.institution,
             tagLeft: item.period,
             tagRight: item.location,
-            iconText: item.institution.charAt(0)
+            iconText: item.institution.charAt(0),
+            logoImagePath: item.imagine_path
           }))} />
 
 

@@ -217,19 +217,22 @@ export const content = {
                     degree: "Master of Information Technology (Software Development)",
                     institution: "University of Southern Queensland",
                     period: "09/2025 - Present",
-                    location: "Online Delivery, Australia"
+                    location: "Online Delivery, Australia",
+                    imagine_path: "/education/unisq-icon.png"
                 },
                 {
                     degree: "Advanced Diploma in Information Technology",
                     institution: "Royal Gurkhas Institute of Technology (RGIT)",
                     period: "04/2020 - 10/2021",
-                    location: "Melbourne, Australia"
+                    location: "Melbourne, Australia",
+                    imagine_path: "/education/RGIT.png"
                 },
                 {
                     degree: "Bachelor's Degree in Computer Information Systems",
                     institution: "Newton Paiva University Centre",
                     period: "2010 - 2013",
-                    location: "Belo Horizonte, Brazil"
+                    location: "Belo Horizonte, Brazil",
+                    imagine_path: "/education/newton-paiva.png"
                 }
             ]
         },
