@@ -14,7 +14,7 @@
 
 .title {
     @apply font-display text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.9];
-    @apply text-slate-900;
+    @apply text-slate-600;
 
     :global(.dark) & {
         @apply text-white;
@@ -27,7 +27,11 @@
 
 .description {
     @apply text-xl md:text-2xl leading-relaxed font-medium;
-    @apply text-slate-600 dark:text-slate-400;
+    @apply text-slate-600;
+
+    :global(.dark) & {
+        @apply text-slate-400;
+    }
 }
 
 /* --- Left List Glass Card --- */
@@ -57,10 +61,11 @@
 
 .listItem {
     @apply flex gap-4 items-start p-4 rounded-2xl border transition-all;
-    @apply bg-slate-200/50 border-slate-200 text-slate-900;
+    @apply bg-slate-200/50 border-slate-200;
+    @apply text-sm md:text-lg font-bold opacity-80;
 
     :global(.dark) & {
-        @apply bg-white/3 border-white/5 text-white;
+        @apply bg-white/3 border-white/5 text-slate-200;
     }
 }
 
@@ -73,7 +78,7 @@
 }
 
 .leftCardText {
-    @apply text-sm md:text-lg font-bold opacity-80;
+    @apply font-bold opacity-80;
 }
 
 /* --- Right Side Column --- */
@@ -87,15 +92,19 @@
 
 .rightCard {
     @apply p-6 md:p-10 rounded-2xl md:rounded-[3rem] border transition-all shadow-lg;
-    @apply bg-slate-200/50 border-slate-200 hover:border-brand-500;
+    @apply bg-slate-200/50 border-slate-200 hover:border-brand-500 text-slate-800;
 
     :global(.dark) & {
-        @apply bg-white/4 border-white/5 hover:border-brand-500;
+        @apply bg-white/4 border-white/5 hover:border-brand-500 text-slate-200;
     }
 }
 
 .rightCardText {
-    @apply font-black text-lg md:text-xl transition-colors leading-tight;
+    @apply font-black transition-colors leading-tight text-slate-600;
+
+    :global(.dark) & {
+        @apply text-slate-400;
+    }
 }
 
 .rightCard:hover .rightCardText {
