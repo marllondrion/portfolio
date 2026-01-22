@@ -44,10 +44,10 @@ const App: React.FC = () => {
           id="about"
           title={data.about.title}
           description={data.about.description}
-          leftListTitle={data.about.achievements}
-          leftList={data.about.achievements_list}
-          rightListTitle={data.about.objectives}
-          rightList={data.about.objectives_list}
+          leftListTitle={data.about.objectives}
+          leftList={data.about.objectives_list}
+          rightListTitle={data.about.achievements}
+          rightList={data.about.achievements_list}
         />
 
         {/* JOURNEY (TimelineSection) */}
