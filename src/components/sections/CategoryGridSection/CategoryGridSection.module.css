@@ -1,8 +1,9 @@
 @reference "../../../index.css";
 
 .sectionWrapper {
-    @apply p-8 md:p-20 lg:p-24 relative overflow-hidden mx-auto max-w-[1600px] md:rounded-[4rem] border-y;
+    @apply p-8 md:p-20 lg:p-24 relative overflow-hidden mx-auto max-w-[1600px];
     @apply transition-colors duration-500;
+    @apply rounded-[2.5rem] md:rounded-[4rem] border-y;
 
     /* Light Mode */
     background-color: #f8fafc;
