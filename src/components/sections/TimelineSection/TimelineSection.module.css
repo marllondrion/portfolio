@@ -14,7 +14,7 @@
 
 .title {
     @apply font-display text-6xl sm:text-8xl md:text-[100px] lg:text-[120px] font-black tracking-tighter leading-none opacity-10 uppercase;
-    @apply text-slate-900 dark:text-white;
+    @apply text-slate-900 dark:text-white transition-colors duration-500;
 
     :global(.dark) & {
         @apply text-white;
@@ -29,26 +29,21 @@
     @apply grid gap-12;
 }
 
-/* --- Timeline Glass Card --- */
 .card {
     @apply p-6 md:p-12 lg:p-16 rounded-3xl md:rounded-[4rem] transition-all duration-700 shadow-2xl relative overflow-hidden;
-    @apply flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-16 border;
+    /* Single column on mobile, two columns on desktop */
+    @apply flex flex-col lg:grid lg:grid-cols-12 lg:gap-16 border;
 
-    /* Liquid Glass Base */
+    /* Liquid Glass Effect */
     background-color: rgba(3, 7, 18, 0.45);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border-color: rgba(255, 255, 255, 0.08);
 
-    /* Light Mode Override */
     :global(html:not(.dark)) & {
         background-color: rgba(255, 255, 255, 0.7);
         border-color: rgba(0, 0, 0, 0.08);
         backdrop-filter: blur(20px) saturate(120%);
-    }
-
-    :global(.dark) & {
-        @apply text-white;
     }
 }
 
@@ -56,12 +51,21 @@
     @apply border-brand-500/50;
 }
 
-.leftCol {
-    @apply lg:col-span-4 space-y-4 md:space-y-6;
+/* --- Left Column (Content) --- */
+.contentWrapper {
+    @apply flex flex-col space-y-6 lg:col-span-5;
+}
+
+.titleGroup {
+    @apply flex flex-col space-y-2;
 }
 
 .cardTitle {
     @apply text-3xl md:text-5xl font-black tracking-tighter transition-colors leading-none;
+
+    :global(html:not(.dark)) & {
+        @apply text-slate-700;
+    }
 }
 
 .card:hover .cardTitle {
@@ -72,20 +76,60 @@
     @apply inline-flex items-center gap-3 text-brand-600 font-black text-lg md:text-xl tracking-tight hover:underline;
 }
 
-.footer {
-    @apply flex justify-between items-end mt-12 pt-6 border-t;
-    @apply text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] opacity-40;
-    @apply text-slate-900 border-slate-200;
+/* left & right information row */
+.infoRow {
+    @apply flex justify-between py-4 lg:py-0;
+    @apply text-[10px] font-black uppercase tracking-[0.3em] opacity-40 text-slate-900 dark:text-slate-200;
 
     :global(.dark) & {
-        @apply text-white border-white/10;
+        @apply text-slate-200;
     }
 }
 
-.rightCol {
-    @apply lg:col-span-8 space-y-6 md:space-y-10;
+.description {
+    @apply text-sm italic text-justify opacity-80;
+    @apply text-slate-900 dark:text-slate-200 leading-relaxed;
+
+    :global(.dark) & {
+        @apply text-white;
+    }
 }
 
+/* --- Right Column (Bullets) --- */
+.rightCol {
+    @apply space-y-6 md:space-y-10 lg:col-span-7;
+}
+
+/* --- Footer & Tags --- */
+.footerDesktop {
+    @apply hidden lg:block pt-6 border-t border-black/5 dark:border-white/5;
+}
+
+.footerMobile {
+    @apply block lg:hidden pt-6 border-t border-black/5 dark:border-white/10;
+}
+
+.tagsList {
+    @apply flex flex-wrap gap-2;
+}
+
+.tag {
+    @apply px-4 py-2 text-[10px] font-bold rounded-lg transition-all duration-300 border uppercase tracking-wider;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: theme('colors.slate.600');
+
+    :global(.dark) & {
+        border-color: rgba(255, 255, 255, 0.08);
+        color: theme('colors.slate.300');
+    }
+}
+
+.tag:hover {
+    @apply border-brand-500 text-brand-500 -translate-y-1 bg-brand-500/5;
+}
+
+/* --- Bullet List Styles --- */
 .bulletList {
     @apply space-y-4 md:space-y-6 text-base md:text-xl font-medium;
     @apply text-slate-600 dark:text-slate-400;
@@ -96,5 +140,5 @@
 }
 
 .bulletPoint {
-    @apply text-brand-600 font-black;
+    @apply text-brand-600 font-black shrink-0;
 }

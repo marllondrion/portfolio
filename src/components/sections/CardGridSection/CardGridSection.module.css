@@ -63,6 +63,14 @@
     @apply w-16 h-16 md:w-24 md:h-24 bg-brand-600 rounded-2xl md:rounded-[2.5rem];
     @apply flex items-center justify-center text-white text-3xl md:text-5xl font-black;
     @apply shadow-2xl shadow-brand-600/30 transition-transform;
+
+    &:has(img) {
+        @apply bg-transparent;
+    }
+
+    img {
+        @apply w-full h-full object-cover rounded-full;
+    }
 }
 
 .card:hover .iconBox {

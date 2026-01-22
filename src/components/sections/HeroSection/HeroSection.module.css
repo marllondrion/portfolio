@@ -90,14 +90,18 @@
 }
 
 .maskContainer {
-    @apply relative z-10 w-64 h-64 sm:w-80 sm:h-80;
+    @apply relative z-10 w-100 h-100 sm:w-60 sm:h-60;
     @apply md:w-[450px] md:h-[450px] xl:w-[550px] xl:h-[550px];
     @apply rounded-[3rem] md:rounded-[6rem];
-    @apply border-8 md:border-16 dark:border-white/10 border-white/30;
+    @apply border-8 md:border-16 border-white/30;
     @apply overflow-hidden shadow-2xl transition-all duration-1000 bg-slate-900 flex items-center justify-center;
 
     /* Initial state: lg:rotate-2 */
     transform: rotate(2deg);
+
+    :global(.dark) & {
+        @apply border-white/10
+    }
 }
 
 .visualWrapper:hover .maskContainer {
