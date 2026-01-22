@@ -7,8 +7,8 @@
     --color-brand-600: #1a27ff;
 }
 
-/* By keeping these as @utility, they work with @apply in your modules.
-  They also automatically work as global .glass-card classes in your HTML.
+/* By keeping these as @utility, they work with @apply in the modules.
+  They also automatically work as global .glass-card classes in HTML.
 */
 @utility glass-card {
     background: rgba(255, 255, 255, 0.7);
