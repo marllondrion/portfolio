@@ -11,7 +11,7 @@ export const CategoryGridSection: React.FC<{ id: string, title: string, subtitle
     const memoizedCategories = useMemo(() => categories, [categories]);
 
     return (
-        <RevealSection id={id} innerClassName="max-w-none px-0">
+        <RevealSection id={id} className="max-w-none px-0">
             <div className={styles.sectionWrapper}>
                 <div className={styles.bgGlow} />
 
