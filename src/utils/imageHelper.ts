@@ -1,7 +1,7 @@
 // Import all images recursively from assets/images folder
 const imageModules: Record<string, string> = import.meta.glob(
     '@/assets/images/**/*.{svg,png,jpg,jpeg,webp,gif}',
-    { eager: true, as: 'url' }
+    { eager: true, query: '?url', import: 'default' }
 );
 
 /**
