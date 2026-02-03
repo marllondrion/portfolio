@@ -53,7 +53,9 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`${styles.mobileMenuOverlay} ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'}`}>
+            <div className={`${styles.mobileMenuOverlay} ${isOpen ?
+                'translate-y-0 opacity-100 visible pointer-events-auto' :
+                '-translate-y-10 opacity-0 invisible pointer-events-none'}`}>
                 <div className={styles.mobileMenuLinks}>
                     {navLinks.map(id => (
                         <a key={id} href={`#${id}`} onClick={() => setIsOpen(false)} className={styles.navLink}>
