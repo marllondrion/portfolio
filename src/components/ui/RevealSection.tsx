@@ -22,7 +22,7 @@ export const RevealSection: React.FC<RevealSectionProps> = ({
         const observer = new IntersectionObserver(
             ([entry]) => {
 
-                if (entry.isIntersecting) {
+                if (entry?.isIntersecting) {
                     setIsActive(true);
                 }
             },
