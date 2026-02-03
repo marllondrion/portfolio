@@ -13,7 +13,7 @@
 }
 
 .title {
-    @apply font-display text-6xl sm:text-8xl md:text-[100px] lg:text-[120px] font-black tracking-tighter leading-none opacity-10 uppercase;
+    @apply font-display text-6xl sm:text-8xl md:text-[100px] lg:text-[120px] font-black tracking-tighter leading-none opacity-100 uppercase;
     @apply text-slate-900 dark:text-white transition-colors duration-500;
 
     :global(.dark) & {
@@ -79,7 +79,7 @@
 /* left & right information row */
 .infoRow {
     @apply flex justify-between py-4 lg:py-0;
-    @apply text-[10px] font-black uppercase tracking-[0.3em] opacity-40 text-slate-900 dark:text-slate-200;
+    @apply text-[10px] font-black uppercase tracking-[0.3em] opacity-70 text-slate-900 dark:text-slate-200;
 
     :global(.dark) & {
         @apply text-slate-200;

@@ -22,7 +22,7 @@ export const RevealSection: React.FC<RevealSectionProps> = ({
         const observer = new IntersectionObserver(
             ([entry]) => {
 
-                if (entry.isIntersecting) {
+                if (entry?.isIntersecting) {
                     setIsActive(true);
                 }
             },
@@ -55,10 +55,7 @@ export const RevealSection: React.FC<RevealSectionProps> = ({
 
             <div
                 ref={ref}
-                className={`w-full max-w-[1440px] h-full min-h-full mx-auto px-6 md:px-12 lg:px-16 
-          reveal ${isActive ? 'active' : ''} 
-          ${innerClassName} 
-        `}
+                className={`w-full max-w-[1440px] h-full min-h-full mx-auto px-6 md:px-12 lg:px-16 ${isActive ? 'active' : ''} ${innerClassName}`}
             >
                 {children}
             </div>

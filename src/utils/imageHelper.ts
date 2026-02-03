@@ -1,7 +1,7 @@
 // Import all images recursively from assets/images folder
 const imageModules: Record<string, string> = import.meta.glob(
     '@/assets/images/**/*.{svg,png,jpg,jpeg,webp,gif}',
-    { eager: true, as: 'url' }
+    { eager: true, query: '?url', import: 'default' }
 );
 
 /**
@@ -91,7 +91,7 @@ export function getImagesFromFolder(folder: string): Record<string, string> {
         .reduce((acc, path) => {
             const filename = path.split('/').pop();
             if (filename) {
-                acc[filename] = imageModules[path];
+                acc[filename] = imageModules[path] as string;
             }
             return acc;
         }, {} as Record<string, string>);
@@ -111,7 +111,7 @@ export function getImagesFromFolderRecursive(folder: string): Record<string, str
         .reduce((acc, path) => {
             // Get relative path from the specified folder
             const relativePath = path.replace(`/src/assets/images/${normalizedFolder}/`, '');
-            acc[relativePath] = imageModules[path];
+            acc[relativePath] = imageModules[path] as string;
             return acc;
         }, {} as Record<string, string>);
 }

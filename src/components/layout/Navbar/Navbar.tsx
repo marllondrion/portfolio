@@ -19,10 +19,12 @@ export const Navbar: React.FC = () => {
             <div className={styles.navContainer}>
 
                 {/* Logo/Brand */}
-                <div className={styles.logoGroup}>
-                    <div className={styles.logoIcon}>M</div>
-                    <span className={styles.logoText}>Marllon Drion</span>
-                </div>
+                <a href="#home">
+                    <div className={styles.logoGroup}>
+                        <div className={styles.logoIcon}>M</div>
+                        <span className={styles.logoText}>Marllon Drion</span>
+                    </div>
+                </a>
 
                 {/* Desktop Navigation */}
                 <div className={styles.desktopMenu}>
@@ -53,7 +55,9 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`${styles.mobileMenuOverlay} ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'}`}>
+            <div className={`${styles.mobileMenuOverlay} ${isOpen ?
+                'translate-y-0 opacity-100 visible pointer-events-auto' :
+                '-translate-y-10 opacity-0 invisible pointer-events-none'}`}>
                 <div className={styles.mobileMenuLinks}>
                     {navLinks.map(id => (
                         <a key={id} href={`#${id}`} onClick={() => setIsOpen(false)} className={styles.navLink}>
