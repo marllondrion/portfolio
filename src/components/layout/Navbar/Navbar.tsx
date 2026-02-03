@@ -19,10 +19,12 @@ export const Navbar: React.FC = () => {
             <div className={styles.navContainer}>
 
                 {/* Logo/Brand */}
-                <div className={styles.logoGroup}>
-                    <div className={styles.logoIcon}>M</div>
-                    <span className={styles.logoText}>Marllon Drion</span>
-                </div>
+                <a href="#home">
+                    <div className={styles.logoGroup}>
+                        <div className={styles.logoIcon}>M</div>
+                        <span className={styles.logoText}>Marllon Drion</span>
+                    </div>
+                </a>
 
                 {/* Desktop Navigation */}
                 <div className={styles.desktopMenu}>
