@@ -90,7 +90,7 @@
 }
 
 .maskContainer {
-    @apply relative z-10 w-100 h-100 sm:w-60 sm:h-60;
+    @apply relative z-10 w-full h-full aspect-square;
     @apply md:w-[450px] md:h-[450px] xl:w-[550px] xl:h-[550px];
     @apply rounded-[3rem] md:rounded-[6rem];
     @apply border-8 md:border-16 border-white/30;
